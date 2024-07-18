@@ -32,13 +32,13 @@ nav > div {
     padding: 8px
 }
 
-.borderDiv {
-    background: url(images/border-1.gif) 0 bottom repeat-x
+.divborder {
+    clear: left;
+    background: url(images/border-1.gif) 0 bottom repeat-x;
 }
 
 .clientes {
     text-align: left;
-    clear: left;
     padding: 30px 26px 40px 26px;
 }
 
@@ -52,10 +52,6 @@ nav > div {
     padding: 30px 26px 40px 26px;
 }
 
-.img-border {
-    border: #ebebec 4px solid;
-    border-radius: 12px
-}
 
 .content > div {
     text-align: left;
