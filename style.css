@@ -33,16 +33,18 @@ nav > div {
 }
 
 .clientes {
+    text-align: left;
     clear: left;
     padding: 30px 26px 40px 26px;
 }
 
 .pics {
-    max-width: 200px;
+    max-width: 220px;
     margin-left: 15px;
 }
 
 .formulario {
+    text-align: left;
     padding: 30px 26px 40px 26px;
 }
 
@@ -52,9 +54,10 @@ nav > div {
 }
 
 .content > div {
+    text-align: left;
     float: left;
-    width: 300px;
-    margin-right: 27px
+    width: 310px;
+    margin: 10px;
 }
 
 footer {
