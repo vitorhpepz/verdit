@@ -5,18 +5,27 @@ body {
     text-align: center;
 }
 
+.logo {
+    padding-top: 30px;
+}
+
+.subtitle {
+    color: darkgray;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
 h2 h3 {
     font-size: 24px
 }
 
 .centeredContainer {
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .headerborder {
     margin: 25px 0;
-    z-index: 100;
     border-radius: 12px;
     background: #ebebec;
     padding: 4px
@@ -24,18 +33,21 @@ h2 h3 {
 
 .headerborder > div {
     background: url(images/nav.jpg) 0 0 repeat-x #55b7c8;
-    border-radius: 12px 8px 8px 12px;
+    border-radius: 8px;
     padding: 8px
 }
 
-.content > div {
+.content>div {
     text-align: left;
     float: left;
     width: 310px;
     margin: 10px;
 }
 
-.imgborder {border:#ebebec 4px solid; border-radius:12px}
+.imgborder {
+    border: #ebebec 4px solid;
+    border-radius: 12px
+}
 
 .separator {
     clear: left;
@@ -58,7 +70,7 @@ h2 h3 {
 }
 
 footer {
-    border-radius:12px;
+    border-radius: 12px;
     padding: 20px 0;
     background-color: #000;
     color: #fff
