@@ -132,11 +132,8 @@
 
             const currentUrl = new URL(window.location);
             currentUrl.searchParams.set('lang', 'en');
-            window.history.pushState({}, '', currentUrl);
             // Apply translations
             applyTranslations();
-            // Reload the page to ensure back button functionality
-            window.location.reload();
 
         }
 
