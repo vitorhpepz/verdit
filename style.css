@@ -1,77 +1,65 @@
-/* Global properties ======================================================== */
-html, body {width:100%; padding:0; margin:0}
-body {font:14px/25px Arial, Helvetica, sans-serif; color:#000; background:#000}
-.main {width:100%; background:url(images/main.jpg) center 0 repeat; border-top:#000 5px solid}
-/***********************************************************************/
-a {text-decoration:none; cursor:pointer}
-a:hover {text-decoration:underline}
-
-h2 {font-size:34px; line-height:4px; color:#000; font-weight:normal; font-family:'Oxygen', sans-serif; letter-spacing:1px}
-h3 {font-size:24px; line-height:30px; color:#000; font-weight:normal; font-family:'Oxygen', sans-serif}
-
-.clear {clear:both; line-height:0; font-size:0; width:100%}
-.wrap {overflow:hidden; position:relative}
-.last {margin-right:0 !important}
-
-.box-shadow {box-shadow:0 1px 1px #fff}
-
-.pad-1 {padding:50px 26px 40px 26px}
-
-.p2 {padding-bottom:12px}
-.p3 {padding-bottom:17px}
-.p4 {padding-bottom:18px !important}
-
-.clientes {padding: 30px 26px 40px 26px;}
-.formulario {padding: 30px 26px 40px 26px;}
-.pics {max-width: 190px; margin-left:15px; margin-right:15px; vertical-align:middle;}
-.img2 {padding-top: 45px;}
-.img3 {padding-top: 23px;}
-.img4 {padding-top: 43px;}
-
-/*********************************header*************************************/
-header {width:960px; margin:0 auto; z-index:101}
-
-h1 {margin-top:30px; display:inline-block; z-index:100}
-
-nav {z-index:100; border-radius:12px; background:#ebebec; margin:22px 6px 0 6px; padding:4px}
-nav > div {background:url(images/nav.jpg) 0 0 repeat-x #55b7c8; border-radius:12px 8px 8px 12px; height:120px}
-
-#content {max-width:940px; margin:0 auto}
-
-.border-1 {background:url(images/border-1.gif) 0 bottom repeat-x}
-.img-border {border:#ebebec 4px solid; border-radius:12px}
-
-.block-1 > div {float:left; width:278px; margin-right:27px}
-.block-1 > div h3 {margin-bottom:16px}
-.block-1 > div img {margin-bottom:12px}
-
-/****************************footer************************/
-footer {width:100%; position:relative; overflow:hidden; text-align:center; padding:20px 0}
-footer p, footer a {color:#fff}
-
-/* Responsive Design ======================================================== */
-@media screen and (max-width: 960px) {
-    header {width:100%; padding:0 10px; box-sizing:border-box;}
-    nav {margin:22px 0; padding:4px; border-radius:0;}
-    nav > div {border-radius:8px; height:auto;}
-
-    #content {max-width:100%; padding:0 10px; box-sizing:border-box;}
-    .pad-1 {padding:20px 10px;}
-
-    .block-1 > div {float:none; width:100%; margin-bottom:20px; padding-bottom:10px;}
-    .block-1 > div img {margin-bottom:10px;}
-    .wrap {overflow:visible;}
+body {
+    font: 16px Helvetica, Arial, sans-serif;
+    color: #2a2a2a;
+    background: url("images/main.jpg");
+    text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    h2 {font-size:28px; line-height:32px;}
-    h3 {font-size:20px;}
-    .pad-1 {padding:10px;}
-    .pics {max-width:45%; margin:5%; padding-top:0;}
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
 }
 
-@media screen and (max-width: 400px) {
-    h2 {font-size:24px; line-height:28px;}
-    nav > div {padding:10px;}
-    .pics {max-width:90%; margin:5%; padding-top:0;}
+h2 h3 {
+    font-size: 24px
+}
+
+nav {
+    margin: 25px 0;
+    z-index: 100;
+    border-radius: 12px;
+    background: #ebebec;
+    padding: 4px
+}
+
+nav > div {
+    background: url(images/nav.jpg) 0 0 repeat-x #55b7c8;
+    border-radius: 12px 8px 8px 12px;
+    padding: 8px
+}
+
+.borderDiv {
+    background: url(images/border-1.gif) 0 bottom repeat-x
+}
+
+.clientes {
+    clear: left;
+    padding: 30px 26px 40px 26px;
+}
+
+.pics {
+    max-width: 200px;
+    margin-left: 15px;
+}
+
+.formulario {
+    padding: 30px 26px 40px 26px;
+}
+
+.img-border {
+    border: #ebebec 4px solid;
+    border-radius: 12px
+}
+
+.content > div {
+    float: left;
+    width: 300px;
+    margin-right: 27px
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff
 }
