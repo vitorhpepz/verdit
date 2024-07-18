@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+.centeredContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .logo {
     padding-top: 30px;
 }
@@ -23,11 +28,6 @@ h2 h3 {
     font-size: 24px
 }
 
-.centeredContainer {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .headerborder {
     margin: 25px 0;
     border-radius: 12px;
@@ -41,11 +41,25 @@ h2 h3 {
     padding: 8px
 }
 
-.content>div {
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content > div {
+    flex: 1 1 200px;
+    margin: 20px;
+    box-sizing: border-box;
     text-align: left;
-    float: left;
-    width: 310px;
-    margin: 10px;
+}
+
+/* Ensure full width for columns for mobile devices */
+@media (max-width: 768px) {
+    .content > div {
+        flex: 1 1 100%; 
+        margin: 5px;
+    }
 }
 
 .imgborder {
