@@ -32,10 +32,12 @@ nav > div {
     padding: 8px
 }
 
-.divborder {
+.separator {
     clear: left;
     background: url(images/border-1.gif) 0 bottom repeat-x;
 }
+
+.imgborder {border:#ebebec 4px solid; border-radius:12px}
 
 .clientes {
     text-align: left;
