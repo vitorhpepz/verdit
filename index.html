@@ -104,49 +104,6 @@
     <title>Verdit Software e Consultoria</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        const translatedText = {
-            "title": "Verdit Software and Consulting",
-            ".subtitle": "Software & Consulting",
-            ".headerborder h2": "13 years of experience and over 200 projects successfully accomplished across the United States and Brazil",
-            ".headerborder p": "Simple and extraordinary solutions. Creating a more productive future with our clients.",
-            ".content div:nth-child(1) h3": "Artificial Intelligence",
-            ".content div:nth-child(1) p": "We are specialists in artificial intelligence. We develop your software or add AI capabilities to your legacy system. Java, Cobol, PHP, .net, Javascript, Python, web, smartphone: it doesn't matter, we adapt to your environment.",
-            ".content div:nth-child(2) h3": "Blockchain",
-            ".content div:nth-child(2) p": "We are pioneers in smart contracts for blockchain - since 2021, over 30 successful projects created. We develop all the software and infrastructure for real estate tokenization on blockchain, digital ticketing systems, altcoins, and more.",
-            ".content div:nth-child(3) h3": "Consulting for Dev Companies",
-            ".content div:nth-child(3) p": "We do more than develop software - we use our experience to improve your development process. <a href=\"mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.\">Click here to consult our specialists.</a>",
-            ".formulario h3": "Get in touch with us, we would be pleased to have you as a partner.",
-            ".formulario p": "We are at your disposal to understand your needs and help you with your projects. We speak English, Portuguese, and Spanish. Contact us via email at <a href=\"mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.\">vitor@verdit.site</a>.",
-            "footer p": "© Verdit Software & Consulting. Since 2010",
-            ".clientes h3": "Some of our clients:"
-        };
-
-        function applyTranslations() {
-            Object.keys(translatedText).forEach(selector => {
-                const element = document.querySelector(selector);
-                if (element) element[selector.includes("a>") ? "textContent" : "innerHTML"] = translatedText[
-                    selector];
-            })
-        }
-
-        function toggleLanguage() {
-            const currentUrl = new URL(window.location);
-            currentUrl.searchParams.set('lang', 'en');
-            applyTranslations();
-
-            document.querySelector(".englishLink").style.display = 'none';
-        }
-
-        function checkLanguageParam() {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('lang') === 'en') {
-                applyTranslations();
-            }
-        }
-
-        window.onload = checkLanguageParam;
-    </script>
 </head>
 
 <body>
@@ -213,9 +170,53 @@
         </div>
     </div>
     <footer>
-        <p>© Verdit Software & Consultoria. Desde 2010</p>
+        <p>© Verdit Software & Consultoria.</p>
     </footer>
 
+    <script>
+        const translatedText = {
+            "title": "Verdit Software and Consulting",
+            ".subtitle": "Software & Consulting",
+            ".headerborder h2": "13 years building software, over 200 success stories.",
+            ".headerborder p": "Extraordinary software solutions. Automating processes for a more productive future with our clients",
+            ".content div:nth-child(1) h3": "Artificial Intelligence",
+            ".content div:nth-child(1) p": "We are specialists in artificial intelligence. We develop your software or add AI capabilities to your legacy system. Java, Cobol, PHP, .net, Javascript, Python, web, smartphone: it doesn't matter, we adapt to your environment.",
+            ".content div:nth-child(2) h3": "Blockchain",
+            ".content div:nth-child(2) p": "We are pioneers in smart contracts for blockchain - since 2021, over 30 successful projects created. We develop all the software and infrastructure for real estate tokenization on blockchain, digital ticketing systems, altcoins, and more.",
+            ".content div:nth-child(3) h3": "Consulting for Dev Companies",
+            ".content div:nth-child(3) p": "We do more than develop software - we use our experience to improve your development process. <a href=\"mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.\">Click here to consult our specialists.</a>",
+            ".formulario h3": "Get in touch with us, we would be pleased to have you as a partner.",
+            ".formulario p": "We are at your disposal to understand your needs and help you with your projects. We speak English, Portuguese, and Spanish. Contact us via email at <a href=\"mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.\">vitor@verdit.site</a>.",
+            "footer p": "© Verdit Software & Consulting.",
+            ".clientes h3": "Some of our clients:"
+        };
+
+        function applyTranslations() {
+            Object.keys(translatedText).forEach(selector => {
+                const element = document.querySelector(selector);
+                if (element) element[selector.includes("a>") ? "textContent" : "innerHTML"] = translatedText[
+                    selector];
+            })
+        }
+
+        function toggleLanguage() {
+            const currentUrl = new URL(window.location);
+            currentUrl.searchParams.set('lang', 'en');
+            applyTranslations();
+
+            document.querySelector(".englishLink").style.display = 'none';
+        }
+
+        function checkLanguageParam() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('lang') === 'en') {
+                applyTranslations();
+            }
+        }
+
+        window.onload = checkLanguageParam;
+        toggleLanguage()
+    </script>
 </body>
 
 </html>
