@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font: 16px Arial, sans-serif;
+            color: #2a2a2a;
+            text-align: center;
+            margin: 0;
+        }
+
+        .top-border {
+            width: 100%;
+            height: 5px;
+            background-color: #747474;
+        }
+
+        .centeredContainer {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            padding-top: 30px;
+        }
+
+        .subtitle {
+            color: darkgray;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        a {
+            color: #000;
+        }
+
+        .headerborder {
+            margin: 25px 0;
+            border-radius: 12px;
+            background: #e7e7e7;
+            padding: 4px;
+        }
+
+        .headerborder>div {
+            border-radius: 8px;
+            padding: 8px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content>div {
+            flex: 1 1 200px;
+            margin: 20px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        /* Ensure full width for columns on mobile devices */
+        @media (max-width: 768px) {
+            .content>div {
+                flex: 1 1 100%;
+                margin: 5px;
+            }
+        }
+
+        .imgborder {
+            border: #ebebec 4px solid;
+            border-radius: 12px;
+        }
+
+        .separator {
+            clear: left;
+            background: url(images/border-1.gif) 0 bottom repeat-x;
+        }
+
+        .clientes {
+            text-align: left;
+            padding: 30px;
+        }
+
+        .clientes img {
+            max-width: 220px;
+            margin-left: 15px;
+        }
+
+        .formulario {
+            text-align: left;
+            padding: 30px;
+        }
+
+        footer {
+            padding: 20px 0;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+
+    <title>Verdit Software and Consulting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="top-border"></div>
+    <div class="centeredContainer">
+        <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+        <p class="subtitle">Software & Consulting</p>
+
+        <div class="headerborder">
+            <div>
+                <h2>13 years building software, over 200 success stories.</h2>
+                <p>Extraordinary software solutions. Automating processes for a more productive future with our clients.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="embossed-pane">
+                <h3>Artificial Intelligence</h3>
+                <img src="images/page1-img1.jpg" alt="" class="imgborder">
+                <p>We are specialists in artificial intelligence. We develop your software or add AI capabilities to your legacy system. Java, Cobol, PHP, .NET, JavaScript, Python, web, smartphone: it doesn't matter, we adapt to your environment.</p>
+            </div>
+            <div>
+                <h3>Blockchain</h3>
+                <img src="images/page1-img3.jpg" alt="" class="imgborder">
+                <p>We are pioneers in smart contracts for blockchain—since 2021, over 30 successful projects created. We develop all the software and infrastructure for real estate tokenization on blockchain, digital ticketing systems, altcoins, and more.</p>
+            </div>
+            <div>
+                <h3>Consulting for Development Companies</h3>
+                <img src="images/page1-img2.jpg" alt="" class="imgborder">
+                <p>We do more than develop software—we use our experience to improve your development process. <a href="mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.">Click here to consult our specialists.</a></p>
+            </div>
+        </div>
+
+        <div class="separator">&nbsp;</div>
+
+        <div class="clientes">
+            <h3>Some of our clients:</h3>
+            <img src="images/inwave.png" alt="Client 1" />
+            <img src="images/br.png" alt="Client 2" />
+            <img src="images/ambidados.png" alt="Client 3" />
+            <img src="images/mybi.png" alt="Client 4" />
+        </div>
+
+        <div class="separator">&nbsp;</div>
+
+        <div class="formulario borderDiv">
+            <h3>Get in touch with us, we would be pleased to work with you.</h3>
+            <p>We are at your disposal to understand your needs and help you with your projects. We serve in person in Fortaleza, or remotely, in Portuguese, Spanish, or English anywhere in the world. Contact us to discuss your requirements via email at <a href="mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit.site&Body=I%20would%20like%20to%20discuss%20your%20services.%20Looking%20forward%20to%20your%20response.">vitor@verdit.site</a>.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© Verdit Software & Consulting.</p>
+    </footer>
+</body>
+
+</html>
