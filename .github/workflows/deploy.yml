@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main  # Change to your default branch if needed
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install root dependencies
+      run: npm install
+
+    - name: Build Main Project
+      run: npm run build:main
+
+    - name: Build PT Project
+      run: npm run build:pt
+
+    - name: Build Crypto Project
+      run: npm run build:crypto
+
+    - name: Build Agentic Project
+      run: npm run build:agentic
+    
+    - name: Copy CNAME
+      run: cp CNAME dist/CNAME
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist  # Publish the entire dist directory
+        target_branch: gh-pages
