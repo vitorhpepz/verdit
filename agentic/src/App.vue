@@ -16,6 +16,7 @@ const menuItems = ref([
 	{ label: "The software", link: "#thesoftware" },
 	{ label: "Features", link: "#features" },
 	{ label: "Testimonials", link: "#testimonies" },
+	{ label: "Verdit Consulting", link: "/" },
 	{ label: "Contact", link: "#contact" },
 ])
 </script>
