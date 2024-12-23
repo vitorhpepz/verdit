@@ -25,7 +25,7 @@
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
-					<p class="font-display">...e muitos mais!</p>
+					<p class="font-display">...dentre muitos outros!</p>
 					<br><br>
 					<BuyButton :isPrimary="true" />
 				</div>
@@ -132,7 +132,7 @@
 					<div class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
-						<Title class="mb-2">“Eu sei que parece um pouco clichê, mas desenvolver software tem sido minha vocação e paixão nos últimos 19 anos. E ver meus clientes crescerem e terem sucesso é incrivelmente gratificante. O que posso dizer? É um trabalho incrível.”</Title>
+						<Title class="mb-2">“Eu sei que parece clichê, mas desenvolver software tem sido minha vocação e paixão nos últimos 19 anos. E ver meus clientes crescerem e terem sucesso é incrivelmente gratificante. O que posso dizer? É um trabalho incrível.”</Title>
 						<SubTitle class="text-white mb-4">
 							Vitor Pepicon, Fundador e Desenvolvedor Líder na Verdit Consulting
 						</SubTitle>
