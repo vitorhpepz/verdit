@@ -18,21 +18,36 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Install root dependencies
+    - name: Install Root Dependencies
       run: npm install
 
-    - name: Build Main Project
-      run: npm run build:main
+    - name: Install Main Project Dependencies
+      run: |
+        cd main
+        npm install
+        cd ..
 
-    - name: Build PT Project
-      run: npm run build:pt
+    - name: Install PT Project Dependencies
+      run: |
+        cd pt
+        npm install
+        cd ..
 
-    - name: Build Crypto Project
-      run: npm run build:crypto
+    - name: Install Crypto Project Dependencies
+      run: |
+        cd crypto
+        npm install
+        cd ..
 
-    - name: Build Agentic Project
-      run: npm run build:agentic
-    
+    - name: Install Agentic Project Dependencies
+      run: |
+        cd agentic
+        npm install
+        cd ..
+
+    - name: Build All Projects
+      run: npm run build:all
+
     - name: Copy CNAME
       run: cp CNAME dist/CNAME
 
