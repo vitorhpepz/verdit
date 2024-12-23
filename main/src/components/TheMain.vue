@@ -134,7 +134,7 @@
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
 						<Title class="mb-2">“I know it sounds a bit corny, but developing software has been my calling and passion for the past 19 years. And seeing my clients grow and succeed is incredibly rewarding. What can I say? It's an awesome job.”</Title>
 						<SubTitle class="text-white mb-4">
-						Vitor, Founder and Lead Developer at Verdit Consulting
+						Vitor Pepicon, Founder and Lead Developer at Verdit Consulting
 						</SubTitle>
 						
 					</div>

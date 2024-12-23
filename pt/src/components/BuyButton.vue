@@ -1,7 +1,7 @@
 <template>
   <button 
     :class="buttonClass"
-    data-tally-open="nGYAdZ"
+    data-tally-open="waZMBb"
     data-tally-emoji-text="👋"
     data-tally-emoji-animation="wave"
     @click="handleButtonClick"
@@ -16,7 +16,7 @@ export default {
   props: {
     buttonText: {
       type: String,
-      default: 'Book a Call',
+      default: 'Agendar Chamada',
     },
     isPrimary: {
       type: Boolean,
@@ -36,7 +36,7 @@ export default {
       twq('event', 'tw-ow2gq-ow2gr', {});
 
       // Trigger the Amplitude tracking event
-      amplitude.track('Sign Up');
+      amplitude.track('contato pt');
 
       // Additional actions can be performed here
     }

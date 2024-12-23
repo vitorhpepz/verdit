@@ -5,11 +5,11 @@
 				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10">
 					<div class="space-y-4 sm:space-y-6">
 						<Title class="lg:text-7xl font-medium">
-							Empowering Innovation with
-							<span class="text-primary-600">Artificial Intelligence</span>
+							Potencializando a Inovação com 
+							<span class="text-primary-600">Inteligência Artificial</span>
 						</Title>
 						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700">
-							Transforming Ideas into Intelligent, Scalable, and Innovative Applications
+							Transformando Ideias em Aplicações Inteligentes, Escaláveis e Inovadoras
 						</SubTitle>
 					</div>
 					<!-- <div class="flex items-center justify-center flex-col sm:flex-row gap-4 sm:gap-6">
@@ -21,11 +21,11 @@
 					</div> -->
 				</div>
 				<div class="space-y-6 text-center">
-					<p class="font-display">Trusted by</p>
+					<p class="font-display">Alguns de nossos clientes:</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
-					<p class="font-display">...and dozens more!</p>
+					<p class="font-display">...e muitos mais!</p>
 					<br><br>
 					<BuyButton :isPrimary="true" />
 				</div>
@@ -39,9 +39,9 @@
 		>
 			<Container class="space-y-16">
 				<div class="space-y-6 text-center text-white">
-					<Title v-text="'Comprehensive AI Solutions'" class="md:text-5xl" />
+					<Title v-text="'Soluções para IA'" class="md:text-5xl" />
 					<SubTitle class="text-white">
-						Tailored Solutions to Meet Your Unique Needs:
+						Soluções Personalizadas para Atender às Suas Necessidades Únicas:
 					</SubTitle>
 				</div>
 					<FeaturesChanger />
@@ -105,16 +105,16 @@
 		<Section id="testimonials" class="bg-slate-50">
 			<Container class="space-y-16">
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
-					<Title>{{ 'What Our Clients Say' }}</Title>
+					<Title>{{ 'O que Dizem Nossos Clientes' }}</Title>
 					<SubTitle>
-						Real Feedback from Businesses Thriving with Our Solutions
+						Feedback Real de Empresas que Prosperam com Nossas Soluções
 					</SubTitle>
 				</div>
 				<Testimonials />
 
 				<div class="text-center">
 					<SubTitle class="text-white-700 underline">
-						<a href="https://www.upwork.com/freelancers/~01ef5120bd178f9fcc">More testimonials about our lead developer clicking here
+						<a href="https://www.upwork.com/freelancers/~01ef5120bd178f9fcc">Mais depoimentos sobre nosso desenvolvedor líder clicando aqui
 						</a>
 					</SubTitle>
 					<br><br>
@@ -132,9 +132,9 @@
 					<div class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
-						<Title class="mb-2">“I know it sounds a bit corny, but developing software has been my calling and passion for the past 19 years. And seeing my clients grow and succeed is incredibly rewarding. What can I say? It's an awesome job.”</Title>
+						<Title class="mb-2">“Eu sei que parece um pouco clichê, mas desenvolver software tem sido minha vocação e paixão nos últimos 19 anos. E ver meus clientes crescerem e terem sucesso é incrivelmente gratificante. O que posso dizer? É um trabalho incrível.”</Title>
 						<SubTitle class="text-white mb-4">
-						Vitor, Founder and Lead Developer at Verdit Consulting
+							Vitor Pepicon, Fundador e Desenvolvedor Líder na Verdit Consulting
 						</SubTitle>
 						
 					</div>
@@ -146,14 +146,14 @@
 					</div>
 				</div>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center text-base">
-					<SubTitle v-text="'Have questions or requests? E-mail Vitor directly'" />
+					<SubTitle v-text="'Tem perguntas ou solicitações? Envie um e-mail diretamente para o Vitor'" />
 					<SubTitle class="text-white-700 underline">
-						<a href="mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">
+						<a href="mailto:vitor@verdit.site?Subject=Contato%20via%20Verdit&Body=Olá,%20tenho%20uma%20dúvida.%20Aguardo%20seu%20contato." class="text-white-700 hover:underline">
             				vitor@verdit.site
 						</a>
 					</SubTitle>
 					<SubTitle>
-						"I’d be delighted to speak with you!"
+						"Aguardo seu contato!"
 					</SubTitle>
 
 				</div>

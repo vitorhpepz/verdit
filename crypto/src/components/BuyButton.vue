@@ -36,7 +36,7 @@ export default {
       twq('event', 'tw-ow2gq-ow2gr', {});
 
       // Trigger the Amplitude tracking event
-      amplitude.track('Sign Up');
+      amplitude.track('contact crypto');
 
       // Additional actions can be performed here
     }

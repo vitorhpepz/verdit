@@ -26,31 +26,31 @@ const testimonials = ref([
     name: "Eric Plotts",
     job: "MoveRocket.com",
     src: `${__BASE_PATH__}/imgs/testimonials/eric.jpeg`,
-    text: "Vitor is one of the best. He's a great guy, smart, honest, and hard working. One of the best guys I've ever worked with. Thanks for being awesome Vitor!",
+    text: "Vitor é um dos melhores. Ele é um ótimo cara, inteligente, honesto e trabalhador. Um dos melhores com quem já trabalhei. Obrigado por ser incrível, Vitor! (Traduzido, feedback original em Inglês)",
   },
   {
     name: "Mark Kempton",
     job: "SAS PointsPrizes",
     src: `${__BASE_PATH__}/imgs/testimonials/mark.jpeg`,
-    text: "Vitor is a veteran at deploying ERC-721 smart contracts. He worked closely with us to design/deploy the contract, and then to deeply integrate it into our game platform. In particular, he has a lot of experience when it comes to minimizing gas fees. Excellent responsiveness to all our messages and highly professional. We will be very likely to hire him again in the future",
+    text: "Vitor é um veterano na implantação de contratos inteligentes ERC-721. Ele trabalhou de perto conosco para projetar/implantar o contrato e depois integrá-lo profundamente em nossa plataforma de jogos. Em particular, ele tem muita experiência em minimizar taxas de gas (da rede Ethereum). Excelente resposta a todas as nossas mensagens e altamente profissional. É muito provável que o contrataremos novamente no futuro. (Traduzido, feedback original em Inglês)",
   },
   {
     name: "Brandon Priest",
     job: "WgmiLabs.com",
     src: `${__BASE_PATH__}/imgs/testimonials/brandon.jpeg`,
-    text: "Amazing experience with Vitor!! Will continue to work with him longterm.",
+    text: "Experiência incrível com Vitor!! Continuaremos a trabalhar com ele a longo prazo. (Traduzido, feedback original em Inglês)",
   },
   {
+    job: "Fundador do HappyLand Gummy Bears",
     name: "Jacobo Escobar",
-    job: "Founder of HappyLand Gummy Bears",
     src: `${__BASE_PATH__}/imgs/testimonials/jacobo.jpeg`,
-    text: "Vitor is amazing! He did exactly what needed to be done and was fun to work with. He is very good at communication when we needed anything or had questions. He was very proficient and knows a lot about creating a smart-contract on the Ethereum Blockchain. The project was a huge success and we'll continue working together on this project for smaller portions of it. Grateful to have met him and is a great asset to the development community as well as the Crypto/NFT space.",
+    text: "Vitor é incrível! Ele fez exatamente o que precisava ser feito e foi divertido trabalhar com ele. Ele é muito bom em comunicação quando precisávamos de algo ou tínhamos perguntas. Ele foi muito proficiente e sabe muito sobre a criação de um contrato inteligente na Blockchain Ethereum. O projeto foi um grande sucesso e continuaremos trabalhando juntos neste projeto em porções menores. Grato por tê-lo conhecido e ele é um grande ativo para a comunidade de desenvolvimento, bem como para o espaço Crypto/NFT. (Traduzido, feedback original em Inglês)",
   },
   {
     name: "Gary Nezri",
     job: "Gnla Transportation LLC",
     src: `${__BASE_PATH__}/imgs/testimonials/peter-renolds.webp`,
-    text: "I have never known a better and more professional developer in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English, understands everything and understands your assignment immediately. We made a mistake during the assignment and despite that he made us a second contract. It was our mistake and he didn't want us to pay anything extra. If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better developer for an NFT project on Upwork. And most importantly, you don't have to be afraid to trust him.",
+    text: "Nunca conheci um desenvolvedor melhor e mais profissional em minha vida. Uma pessoa que tem entusiasmo, motivação, é confiável, tem inglês perfeito, entende tudo e compreende sua tarefa imediatamente. Cometemos um erro durante a tarefa e, apesar disso, ele fez um segundo contrato para nós. Foi nosso erro e ele não quis que pagássemos nada extra. Se você está procurando alguém com quem não terá que se preocupar e que resolverá tudo para você, definitivamente não encontrará um desenvolvedor melhor para um projeto NFT no Upwork. E, o mais importante, você não precisa ter medo de confiar nele. (Traduzido, feedback original em Inglês)",
   }
 ]);
 </script>

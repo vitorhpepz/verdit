@@ -100,7 +100,7 @@
       <div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
         <Title class="mb-2">“I've easily tripled my productivity engaging with leads for my consulting business. And I feel like they prefer talking to Agentic rather than to me!”</Title>
         <SubTitle class="text-white mb-4">
-          Vitor, Founder at Verdit Consulting and creator of Agentic
+          Vitor Pepicon, Founder at Verdit Consulting and creator of Agentic
         </SubTitle>
       </div>
       

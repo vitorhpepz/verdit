@@ -13,10 +13,10 @@ import TheFooter from "./components/TheFooter.vue"
 import { ref } from "vue"
 
 const menuItems = ref([
-	{ label: "Our Services", link: "#services" },
-	{ label: "Testimonials", link: "#testimonials" },
-	{ label: "Contact", link: "#contact" },
-	{ label: "Blockchain Services", link: "/crypto/" },
+	{ label: "Nossos serviços", link: "#services" },
+	{ label: "Depoimentos", link: "#testimonials" },
+	{ label: "Contato", link: "#contact" },
+	{ label: "Serviços de Blockchain", link: "/crypto/" },
 	{ label: "Agentic", link: "/agentic/" },
 	{ label: "English 🇺🇸🇬🇧", link: "/" },
 ])

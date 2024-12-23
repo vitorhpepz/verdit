@@ -68,27 +68,27 @@ import { ref } from "vue"
 const selectedFeatureIndex = ref(0)
 const features = ref([
   {
-    label: "AI Integration for Legacy Systems",
+    label: "Integração de IA para Sistemas Legados",
     description:
-      "Enhance your legacy systems with AI capabilities. Whether it's Java, Cobol, PHP, .NET, JavaScript, Python, web, or smartphone applications, we adapt to your environment and elevate your existing infrastructure.",
+      "Aprimore seus sistemas legados com capacidades de IA. Seja em Java, Cobol, PHP, .NET, JavaScript, Python, aplicações web ou para smartphones, nós nos adaptamos ao seu ambiente e aproveitamos sua infraestrutura existente.",
     img: `${__BASE_PATH__}/imgs/features/legacy.jpg`,
   },
   {
-    label: "AI Consulting & Strategy",
+    label: "Consultoria e Estratégia de IA",
     description:
-      "Our expert consultants provide strategic insights and guidance, helping you navigate the AI landscape and harness its potential to drive innovation and growth.",
+      "Nossos consultores especializados oferecem insights estratégicos e orientação, ajudando você a navegar pelo cenário da IA e aproveitar seu potencial para impulsionar a inovação e o crescimento.",
     img: `${__BASE_PATH__}/imgs/features/consulting.jpg`,
   },
   {
-    label: "MVP App Development",
+    label: "Desenvolvimento de Aplicações MVP",
     description:
-      "We specialize in creating Minimum Viable Product (MVP) applications that accelerate your time-to-market, allowing you to validate ideas quickly and efficiently.",
+      "Nós nos especializamos na criação de aplicativos de Produto Mínimo Viável (MVP) que aceleram seu tempo de lançamento no mercado, permitindo validar ideias de forma rápida e eficiente.",
     img: `${__BASE_PATH__}/imgs/features/mvp.jpg`,
   },
   {
-    label: "Robotic Process Automation (RPA) Systems",
+    label: "Sistemas de Automação de Processos Robóticos (RPA)",
     description:
-      "We design and implement RPA systems to automate repetitive tasks, improve efficiency, and reduce operational costs, driving productivity across your organization.",
+      "Projetamos e implementamos sistemas de RPA para automatizar tarefas repetitivas, melhorar a eficiência e reduzir custos operacionais, impulsionando a produtividade em sua organização.",
     img: `${__BASE_PATH__}/imgs/features/flow.jpg`,
   },
 ]);
