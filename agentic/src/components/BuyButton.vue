@@ -16,7 +16,7 @@ export default {
   props: {
     buttonText: {
       type: String,
-      default: 'Buy it Here',
+      default: 'Join Waitlist',
     },
     isPrimary: {
       type: Boolean,

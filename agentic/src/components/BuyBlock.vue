@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center">
       <SubTitle :class="subtitleClass" class="mb-4">
-        $9/month/user.
+        $9/month/user, Exclusive for early users.
       </SubTitle>
       <BuyButton :isPrimary="isPrimary" />
       <SubTitle :class="subtitleClass" class="text-center">
