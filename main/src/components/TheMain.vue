@@ -179,18 +179,17 @@
 			<Container class="text-center text-white">
 				
 				<div class="max-w-4xl mx-auto p-4">
-					<div class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start mb-6">
+					<div class="flex flex-col lg:flex-row items-start lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
-					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
-						<Title class="mb-2">{{ content.about.title }}</Title>
-						<SubTitle class="text-white mb-4" v-for="paragraph in content.about.content">
+					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-start text-left">
+						<Title class="mb-2 text-left">{{ content.about.title }}</Title>
+						<SubTitle class="text-white mb-4 text-left" v-for="paragraph in content.about.content">
 							{{ paragraph }}
 						</SubTitle>
-						
 					</div>
 					
 					<!-- Image Section -->
-					<div class="flex justify-center lg:w-2/5 w-full mt-4 lg:mt-0">
+					<div class="flex items-center justify-end lg:w-2/5 w-full mt-4 lg:mt-0">
 						<img src="/myphoto.jpeg" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
 					</div>
 					</div>
@@ -201,9 +200,6 @@
 						<a href="mailto:vitor@verdit.site?Subject=Contact%20via%20Verdit&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">
             				vitor@verdit.site
 						</a>
-					</SubTitle>
-					<SubTitle>
-						"I'd be delighted to speak with you!"
 					</SubTitle>
 
 				</div>
