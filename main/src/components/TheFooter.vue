@@ -13,8 +13,8 @@
 			</div>
 			<hr />
 			<div class="flex items-center text-center justify-between flex-col sm:flex-row gap-4">
-				<p v-text="'Verdit Consulting'" />
-				<p v-text="'Empowering your sales team through intelligent automation.'" />
+				<p v-text="content.footer.companyName" />
+				<p v-text="content.footer.tagline" />
 			</div>
 		</Container>
 	</footer>
@@ -22,6 +22,7 @@
 
 <script setup>
 import Container from "./Container.vue";
+import content from '../content.json'
 
 const props = defineProps({
 	menuItems: Array,

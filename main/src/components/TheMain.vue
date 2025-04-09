@@ -5,11 +5,11 @@
 				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10">
 					<div class="space-y-4 sm:space-y-6">
 						<Title class="lg:text-7xl font-medium">
-							<span class="text-primary-600">AI Sales Automation</span>
-							 for Founders & Sales Teams							
+							<span class="text-primary-600">{{ content.hero.title.blue }}</span>
+							<span class="text-slate-900"> {{ content.hero.title.black }}</span>
 						</Title>
 						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700">
-							Automate outreach, qualify leads instantly, and close more — without expanding your team.
+							{{ content.hero.subtitle }}
 						</SubTitle>
 					</div>
 					<!-- <div class="flex items-center justify-center flex-col sm:flex-row gap-4 sm:gap-6">
@@ -23,11 +23,11 @@
 				<div class="space-y-6 text-center">
 					<BuyButton :isPrimary="true" />
 					<br><br>
-					<p class="font-display">Trusted by</p>
+					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
-					<p class="font-display">...and many more!</p>					
+					<p class="font-display">{{ content.hero.trustedBy.suffix }}</p>					
 				</div>
 				
 			</Container>
@@ -39,9 +39,9 @@
 		>
 			<Container class="space-y-16">
 				<div class="space-y-6 text-center text-white">
-					<Title v-text="'Everything You Need to Scale Sales'" class="md:text-5xl" />
+					<Title>{{ content.services.title }}</Title>
 					<SubTitle class="text-white">
-						Streamline and Simplify Your Sales Operations:
+						{{ content.services.subtitle }}
 					</SubTitle>
 				</div>
 					<FeaturesChanger />
@@ -90,7 +90,7 @@
 					<strong>Seamlessly switches roles:</strong> Acting as a sales representative for leads, tech support, customer service agent, and more.
 				</li>
 				<li class="mb-4">
-					<strong>Review the generated response before sending it:</strong> Ensure every message is perfect and tailored to your client’s needs.
+					<strong>Review the generated response before sending it:</strong> Ensure every message is perfect and tailored to your client's needs.
 				</li>
 				<li class="mb-4">
 					<strong>Save valuable mental energy:</strong> Work longer hours, maintain sharper focus, and ultimately close more deals without burning out.
@@ -105,9 +105,9 @@
 		<Section id="testimonials" class="bg-slate-50">
 			<Container class="space-y-16">
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
-					<Title>{{ 'Loved by Fast-Growing Teams:' }}</Title>
+					<Title>{{ content.testimonials.title }}</Title>
 					<SubTitle>
-						Real Feedback from Businesses Thriving with Our Solutions
+						{{ content.testimonials.subtitle }}
 					</SubTitle>
 				</div>
 				<Testimonials />
@@ -128,7 +128,7 @@
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
-					<Title v-text="'Get Your AI Sales Automation Roadmap Today'" />
+					<Title>Get Your AI Sales Automation Roadmap Today</Title>
 					<SubTitle class="text-white">
 						Discover exactly how AI can streamline your sales. No guesswork - just clear, actionable steps.
 					</SubTitle>
@@ -159,7 +159,7 @@
 		<Section id="faq" class="bg-slate-50 bg-[url('/imgs/bg-faq.jpg')] bg-contain bg-right bg-no-repeat">
 			<Container class="space-y-16">
 				<div class="w-full max-w-2xl space-y-4">
-					<Title v-text="'Frequently asked questions'" />
+					<Title>{{ content.faq.title }}</Title>
 					<!-- <SubTitle class="text-slate-700">
 						If you can't find what you're looking for, email our support team and if you're lucky someone
 						will get back to you.
@@ -167,9 +167,9 @@
 				</div>
 
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-					<div v-for="faq in faqs" class="space-y-1 sm:space-y-4 w-full">
-						<h3 v-text="faq.question" class="font-display text-lg" />
-						<p v-text="faq.answer" class="text-sm" />
+					<div v-for="faq in content.faq.items" class="space-y-1 sm:space-y-4 w-full">
+						<h3 class="font-display text-lg">{{ faq.question }}</h3>
+						<p class="text-sm">{{ faq.answer }}</p>
 					</div>
 				</div>
 			</Container>
@@ -182,19 +182,9 @@
 					<div class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
-						<Title class="mb-2">Meet Vitor, founder of Verdit”</Title>
-						<SubTitle class="text-white mb-4">
-							For two decades, I helped build all kinds of software — from trading systems to smart contracts to automation tools for logistics.  
-
-I’ve worked with billion-dollar enterprises, scrappy startups, and everything in between. And if there’s one thing I’ve learned, it’s this: it’s not the fanciest tech that wins — it’s systems that plugs into your process and help you sell.
-
-That’s what I do at Verdit: I bring AI and automation to the most critical part of any business: sales.
-
-Today, I help small teams compete like giants by automating what slows them down. No bloat, no jargon — just smart tools that make you faster and help you close more deals.
-
-I’ve been where your team is: juggling leads, missing follow-ups, spending hours on things that could be done in minutes. Now I turn that pain into elegant, custom automations that run in the background so you can focus on what matters.
-
-My work isn’t about flashy demos — it’s about building things that quietly work — and help you grow.
+						<Title class="mb-2">{{ content.about.title }}</Title>
+						<SubTitle class="text-white mb-4" v-for="paragraph in content.about.content">
+							{{ paragraph }}
 						</SubTitle>
 						
 					</div>
@@ -213,7 +203,7 @@ My work isn’t about flashy demos — it’s about building things that quietly
 						</a>
 					</SubTitle>
 					<SubTitle>
-						"I’d be delighted to speak with you!"
+						"I'd be delighted to speak with you!"
 					</SubTitle>
 
 				</div>
@@ -237,50 +227,24 @@ import Title from "./Title.vue"
 import { ref } from "vue"
 import SubTitle from "./SubTitle.vue"
 import TasksSlider from "./TasksSlider.vue"
+import content from '../content.json'
 
 const partners = ref([
-{
-    name: "Inwave",
-    src: `${__BASE_PATH__}/imgs/partners/inwave.png`,
-  },
-  {
-    name: "Petrobras",
-    src: `${__BASE_PATH__}/imgs/partners/br.png`,
-  },
-  {
-    name: "Ambidados",
-    src: `${__BASE_PATH__}/imgs/partners/ambidados.png`,
-  },
-  {
-    name: "MyBI",
-    src: `${__BASE_PATH__}/imgs/partners/mybi.png`,
-  },
-])
-
-const faqs = ref([
 	{
-		question: "Can you integrate with my current CRM and tools?",
-		answer: "Absolutely! I work with popular tools like HubSpot, Airtable, Pipedrive, Notion, and more. If your CRM supports API or Zapier/Make, I can automate data sync, lead status updates, and outreach flows.",
+		name: "Inwave",
+		src: `${__BASE_PATH__}/imgs/partners/inwave.png`,
 	},
 	{
-		question: "Do I need technical expertise to work with you?",
-		answer: "No technical expertise needed — I'll handle everything, so you can focus on selling.",
+		name: "Petrobras",
+		src: `${__BASE_PATH__}/imgs/partners/br.png`,
 	},
 	{
-		question: "How quickly can I expect results?",
-		answer: "Clients typically see meaningful improvements in lead response rates and efficiency within the first month already.",
+		name: "Ambidados",
+		src: `${__BASE_PATH__}/imgs/partners/ambidados.png`,
 	},
 	{
-		question: "What if I'm not sure exactly what I need?",
-		answer: "Schedule your free strategy call and I'll help you clarify your goals and propose the ideal next steps.",
+		name: "MyBI",
+		src: `${__BASE_PATH__}/imgs/partners/mybi.png`,
 	},
-	{
-		question: "Can you work with my existing sales team or processes?",
-		answer: "Yes — my goal is to enhance what’s already working. I’ll tailor the automation to fit your current workflow, not force you to adopt a new one.",
-	},
-	{
-		question: "Is this just another AI tool?",
-		answer: "Not at all. I design and implement modifications that plug-in to whatever system and process you already have working.",
-	}
 ])
 </script>
