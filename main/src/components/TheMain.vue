@@ -20,6 +20,12 @@
 						</Button>
 					</div> -->
 				</div>
+				
+				<!-- Chat Box Section -->
+				<div class="mt-8">
+					<ChatBox />
+				</div>
+				
 				<div class="space-y-6 text-center">
 					<BuyButton :isPrimary="true" />
 					<br><br>
@@ -224,6 +230,7 @@ import { ref } from "vue"
 import SubTitle from "./SubTitle.vue"
 import TasksSlider from "./TasksSlider.vue"
 import content from '../content.json'
+import ChatBox from './ChatBox.vue'
 
 const partners = ref([
 	{
