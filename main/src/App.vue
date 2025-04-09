@@ -15,9 +15,11 @@ import { ref } from "vue"
 const menuItems = ref([
 	{ label: "Our Services", link: "#services" },
 	{ label: "Testimonials", link: "#testimonials" },
-	{ label: "Contact", link: "#contact" },
-	{ label: "Blockchain Services", link: "/crypto/" },
-	{ label: "Agentic", link: "/agentic/" },
-	{ label: "Português 🇧🇷🇵🇹", link: "/pt/" },
+	{ label: "Pricing", link: "#pricing" },
+	{ label: "FAQ", link: "#faq" },
+	{ label: "About Us", link: "#contact" },
+	// { label: "Blockchain Services", link: "/crypto/" },
+	// { label: "Agentic", link: "/agentic/" },
+	// { label: "Português 🇧🇷🇵🇹", link: "/pt/" },
 ])
 </script>

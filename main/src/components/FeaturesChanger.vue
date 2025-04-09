@@ -12,7 +12,7 @@
 						:class="{ '!bg-white text-primary-600': selectedFeatureIndex === index }"
 					/>
 				</div>
-				<p v-text="features[selectedFeatureIndex].description" class="text-lg" />
+				<p v-text="features[selectedFeatureIndex].description" class="text-lg italic" />
 			</div>
 
 			<div class="relative aspect-video sm:w-full sm:h-auto rounded-xl overflow-hidden">
@@ -68,28 +68,34 @@ import { ref } from "vue"
 const selectedFeatureIndex = ref(0)
 const features = ref([
   {
-    label: "AI Integration for Legacy Systems",
+    label: "Automated Lead Qualification",
     description:
-      "Enhance your legacy systems with AI capabilities. Whether it's Java, Cobol, PHP, .NET, JavaScript, Python, web, or smartphone applications, we adapt to your environment and elevate your existing infrastructure.",
-    img: `${__BASE_PATH__}/imgs/features/legacy.jpg`,
+      "Identify your hottest leads instantly with AI-driven scoring.",
+    img: `${__BASE_PATH__}/imgs/features/servers.jpg`,
   },
   {
-    label: "AI Consulting & Strategy",
+    label: "Personalized AI Outreach",
     description:
-      "Our expert consultants provide strategic insights and guidance, helping you navigate the AI landscape and harness its potential to drive innovation and growth.",
-    img: `${__BASE_PATH__}/imgs/features/consulting.jpg`,
+      "Engage prospects automatically with tailored messaging that converts.",
+    img: `${__BASE_PATH__}/imgs/features/email.jpg`,
   },
   {
-    label: "MVP App Development",
+    label: "CRM & Workflow Automation",
     description:
-      "We specialize in creating Minimum Viable Product (MVP) applications that accelerate your time-to-market, allowing you to validate ideas quickly and efficiently.",
-    img: `${__BASE_PATH__}/imgs/features/mvp.jpg`,
+      "Streamline your sales funnel and eliminate manual tasks.",
+    img: `${__BASE_PATH__}/imgs/features/flowchart.jpg`,
   },
   {
-    label: "Robotic Process Automation (RPA) Systems",
+    label: "Real-Time Data Enrichment",
     description:
-      "We design and implement RPA systems to automate repetitive tasks, improve efficiency, and reduce operational costs, driving productivity across your organization.",
-    img: `${__BASE_PATH__}/imgs/features/flow.jpg`,
-  },
+      "Automatically enhance your leads with actionable insights pulled from multiple sources.",
+    img: `${__BASE_PATH__}/imgs/features/report.jpg`,
+	}
+//   {
+//     label: "Robotic Process Automation (RPA) Systems",
+//     description:
+//       "We design and implement RPA systems to automate repetitive tasks, improve efficiency, and reduce operational costs, driving productivity across your organization.",
+//     img: `${__BASE_PATH__}/imgs/features/flow.jpg`,
+//   },
 ]);
 </script>

@@ -13,7 +13,8 @@
 			</div>
 			<hr />
 			<div class="flex items-center text-center justify-between flex-col sm:flex-row gap-4">
-				<p v-text="'Copyright © Verdit. All rights reserved.'" />
+				<p v-text="'Verdit Consulting'" />
+				<p v-text="'Empowering your sales team through intelligent automation.'" />
 			</div>
 		</Container>
 	</footer>

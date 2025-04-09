@@ -5,11 +5,11 @@
 				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10">
 					<div class="space-y-4 sm:space-y-6">
 						<Title class="lg:text-7xl font-medium">
-							Empowering Innovation with
-							<span class="text-primary-600">Artificial Intelligence</span>
+							<span class="text-primary-600">AI Sales Automation</span>
+							 for Founders & Sales Teams							
 						</Title>
 						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700">
-							Transforming Ideas into Intelligent, Scalable, and Innovative Applications
+							Automate outreach, qualify leads instantly, and close more — without expanding your team.
 						</SubTitle>
 					</div>
 					<!-- <div class="flex items-center justify-center flex-col sm:flex-row gap-4 sm:gap-6">
@@ -21,13 +21,13 @@
 					</div> -->
 				</div>
 				<div class="space-y-6 text-center">
+					<BuyButton :isPrimary="true" />
+					<br><br>
 					<p class="font-display">Trusted by</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
-					<p class="font-display">...and dozens more!</p>
-					<br><br>
-					<BuyButton :isPrimary="true" />
+					<p class="font-display">...and many more!</p>					
 				</div>
 				
 			</Container>
@@ -39,9 +39,9 @@
 		>
 			<Container class="space-y-16">
 				<div class="space-y-6 text-center text-white">
-					<Title v-text="'Comprehensive AI Solutions'" class="md:text-5xl" />
+					<Title v-text="'Everything You Need to Scale Sales'" class="md:text-5xl" />
 					<SubTitle class="text-white">
-						Tailored Solutions to Meet Your Unique Needs:
+						Streamline and Simplify Your Sales Operations:
 					</SubTitle>
 				</div>
 					<FeaturesChanger />
@@ -105,7 +105,7 @@
 		<Section id="testimonials" class="bg-slate-50">
 			<Container class="space-y-16">
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
-					<Title>{{ 'What Our Clients Say' }}</Title>
+					<Title>{{ 'Loved by Fast-Growing Teams:' }}</Title>
 					<SubTitle>
 						Real Feedback from Businesses Thriving with Our Solutions
 					</SubTitle>
@@ -113,9 +113,10 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<SubTitle class="text-white-700 underline">
-						<a href="https://www.upwork.com/freelancers/~01ef5120bd178f9fcc">More testimonials about our lead developer clicking here
-						</a>
+					<SubTitle class="text-white-700">
+						⭐ Rated Top 1% on Upwork — 100+ projects delivered.
+						<!-- <a href="https://www.upwork.com/freelancers/~01ef5120bd178f9fcc">More testimonials about our lead developer clicking here
+						</a> -->
 					</SubTitle>
 					<br><br>
 					<BuyButton :isPrimary="true" />
@@ -124,6 +125,55 @@
 			</Container>
 		</Section>
 
+		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+			<Container class="text-center text-white">
+				<div class="w-full max-w-lg mx-auto space-y-6">
+					<Title v-text="'Get Your AI Sales Automation Roadmap Today'" />
+					<SubTitle class="text-white">
+						Discover exactly how AI can streamline your sales. No guesswork - just clear, actionable steps.
+					</SubTitle>
+					<BuyButton :isPrimary="false" />
+				</div>
+			</Container>
+		</Section>
+
+		<Section id="pricing" class="bg-slate-900">
+			<Container class="text-white space-y-16">
+				<!-- <div class="text-center space-y-6">
+					<Title>
+						<span class="relative">
+							<IconTextDecoration2 />
+							<span v-text="'Simple pricing,'" class="relative" />
+						</span>
+						Transparent Packages.
+					</Title>
+					<SubTitle class="text-slate-400">
+						It doesn't matter what size your business is, our software won't work well for you.
+					</SubTitle>
+				</div> -->
+
+				<PricingCards />
+			</Container>
+		</Section>
+
+		<Section id="faq" class="bg-slate-50 bg-[url('/imgs/bg-faq.jpg')] bg-contain bg-right bg-no-repeat">
+			<Container class="space-y-16">
+				<div class="w-full max-w-2xl space-y-4">
+					<Title v-text="'Frequently asked questions'" />
+					<!-- <SubTitle class="text-slate-700">
+						If you can't find what you're looking for, email our support team and if you're lucky someone
+						will get back to you.
+					</SubTitle> -->
+				</div>
+
+				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+					<div v-for="faq in faqs" class="space-y-1 sm:space-y-4 w-full">
+						<h3 v-text="faq.question" class="font-display text-lg" />
+						<p v-text="faq.answer" class="text-sm" />
+					</div>
+				</div>
+			</Container>
+		</Section>
 
 		<Section id="contact" class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
@@ -132,9 +182,19 @@
 					<div class="flex flex-col lg:flex-row items-center lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-center">
-						<Title class="mb-2">“I know it sounds a bit corny, but developing software has been my calling and passion for the past 19 years. And seeing my clients grow and succeed is incredibly rewarding. What can I say? It's an awesome job.”</Title>
+						<Title class="mb-2">Meet Vitor, founder of Verdit”</Title>
 						<SubTitle class="text-white mb-4">
-						Vitor Pepicon, Founder and Lead Developer at Verdit Consulting
+							For two decades, I helped build all kinds of software — from trading systems to smart contracts to automation tools for logistics.  
+
+I’ve worked with billion-dollar enterprises, scrappy startups, and everything in between. And if there’s one thing I’ve learned, it’s this: it’s not the fanciest tech that wins — it’s systems that plugs into your process and help you sell.
+
+That’s what I do at Verdit: I bring AI and automation to the most critical part of any business: sales.
+
+Today, I help small teams compete like giants by automating what slows them down. No bloat, no jargon — just smart tools that make you faster and help you close more deals.
+
+I’ve been where your team is: juggling leads, missing follow-ups, spending hours on things that could be done in minutes. Now I turn that pain into elegant, custom automations that run in the background so you can focus on what matters.
+
+My work isn’t about flashy demos — it’s about building things that quietly work — and help you grow.
 						</SubTitle>
 						
 					</div>
@@ -159,44 +219,6 @@
 				</div>
 			</Container>
 		</Section>
-
-		<!-- <Section id="pricing" class="bg-slate-900">
-			<Container class="text-white space-y-16">
-				<div class="text-center space-y-6">
-					<Title>
-						<span class="relative">
-							<IconTextDecoration2 />
-							<span v-text="'Simple pricing,'" class="relative" />
-						</span>
-						for everyone.
-					</Title>
-					<SubTitle class="text-slate-400">
-						It doesn't matter what size your business is, our software won't work well for you.
-					</SubTitle>
-				</div>
-
-				<PricingCards />
-			</Container>
-		</Section> -->
-
-		<!-- <Section id="faq" class="bg-slate-50 bg-[url('/imgs/bg-faq.jpg')] bg-contain bg-right bg-no-repeat">
-			<Container class="space-y-16">
-				<div class="w-full max-w-2xl space-y-4">
-					<Title v-text="'Frequently asked questions'" />
-					<SubTitle class="text-slate-700">
-						If you can't find what you're looking for, email our support team and if you're lucky someone
-						will get back to you.
-					</SubTitle>
-				</div>
-
-				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-					<div v-for="faq in faqs" class="space-y-1 sm:space-y-4 w-full">
-						<h3 v-text="faq.question" class="font-display text-lg" />
-						<p v-text="faq.answer" class="text-sm" />
-					</div>
-				</div>
-			</Container>
-		</Section> -->
 	</main>
 </template>
 
@@ -237,40 +259,28 @@ const partners = ref([
 
 const faqs = ref([
 	{
-		question: "Does TaxPal handle VAT?",
-		answer: "Well no, but if you move your company offshore you can probably ignore it.",
+		question: "Can you integrate with my current CRM and tools?",
+		answer: "Absolutely! I work with popular tools like HubSpot, Airtable, Pipedrive, Notion, and more. If your CRM supports API or Zapier/Make, I can automate data sync, lead status updates, and outreach flows.",
 	},
 	{
-		question: "Can I pay for my subscription via purchase order?",
-		answer: "Absolutely, we are happy to take your money in all forms.",
+		question: "Do I need technical expertise to work with you?",
+		answer: "No technical expertise needed — I'll handle everything, so you can focus on selling.",
 	},
 	{
-		question: "How do I apply for a job at TaxPal?",
-		answer: "We only hire our customers, so subscribe for a minimum of 6 months and then let's talk.",
+		question: "How quickly can I expect results?",
+		answer: "Clients typically see meaningful improvements in lead response rates and efficiency within the first month already.",
 	},
 	{
-		question: "What was that testimonial about tax fraud all about?",
-		answer: "TaxPal is just a software application, ultimately your books are your responsibility.",
+		question: "What if I'm not sure exactly what I need?",
+		answer: "Schedule your free strategy call and I'll help you clarify your goals and propose the ideal next steps.",
 	},
 	{
-		question: "TaxPal sounds horrible but why do I still feel compelled to purchase?",
-		answer: "This is the power of excellent visual design. You just can't resist it, no matter how poorly it actually functions.",
+		question: "Can you work with my existing sales team or processes?",
+		answer: "Yes — my goal is to enhance what’s already working. I’ll tailor the automation to fit your current workflow, not force you to adopt a new one.",
 	},
 	{
-		question: "I found other companies called TaxPal, are you sure you can use this name?",
-		answer: "Honestly not sure at all. We haven't actually incorporated or anything, we just thought it sounded cool and made this website.",
-	},
-	{
-		question: "How do you generate reports?",
-		answer: "You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.",
-	},
-	{
-		question: "Can we expect more inventory features?",
-		answer: "In life it's really better to never expect anything at all.",
-	},
-	{
-		question: "I lost my password, how do I get into my account?",
-		answer: "Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.",
-	},
+		question: "Is this just another AI tool?",
+		answer: "Not at all. I design and implement modifications that plug-in to whatever system and process you already have working.",
+	}
 ])
 </script>
