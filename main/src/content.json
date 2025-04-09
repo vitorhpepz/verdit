@@ -11,7 +11,7 @@
   "hero": {
     "title": {
       "blue": "AI Sales Automation",
-      "black": " for Founders Who’d Rather Close Than Chase"
+      "black": " for Founders Who'd Rather Close Than Chase"
     },
     "subtitle": "Ditch the grunt work. Automate outreach, qualify leads in real time, and close faster — no extra hires needed.",
     "trustedBy": {
@@ -25,7 +25,7 @@
     "features": [
       {
         "label": "AI-Powered Lead Scoring",
-        "description": "Instantly spot who’s ready to buy — and who’s just browsing.",
+        "description": "Instantly spot who's ready to buy — and who's just browsing.",
         "img": "/imgs/features/servers.jpg"
       },
       {
@@ -47,18 +47,18 @@
   },
   "testimonials": {
     "title": "Real Teams. Real Results.",
-    "subtitle": "Here’s what happens when founders stop winging sales ops.",
+    "subtitle": "Here's what happens when founders stop winging sales ops.",
     "items": [
       {
         "name": "Mark Kempton",
         "job": "SAS PointsPrizes",
-        "text": "Super responsive, highly professional. We’re already planning the next project.",
+        "text": "Super responsive, highly professional. We're already planning the next project.",
         "src": "/imgs/testimonials/mark.jpeg"
       },
       {
         "name": "Eric Plotts",
         "job": "MoveRocket.com",
-        "text": "Vitor is a beast. Honest, smart, hardworking. One of the best I’ve worked with.",
+        "text": "Vitor is a beast. Honest, smart, hardworking. One of the best I've worked with.",
         "src": "/imgs/testimonials/eric.jpeg"
       },
       {
@@ -84,6 +84,15 @@
 "pricing": {
   "plans": [
     {
+      "name": "Free Strategy Exchange",
+      "price": "Free",
+      "description": "Email exchange or quick call to clarify your goals and map your automation potential.",
+      "features": [
+        "Choose between email exchange or quick call",
+        "Get actionable insights you can use immediately"
+      ]
+    },
+    {
       "name": "AI Sales Jumpstart",
       "price": "$750",
       "description": "A fast, focused way to see what AI can do for your sales — without the big leap (yet).",
@@ -93,7 +102,7 @@
         "Prototype automation (lead scoring, GPT follow-ups, etc.)",
         "Actionable roadmap tailored to your stack",
         "Apply this cost toward a full build",
-        "What you get: Clarity on how to save 5–10+ hours/week and improve lead conversion by up to 30% — without hiring anyone."
+        "What you get: Clear roadmap to save 10-20 hours/month and boost lead conversion by up to 30% — without hiring anyone."
       ]
     },
     {
@@ -102,28 +111,26 @@
       "description": "Replace manual work with smart, invisible systems — fully built around your real-life process.",
       "features": [
         "Map your current sales flow",
-        "AI lead scoring: know who’s hot instantly",
+        "AI lead scoring: know who's hot instantly",
         "GPT-based outreach that gets 2–3x more replies",
         "Automate follow-ups, lead routing, and deal updates",
         "Integrates cleanly with HubSpot, Airtable, Pipedrive, Zoho, etc.",
         "Delivered with 1:1 training + post-launch support",
-        "What you get: Close more, save 10–20 hours/month, and run like a team twice your size — without adding headcount."
+        "What you get: Save 20-40 hours/month, double your reply rates, and run like a team twice your size — without adding headcount."
       ],
       "recommended": true
     },
     {
       "name": "Monthly AI Sales Advisor",
-      "price": "Starting at $2,500/month",
+      "price": "From $2,500/mo",
       "description": "Ongoing strategy, optimization, and iteration — for teams who want to keep improving.",
       "features": [
         "Monthly reviews + optimizations to keep everything sharp",
         "New automations based on team needs and campaign changes",
-        "Ongoing GPT prompt tuning + sequence experiments",
         "Performance reports with clear next steps",
         "Add new channels or workflows (email, WhatsApp, LinkedIn, etc.)",
         "Fast support via email or Slack",
         "Weekly syncs or async Loom check-ins",
-        "Dedicated partner keeping your revenue engine running",
         "What you get: A sales ops brain on retainer — turning data into deals and keeping your system evolving as fast as your pipeline."
       ]
     }
@@ -138,7 +145,7 @@
       },
       {
         "question": "Do I need technical expertise to work with you?",
-        "answer": "Zero. You focus on selling — I’ll handle the nerdy stuff behind the curtain."
+        "answer": "Zero. You focus on selling — I'll handle the nerdy stuff behind the curtain."
       },
       {
         "question": "How quickly can I expect results?",
@@ -146,15 +153,15 @@
       },
       {
         "question": "What if I'm not even sure what I need?",
-        "answer": "No problem — bring your chaos to the free strategy call and I’ll bring the clarity."
-      },
-      {
-        "question": "Will this mess with my current sales ops?",
-        "answer": "Not a chance. My job is to improve what’s working — not bulldoze it."
+        "answer": "No problem — bring your chaos to the free strategy call and I'll bring the clarity."
       },
       {
         "question": "Is this just another AI tool?",
-        "answer": "Nope. This isn’t some off-the-shelf tool — it’s hands-on consulting plus custom-built automation tailored to your process, tools, and goals."
+        "answer": "Nope. This isn't some off-the-shelf tool — it's hands-on consulting plus custom-built automation tailored to your process, tools, and goals."
+      },
+      {
+        "question": "Do I need to commit to the monthly plan?",
+        "answer": "Not at all. You can stop after getting your Custom AI Sales Engine built and run it yourself. The monthly plan is optional for teams who want ongoing optimization and support."
       }
     ]
   },
@@ -162,7 +169,7 @@
     "title": "Meet Vitor, Founder of Verdit",
     "content": [
       "I've spent 20 years building software — trading platforms, smart contracts, AI systems, you name it.",
-      "Big corporations, scrappy startups, logistics chains — I've worked with them all. And here’s what I learned: the fanciest tool doesn’t win. The system that *actually fits* your workflow does.",
+      "Big corporations, scrappy startups, logistics chains — I've worked with them all. And here's what I learned: the fanciest tool doesn't win. The system that *actually fits* your workflow does.",
       "At Verdit, I help lean sales teams punch above their weight with AI and automation that plugs into their process — not forces a new one.",
       "No more missed follow-ups. No more wasted hours. Just clean, automated flows that do the grunt work while you focus on deals.",
       "If you're juggling spreadsheets and living in your inbox, let's fix that — and help you scale without hiring an army."

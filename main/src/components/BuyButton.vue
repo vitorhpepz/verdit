@@ -16,7 +16,7 @@ export default {
   props: {
     buttonText: {
       type: String,
-      default: 'Book Your Free Strategy Call',
+      default: "Let's Start (It's Free)",
     },
     isPrimary: {
       type: Boolean,
