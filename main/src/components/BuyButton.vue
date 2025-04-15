@@ -16,7 +16,7 @@ export default {
   props: {
     buttonText: {
       type: String,
-      default: "Let's Start (It's Free)",
+      default: "Speak With Vitor — No Strings",
     },
     isPrimary: {
       type: Boolean,

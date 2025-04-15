@@ -10,18 +10,18 @@
   },
   "hero": {
     "title": {
-      "blue": "AI Sales Automation",
-      "black": " for Founders Who'd Rather Close Than Chase"
+      "blue": "AI Sales Automation,",
+      "black": " Built on 20 Years of Experience"
     },
-    "subtitle": "Ditch the grunt work. Automate outreach, qualify leads in real time, and close faster — no extra hires needed.",
+    "subtitle": "Work directly with Vitor to set up AI-powered sales automations that boost conversions, shrink your workload, and scale your pipeline—no extra hires, no guesswork.",
     "trustedBy": {
-      "prefix": "Used by scrappy startups and enterprise giants alike:",
+      "prefix": "Trusted by teams from startups to enterprise:",
       "suffix": "...and other smart teams who hate manual work."
     }
   },
   "services": {
     "title": "Everything You Need to Sell Without Losing Your Mind",
-    "subtitle": "Smart automations that plug into your flow — not fight it.",
+    "subtitle": "Bespoke automations, crafted to fit your flow,not force a new one",
     "features": [
       {
         "label": "AI-Powered Lead Scoring",
@@ -99,10 +99,10 @@
       "features": [
         "90-minute strategy + audit call",
         "Review of your tools, workflows, and bottlenecks",
-        "Prototype automation (lead scoring, GPT follow-ups, etc.)",
+        "One real automation (lead scoring, GPT follow-ups, etc), fully set up in your tools — so you don't have to imagine what it'll do. You'll see it working.",
         "Actionable roadmap tailored to your stack",
         "Apply this cost toward a full build",
-        "What you get: Clear roadmap to save 10-20 hours/month and boost lead conversion by up to 30% — without hiring anyone."
+        "What you get: A working automation in your tools + a clear roadmap to save 10-20 hours/month and boost lead conversion by up to 30% — without hiring anyone."
       ]
     },
     {
@@ -168,11 +168,10 @@
   "about": {
     "title": "Meet Vitor, Founder of Verdit",
     "content": [
-      "I've spent 20 years building software — trading platforms, smart contracts, AI systems, you name it.",
-      "Big corporations, scrappy startups, logistics chains — I've worked with them all. And here's what I learned: the fanciest tool doesn't win. The system that *actually fits* your workflow does.",
-      "At Verdit, I help lean sales teams punch above their weight with AI and automation that plugs into their process — not forces a new one.",
-      "No more missed follow-ups. No more wasted hours. Just clean, automated flows that do the grunt work while you focus on deals.",
-      "If you're juggling spreadsheets and living in your inbox, let's fix that — and help you scale without hiring an army."
+      "For 20 years, I've tackled everything from trading platforms to AI-driven smart contracts, turning messy processes into frictionless flows is my favorite kind of magic.",
+      "But here's the big lesson: it's never about the \"fanciest\" tool. It's about a system that actually fits your workflow.",
+      "I founded Verdit so lean sales teams don't have to do what big companies do—throw more people at the problem. Instead, we build automations that just work, without drowning you in new software or forcing a whole new process.",
+      "If you're glued to your inbox all day, let's fix that. The right system sets you free to close deals, to identify and talk to the right leads, while the AI and automations do the rest. Ready to see how this all fits into your pipeline? Let's talk and get you a clear plan."
     ]
   },
   "footer": {

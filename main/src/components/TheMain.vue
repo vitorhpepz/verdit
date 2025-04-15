@@ -1,8 +1,8 @@
 <template>
 	<main>
 		<Section class="bg-white">
-			<Container class="space-y-24 sm:space-y-36">
-				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-10">
+			<Container class="space-y-12 sm:space-y-20">
+				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
 					<div class="space-y-4 sm:space-y-6">
 						<Title class="lg:text-7xl font-medium">
 							<span class="text-primary-600">{{ content.hero.title.blue }}</span>
@@ -21,14 +21,15 @@
 					</div> -->
 				</div>
 				
-				<!-- Chat Box Section -->
-				<div class="mt-8">
+				<!-- Chat Box Section - Temporarily removed -->
+				<!-- <div class="mt-8">
 					<ChatBox />
-				</div>
+				</div> -->
 				
-				<div class="space-y-6 text-center">
-					<BuyButton :isPrimary="true" />
-					<br><br>
+				<div class="space-y-4 text-center">
+					<BuyButton :isPrimary="true" text="Get My Free AI Sales Roadmap" />
+					<p class="text-slate-700 font-medium text-base italic">Walk Away With a Custom Plan — Even if You Don't Hire Me</p>
+					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
@@ -45,9 +46,9 @@
 		>
 			<Container class="space-y-16">
 				<div class="space-y-6 text-center text-white">
-					<Title>{{ content.services.title }}</Title>
+					<Title>{{ content.services.subtitle }}</Title>
 					<SubTitle class="text-white">
-						{{ content.services.subtitle }}
+						You get a system that works the way you do
 					</SubTitle>
 				</div>
 					<FeaturesChanger />
@@ -188,7 +189,7 @@
 					<div class="flex flex-col lg:flex-row items-start lg:items-center lg:justify-start mb-6">
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-start text-left">
-						<Title class="mb-2 text-left">{{ content.about.title }}</Title>
+						<Title class="mb-6 text-left">{{ content.about.title }}</Title>
 						<SubTitle class="text-white mb-4 text-left" v-for="paragraph in content.about.content">
 							{{ paragraph }}
 						</SubTitle>
