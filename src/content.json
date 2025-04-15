@@ -1,0 +1,180 @@
+{
+  "header": {
+    "menuItems": [
+      { "label": "Features", "link": "#features" },
+      { "label": "Consulting Services", "link": "/" },
+      { "label": "More Tools", "link": "/" },
+      { "label": "Contact", "link": "#contact" }
+    ]
+  },
+  "hero": {
+    "title": {
+      "blue": "AI Sales Automation,",
+      "black": " Built on 20 Years of Experience"
+    },
+    "subtitle": "Work directly with Vitor to set up AI-powered sales automations that boost conversions, shrink your workload, and scale your pipeline—no extra hires, no guesswork.",
+    "trustedBy": {
+      "prefix": "Trusted by teams from startups to enterprise:",
+      "suffix": "...and other smart teams who hate manual work."
+    }
+  },
+  "services": {
+    "title": "Everything You Need to Sell Without Losing Your Mind",
+    "subtitle": "Bespoke automations, crafted to fit your flow,not force a new one",
+    "features": [
+      {
+        "label": "AI-Powered Lead Scoring",
+        "description": "Instantly spot who's ready to buy — and who's just browsing.",
+        "img": "/imgs/features/servers.jpg"
+      },
+      {
+        "label": "Personalized Outreach on Autopilot",
+        "description": "Custom messages that actually get replies. No spam, just conversions.",
+        "img": "/imgs/features/email.jpg"
+      },
+      {
+        "label": "CRM & Workflow Automation",
+        "description": "Follow-ups, lead routing, stage updates — all handled without lifting a finger.",
+        "img": "/imgs/features/flowchart.jpg"
+      },
+      {
+        "label": "Real-Time Data Enrichment",
+        "description": "Enrich your leads with fresh, actionable info from multiple sources — automatically.",
+        "img": "/imgs/features/report.jpg"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Real Teams. Real Results.",
+    "subtitle": "Here's what happens when founders stop winging sales ops.",
+    "items": [
+      {
+        "name": "Mark Kempton",
+        "job": "SAS PointsPrizes",
+        "text": "Super responsive, highly professional. We're already planning the next project.",
+        "src": "/imgs/testimonials/mark.jpeg"
+      },
+      {
+        "name": "Eric Plotts",
+        "job": "MoveRocket.com",
+        "text": "Vitor is a beast. Honest, smart, hardworking. One of the best I've worked with.",
+        "src": "/imgs/testimonials/eric.jpeg"
+      },
+      {
+        "name": "Brandon Priest",
+        "job": "WgmiLabs.com",
+        "text": "Amazing experience with Vitor!! Will continue to work with him longterm.",
+        "src": "/imgs/testimonials/brandon.jpeg"
+      },
+      {
+        "name": "Jacobo Escobar",
+        "job": "Founder, Web3 Gaming Platform",
+        "text": "Vitor is amazing! He did exactly what needed to be done and was fun to work with. He is very good at communication when we needed anything or had questions... The project was a huge success and we'll continue working together on this project for smaller portions of it.",
+        "src": "/imgs/testimonials/jacobo.jpeg"
+      },
+      {
+        "name": "Gary Nezri",
+        "job": "Gnla Transportation LLC",
+        "text": "I have never known a better and more professional developer in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.",
+        "src": "/imgs/testimonials/peter-renolds.webp"
+      }
+    ]
+  },
+"pricing": {
+  "plans": [
+    {
+      "name": "Free Strategy Exchange",
+      "price": "Free",
+      "description": "Email exchange or quick call to clarify your goals and map your automation potential.",
+      "features": [
+        "Choose between email exchange or quick call",
+        "Get actionable insights you can use immediately"
+      ]
+    },
+    {
+      "name": "AI Sales Jumpstart",
+      "price": "$750",
+      "description": "A fast, focused way to see what AI can do for your sales — without the big leap (yet).",
+      "features": [
+        "90-minute strategy + audit call",
+        "Review of your tools, workflows, and bottlenecks",
+        "One real automation (lead scoring, GPT follow-ups, etc), fully set up in your tools — so you don't have to imagine what it'll do. You'll see it working.",
+        "Actionable roadmap tailored to your stack",
+        "Apply this cost toward a full build",
+        "What you get: A working automation in your tools + a clear roadmap to save 10-20 hours/month and boost lead conversion by up to 30% — without hiring anyone."
+      ]
+    },
+    {
+      "name": "Custom AI Sales Engine",
+      "price": "Starting at $3,500",
+      "description": "Replace manual work with smart, invisible systems — fully built around your real-life process.",
+      "features": [
+        "Map your current sales flow",
+        "AI lead scoring: know who's hot instantly",
+        "GPT-based outreach that gets 2–3x more replies",
+        "Automate follow-ups, lead routing, and deal updates",
+        "Integrates cleanly with HubSpot, Airtable, Pipedrive, Zoho, etc.",
+        "Delivered with 1:1 training + post-launch support",
+        "What you get: Save 20-40 hours/month, double your reply rates, and run like a team twice your size — without adding headcount."
+      ],
+      "recommended": true
+    },
+    {
+      "name": "Monthly AI Sales Advisor",
+      "price": "From $2,500/mo",
+      "description": "Ongoing strategy, optimization, and iteration — for teams who want to keep improving.",
+      "features": [
+        "Monthly reviews + optimizations to keep everything sharp",
+        "New automations based on team needs and campaign changes",
+        "Performance reports with clear next steps",
+        "Add new channels or workflows (email, WhatsApp, LinkedIn, etc.)",
+        "Fast support via email or Slack",
+        "Weekly syncs or async Loom check-ins",
+        "What you get: A sales ops brain on retainer — turning data into deals and keeping your system evolving as fast as your pipeline."
+      ]
+    }
+  ]
+},
+  "faq": {
+    "title": "Got Questions?",
+    "items": [
+      {
+        "question": "Can you integrate with my current CRM and tools?",
+        "answer": "Absolutely. Works best if your tools play nice with Zapier, Make, or have an API — but we can handle the weird ones too."
+      },
+      {
+        "question": "Do I need technical expertise to work with you?",
+        "answer": "Zero. You focus on selling — I'll handle the nerdy stuff behind the curtain."
+      },
+      {
+        "question": "How quickly can I expect results?",
+        "answer": "Most teams see more replies, better lead quality, and fewer headaches within the first month."
+      },
+      {
+        "question": "What if I'm not even sure what I need?",
+        "answer": "No problem — bring your chaos to the free strategy call and I'll bring the clarity."
+      },
+      {
+        "question": "Is this just another AI tool?",
+        "answer": "Nope. This isn't some off-the-shelf tool — it's hands-on consulting plus custom-built automation tailored to your process, tools, and goals."
+      },
+      {
+        "question": "Do I need to commit to the monthly plan?",
+        "answer": "Not at all. You can stop after getting your Custom AI Sales Engine built and run it yourself. The monthly plan is optional for teams who want ongoing optimization and support."
+      }
+    ]
+  },
+  "about": {
+    "title": "Meet Vitor, Founder of Verdit",
+    "content": [
+      "For 20 years, I've tackled everything from trading platforms to AI-driven smart contracts, turning messy processes into frictionless flows is my favorite kind of magic.",
+      "But here's the big lesson: it's never about the \"fanciest\" tool. It's about a system that actually fits your workflow.",
+      "I founded Verdit so lean sales teams don't have to do what big companies do—throw more people at the problem. Instead, we build automations that just work, without drowning you in new software or forcing a whole new process.",
+      "If you're glued to your inbox all day, let's fix that. The right system sets you free to close deals, to identify and talk to the right leads, while the AI and automations do the rest. Ready to see how this all fits into your pipeline? Let's talk and get you a clear plan."
+    ]
+  },
+  "footer": {
+    "companyName": "Verdit",
+    "tagline": "Outsell the Big Guys — With Less Hustle, More Flow."
+  }
+}

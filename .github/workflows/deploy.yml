@@ -18,35 +18,11 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Install Root Dependencies
+    - name: Install Dependencies
       run: npm install
 
-    - name: Install Main Project Dependencies
-      run: |
-        cd main
-        npm install
-        cd ..
-
-    - name: Install PT Project Dependencies
-      run: |
-        cd pt
-        npm install
-        cd ..
-
-    - name: Install Crypto Project Dependencies
-      run: |
-        cd crypto
-        npm install
-        cd ..
-
-    - name: Install Agentic Project Dependencies
-      run: |
-        cd agentic
-        npm install
-        cd ..
-
-    - name: Build All Projects
-      run: npm run build:all
+    - name: Build Project
+      run: npm run build
 
     - name: Copy CNAME
       run: cp CNAME dist/CNAME
@@ -55,5 +31,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Publish the entire dist directory
+        publish_dir: ./dist
         target_branch: gh-pages
