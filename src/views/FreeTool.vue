@@ -40,7 +40,7 @@
       </Container>
     </Section>
 
-    <Section id="features" class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+    <Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed" id="features">
       <Container>
         <div class="w-full max-w-2xl space-y-4 mx-auto text-center mb-16">
           <Title class="text-white">Powerful Features</Title>
