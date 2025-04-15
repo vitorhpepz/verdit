@@ -1,6 +1,6 @@
-entrypoint = "index.js"
 modules = ["vue-node-20", "nodejs-20", "web"]
 hidden = [".config", "package-lock.json"]
+run = "npm run dev"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
@@ -9,6 +9,10 @@ requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
 channel = "stable-24_05"
 
 [deployment]
-run = ["node", "index.js"]
+run = ["sh", "-c", "npm run dev"]
 deploymentTarget = "autoscale"
 ignorePorts = false
+
+[[ports]]
+localPort = 5173
+externalPort = 80
