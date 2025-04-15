@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TheHeader :isFreeTool="true" :menuItems="[
+    <TheHeader :isFreeTool="true" :buttonText="'Download Free'" :menuItems="[
       { label: 'Features', link: '#features' },
       { label: 'GitHub', link: 'https://github.com/verditdev/verdit' },
       { label: 'Consulting', link: '/' },

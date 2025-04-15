@@ -35,7 +35,7 @@
 				<BuyButton 
 					class="hidden md:inline-block" 
 					:isPrimary="true" 
-					:buttonText="isFreeTool ? 'Download Free' : 'Get My Free AI Sales Roadmap'"
+					:buttonText="buttonText || (isFreeTool ? 'Download Free' : 'Get My Free AI Sales Roadmap')"
 				/>
 
 				<!-- MOBILE MENU -->
@@ -112,6 +112,7 @@ import { RouterLink } from 'vue-router'
 
 const props = defineProps({
 	menuItems: Array,
+	buttonText: String,
 	isFreeTool: {
 		type: Boolean,
 		default: false
