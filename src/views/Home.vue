@@ -23,7 +23,7 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic">Walk Away With a Custom Plan — Even if You Don't Hire Me</p>
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
@@ -67,7 +67,7 @@
 						⭐ Rated Top 1% on Upwork — 100+ projects delivered.
 					</SubTitle>
 					<br><br>
-					<Button :isPrimary="true" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -76,11 +76,11 @@
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
-					<Title>Get Your Free Strategy Call Today</Title>
+					<Title>Get Your Free Strategy Plan Today</Title>
 					<SubTitle class="text-white">
-						Discover exactly how AI can streamline your sales. No guesswork - just clear, actionable steps.
+						Discover exactly how AI can streamline your sales. Walk away with clear and actionable steps.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>

@@ -84,10 +84,10 @@
     {
       "name": "Free Strategy Exchange",
       "price": "Free",
-      "description": "Email exchange or quick call to clarify your goals and map your automation potential.",
+      "description": "Email exchange to clarify your goals and map your automation potential.",
       "features": [
-        "Choose between email exchange or quick call",
-        "Get actionable insights you can use immediately"
+        "Get actionable insights you can use immediately",
+        "Personalized recommendations for your business"
       ]
     },
     {
@@ -95,7 +95,7 @@
       "price": "$750",
       "description": "A fast, focused way to see what AI can do for your sales.",
       "features": [
-        "90-minute strategy + audit call",
+        "90-minute strategy + audit session",
         "Review of your tools, workflows, and bottlenecks",
         "One real automation (lead scoring, GPT follow-ups, etc), fully set up in your tools so you don't have to imagine what it'll do. You'll see it working.",
         "Actionable roadmap tailored to your stack",
@@ -128,7 +128,7 @@
         "Performance reports with clear next steps",
         "Add new channels or workflows (email, WhatsApp, LinkedIn, etc.)",
         "Fast support via email or Slack",
-        "Weekly syncs or async Loom check-ins",
+        "Weekly async Loom check-ins",
         "What you get: A sales ops brain on retainer: turning data into deals and keeping your system evolving as fast as your pipeline."
       ]
     }
@@ -151,7 +151,7 @@
       },
       {
         "question": "What if I'm not even sure what I need?",
-        "answer": "No problem: bring your chaos to the free strategy call and I'll bring the clarity."
+        "answer": "No problem: bring your chaos to the email exchange and I'll bring the clarity."
       },
       {
         "question": "Is this just another AI tool?",

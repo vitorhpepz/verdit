@@ -17,7 +17,7 @@
 			</div>
 			<Button
 				:whatButton="getWhatButton(pricing.price)"
-				v-text="pricing.price === 'Free' ? 'Get Your Free Strategy' : 'Get started'"
+				v-text="pricing.price === 'Free' ? 'Estimate Your Growth Potential' : 'Get started'"
 				:isPrimary="pricing.recommended"
 				:isPricingCard="true"
 				class="w-full transition-all duration-300 hover:scale-105"
