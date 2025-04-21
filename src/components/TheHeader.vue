@@ -2,22 +2,14 @@
 	<header class="shadow py-6 md:py-10 sticky top-0 z-10 bg-white">
 		<Container class="relative flex items-center justify-between gap-4 text-slate-900 text-base">
 			<div class="flex items-center gap-8">
-				<router-link :to="isFreeTool ? '/freetool' : '/'" class="text-4xl font-bold">
+				<router-link :to="'/'" class="text-4xl font-bold">
 					Verd<span class="text-primary-600">it</span>
 				</router-link>
 				<nav class="items-center gap-3 hidden md:flex">
 					<template v-for="menu in menuItems" :key="menu.label">
-						<router-link
-							v-if="!isExternalLink(menu.link)"
-							:to="menu.link"
-							class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100"
-							v-text="menu.label"
-						/>
 						<a
-							v-else
 							:href="menu.link"
-							target="_blank"
-							rel="noopener noreferrer"
+							@click.prevent="handleLinkClick(menu.link)"
 							class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100"
 							v-text="menu.label"
 						/>
@@ -35,7 +27,8 @@
 				<BuyButton 
 					class="hidden md:inline-block" 
 					:isPrimary="true" 
-					:buttonText="buttonText || (isFreeTool ? 'Download Free' : 'Get My Free AI Sales Roadmap')"
+					:buttonText="isFreeTool ? 'Get tool from GitHub' : 'Get Your Free Strategy'"
+					:isFreeTool="isFreeTool"
 				/>
 
 				<!-- MOBILE MENU -->
@@ -73,24 +66,16 @@
 							<nav class="flex flex-col">
 								<template v-for="menu in menuItems" :key="menu.label">
 									<button
-										v-if="!isExternalLink(menu.link)"
 										v-text="menu.label"
-										@click.prevent="redirect(menu.link)"
+										@click.prevent="handleLinkClick(menu.link)"
 										class="p-4 hover:bg-slate-100 rounded-lg text-left"
-									/>
-									<a
-										v-else
-										:href="menu.link"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="p-4 hover:bg-slate-100 rounded-lg text-left"
-										v-text="menu.label"
 									/>
 								</template>
 								<hr class="my-2" />
 								<BuyButton 
 									:isPrimary="true" 
-									:buttonText="isFreeTool ? 'Download Free' : 'Get My Free AI Sales Roadmap'"
+									:buttonText="isFreeTool ? 'Get tool from GitHub' : 'Get Your Free Strategy'"
+									:isFreeTool="isFreeTool"
 								/>
 							</nav>
 						</div>
@@ -121,12 +106,28 @@ const props = defineProps({
 
 const showMobileMenu = ref(false)
 
-function redirect(link) {
-	showMobileMenu.value = false
-	window.location = link
-}
-
 function isExternalLink(link) {
 	return link.startsWith('http') || link.startsWith('mailto:') || link.startsWith('tel:')
 }
+
+function isHashLink(link) {
+	return link.startsWith('#')
+}
+
+function handleLinkClick(link) {
+	if (isHashLink(link)) {
+		showMobileMenu.value = false
+		const element = document.querySelector(link)
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' })
+		}
+	} else if (isExternalLink(link)) {
+		showMobileMenu.value = false
+		window.open(link, '_blank', 'noopener,noreferrer')
+	} else {
+		showMobileMenu.value = false
+		window.location = link
+	}
+}
 </script>
+

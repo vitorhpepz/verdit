@@ -1,7 +1,8 @@
 <template>
   <button 
     :class="buttonClass"
-    data-tally-open="nGYAdZ"
+    :data-tally-open="isFreeTool ? '31BZpM' : 'nGYAdZ'"
+    :data-tally-hidden="isFreeTool ? '' : `whatButton=${buttonType}`"
     data-tally-emoji-text="👋"
     data-tally-emoji-animation="wave"
     @click="handleButtonClick"
@@ -16,11 +17,19 @@ export default {
   props: {
     buttonText: {
       type: String,
-      default: "Get Free Tool on GitHub",
+      default: "Get Your Free Strategy Call",
     },
     isPrimary: {
       type: Boolean,
       default: false, // Set to true if you want the primary scheme by default
+    },
+    isFreeTool: {
+      type: Boolean,
+      default: false,
+    },
+    buttonType: {
+      type: String,
+      default: "free_offer",
     },
   },
   computed: {

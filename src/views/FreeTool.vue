@@ -2,9 +2,8 @@
   <main>
     <TheHeader :isFreeTool="true" :buttonText="'Download Free'" :menuItems="[
       { label: 'Features', link: '#features' },
-      { label: 'GitHub', link: 'https://github.com/verditdev/verdit' },
-      { label: 'Consulting', link: '/' },
-      { label: 'Contact', link: 'mailto:vitor@verdit.site' }
+      { label: 'Our Consultancy Services', link: '/' },
+      { label: 'Twitter', link: 'https://x.com/vitorpepz' }
     ]" />
     <Section class="bg-white">
       <Container class="space-y-12 sm:space-y-20">
@@ -19,7 +18,7 @@
             </SubTitle>
           </div>
           <div class="text-center mt-6">
-            <BuyButton :isPrimary="true" />
+            <BuyButton :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" />
           </div>
           <div style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
             <video class="responsive-video" autoplay loop muted playsinline>
@@ -28,19 +27,19 @@
             </video>
           </div>
           <div class="text-sm text-slate-600 mt-4">
-            The interaction in the video costs $0.05 USD in API costs. For more details, visit the 
+            Needs OpenAI API key. The interaction in the video costs $0.05 USD in API costs. For more details, visit the 
             <a href="https://openai.com/api/pricing/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700">
               OpenAI API Pricing page
             </a>.
           </div>
           <div class="text-center mt-6">
-            <BuyButton :isPrimary="true" />
+            <BuyButton :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" />
           </div>
         </div>
       </Container>
     </Section>
 
-    <Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed" id="features">
+    <Section id="features" class="bg-gradient-to-br from-primary-600 to-primary-800">
       <Container>
         <div class="w-full max-w-2xl space-y-4 mx-auto text-center mb-16">
           <Title class="text-white">Powerful Features</Title>
@@ -81,7 +80,7 @@
           </ul>
         </div>
         <div class="text-center mt-12">
-          <BuyButton :isPrimary="false" />
+          <BuyButton :isPrimary="false" buttonText="Get tool from GitHub" :isFreeTool="true" />
         </div>
       </Container>
     </Section>
@@ -90,15 +89,26 @@
       <Container class="text-center">
         <div class="w-full max-w-lg mx-auto space-y-6">
           <Title>Want a Custom AI Solution for Your Business?</Title>
-          <SubTitle class="text-slate-700">
-            Get a personalized AI sales automation roadmap tailored to your specific needs and workflow.
-          </SubTitle>
           <div class="space-y-6">
-            <router-link to="/" class="inline-block">
-              <Button class="bg-primary-600 text-white hover:bg-primary-700">
+            <div class="text-left space-y-4">
+              <div>
+                <h3 class="font-display text-lg font-medium">AI-Powered Lead Scoring</h3>
+                <p class="text-slate-600">Instantly spot who's ready to buy and who's just browsing.</p>
+              </div>
+              <div>
+                <h3 class="font-display text-lg font-medium">Personalized Outreach on Autopilot</h3>
+                <p class="text-slate-600">Custom messages that actually get replies. No spam, just conversions.</p>
+              </div>
+              <div>
+                <h3 class="font-display text-lg font-medium">Real-Time Data Enrichment</h3>
+                <p class="text-slate-600">Enrich your leads with fresh, actionable info from multiple sources, automatically.</p>
+              </div>
+            </div>
+            <button @click="handleLinkClick('/')" class="inline-block">
+              <Button class="bg-blue-700 text-white hover:bg-blue-800">
                 Explore Our Consulting Services
               </Button>
-            </router-link>
+            </button>
             <div>
               <a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
                 Follow Vitor on Twitter →
@@ -119,6 +129,19 @@ import Title from "../components/Title.vue"
 import SubTitle from "../components/SubTitle.vue"
 import BuyButton from "../components/BuyButton.vue"
 import TheHeader from "../components/TheHeader.vue"
+
+function handleLinkClick(link) {
+  if (link.startsWith('#')) {
+    const element = document.querySelector(link)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  } else if (link.startsWith('http')) {
+    window.open(link, '_blank', 'noopener,noreferrer')
+  } else {
+    window.location = link
+  }
+}
 </script>
 
 <style scoped>

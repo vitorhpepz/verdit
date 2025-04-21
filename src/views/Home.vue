@@ -6,7 +6,7 @@
 			{ label: 'Pricing', link: '#pricing' },
 			{ label: 'FAQ', link: '#faq' },
 			{ label: 'Contact', link: '#contact' },
-			{ label: 'Free Tool', link: '/freetool' }
+			{ label: 'Opensource Sales AI Tool', link: '/freetool' }
 		]" />
 		<Section class="bg-white">
 			<Container class="space-y-12 sm:space-y-20">
@@ -23,7 +23,7 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<BuyButton :isPrimary="true" text="Get My Free AI Sales Roadmap" />
+					<BuyButton :isPrimary="true" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic">Walk Away With a Custom Plan — Even if You Don't Hire Me</p>
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
@@ -38,22 +38,18 @@
 
 		<Section
 			id="services"
-			class="bg-primary-600 bg-[url('/imgs/featured-bg-2.jpg')] bg-cover bg-no-repeat space-y-12 overflow-hidden"
+			class="bg-white overflow-hidden space-y-16 border-t border-slate-200"
 		>
-			<Container class="space-y-16">
-				<div class="space-y-6 text-center text-white">
+			<Container>
+				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
 					<Title>{{ content.services.subtitle }}</Title>
-					<SubTitle class="text-white">
+					<SubTitle class="text-slate-700">
 						You get a system that works the way you do
 					</SubTitle>
 				</div>
-					<FeaturesChanger />
-				
-				<div class="text-center">
-					<BuyButton :isPrimary="false" />
-				</div>
-				
 			</Container>
+
+			<TasksSlider />
 		</Section>
 
 		<Section id="testimonials" class="bg-slate-50">
@@ -71,7 +67,7 @@
 						⭐ Rated Top 1% on Upwork — 100+ projects delivered.
 					</SubTitle>
 					<br><br>
-					<BuyButton :isPrimary="true" />
+					<BuyButton :isPrimary="true" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -80,11 +76,11 @@
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
-					<Title>Get Your AI Sales Automation Roadmap Today</Title>
+					<Title>Get Your Free Strategy Call Today</Title>
 					<SubTitle class="text-white">
 						Discover exactly how AI can streamline your sales. No guesswork - just clear, actionable steps.
 					</SubTitle>
-					<BuyButton :isPrimary="false" />
+					<BuyButton :isPrimary="false" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
@@ -110,7 +106,7 @@
 			</Container>
 		</Section>
 
-		<Section id="contact" class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+		<Section id="contact" class="bg-gradient-to-br from-primary-600 to-primary-800">
 			<Container class="text-center text-white">
 				
 				<div class="max-w-4xl mx-auto p-4">
@@ -136,7 +132,11 @@
             				vitor@verdit.site
 						</a>
 					</SubTitle>
-
+					<SubTitle class="text-white-700">
+						<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 hover:underline">
+							Follow Vitor on Twitter →
+						</a>
+					</SubTitle>
 				</div>
 			</Container>
 		</Section>
@@ -157,6 +157,7 @@ import FeaturesChanger from "../components/FeaturesChanger.vue"
 import Title from "../components/Title.vue"
 import { ref } from "vue"
 import SubTitle from "../components/SubTitle.vue"
+import TasksSlider from "../components/TasksSlider.vue"
 import content from '../content.json'
 import TheHeader from "../components/TheHeader.vue"
 

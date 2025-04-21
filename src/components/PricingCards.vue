@@ -16,7 +16,9 @@
 				/>
 			</div>
 			<Button
-				v-text="pricing.price === 'Free' ? 'Let\'s Start (It\'s Free)' : 'Get started'"
+				:data-tally-open="'nGYAdZ'"
+				:data-tally-hidden="`whatButton=${getButtonType(pricing.price)}`"
+				v-text="pricing.price === 'Free' ? 'Get Your Free Strategy' : 'Get started'"
 				class="text-sm w-full transition-colors duration-300 border-white"
 				:class="{ 'bg-white text-slate-900': pricing.recommended }"
 			/>
@@ -38,4 +40,19 @@
 import Button from "./Button.vue"
 import IconCheck from "./icons/IconCheck.vue"
 import content from '../content.json'
+
+function getButtonType(price: string) {
+	switch (price) {
+		case 'Free':
+			return 'free_strategy'
+		case '$750':
+			return 'jumpstart_750'
+		case '$3,500':
+			return 'full_setup_3500'
+		case '$1,500/mo':
+			return 'monthly_1500'
+		default:
+			return 'free_strategy'
+	}
+}
 </script>
