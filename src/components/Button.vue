@@ -14,6 +14,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import { trackButtonClick } from '../services/analytics'
 
 const props = defineProps({
 	// Button text (fallback if no slot content)
@@ -79,10 +80,16 @@ function handleClick(event) {
 		element: event.target.outerHTML
 	})
 
-	// Trigger the Amplitude tracking event
-	if (typeof amplitude !== 'undefined') {
-		amplitude.track('tool_download')
-	}
+	// Track button click with properties
+	trackButtonClick({
+		button_type: props.isFreeTool ? 'free_tool' : 'strategy',
+		button_text: props.buttonText,
+		tally_form: props.tallyOpen,
+		what_button: props.whatButton,
+		is_primary: props.isPrimary,
+		is_pricing_card: props.isPricingCard,
+		url: window.location.pathname
+	})
 
 	emit('click', event)
 }

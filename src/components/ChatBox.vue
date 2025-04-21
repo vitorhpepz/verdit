@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
+import { trackChatInteraction } from '../services/analytics'
 
 // Constants moved from chatInstructions.js
 const INITIAL_GREETING = "Hey there 👋 I'm Verdit, your AI sales sidekick. Let's do a quick mini-audit to see what's slowing down your sales. I'll ask you 2–3 quick questions and then give you tailored advice — all in under 2 mins.\n\nReady? Let's do this.\n\nWhat's your biggest sales challenge right now?"
@@ -122,9 +123,10 @@ const scrollToBottom = async () => {
   }
 }
 
-// Initialize the conversation with the first message
+// Track conversation start
 onMounted(() => {
   if (!conversationStarted.value) {
+    trackChatInteraction('conversation_started')
     startConversation()
   }
 })
@@ -172,6 +174,12 @@ const startConversation = async () => {
 
 const sendMessage = async () => {
   if (!userInput.value.trim()) return
+  
+  // Track message sent
+  trackChatInteraction('message_sent', {
+    message_length: userInput.value.length,
+    is_first_message: messages.value.length === 0
+  })
   
   messages.value.push({
     text: userInput.value,
@@ -249,6 +257,12 @@ const sendMessage = async () => {
     const botResponse = data.reply || data.response
     
     if (botResponse) {
+      // Track bot response
+      trackChatInteraction('bot_response', {
+        response_length: botResponse.length,
+        conversation_length: messages.value.length
+      })
+      
       messages.value.push({
         text: botResponse,
         isUser: false,
@@ -267,6 +281,11 @@ const sendMessage = async () => {
     // Scroll to bottom after AI response
     await scrollToBottom()
   } catch (error) {
+    // Track error
+    trackChatInteraction('chat_error', {
+      error_message: error.message
+    })
+    
     console.error('API Error:', error)
     apiAvailable.value = false
     
