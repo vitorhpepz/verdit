@@ -23,12 +23,12 @@
     "features": [
       {
         "label": "AI-Powered Lead Scoring",
-        "description": "Instantly spot who's ready to buy and who's just browsing.",
+        "description": "Instantly spot who's ready to buy and who's just browsing. We go beyond basic rules, using AI to analyze your specific data like website behaviour, email engagement, and enriched firmographics to identify prospects matching your ideal customer profile. This custom model learns over time, ensuring your sales team consistently focuses its energy on the highest-potential leads, directly surfaced within your CRM.",
         "img": "/imgs/features/servers.jpg"
       },
       {
         "label": "Personalized Outreach on Autopilot",
-        "description": "Custom messages that actually get replies. No spam, just conversions.",
+        "description": "Custom messages that actually get replies, automatically. Trigger relevant, context-aware outreach based on lead scores, specific actions (like demo requests or content downloads), or enrichment data. We can leverage AI (like GPT) trained on your value proposition to draft initial messages or follow-ups that resonate, moving beyond generic templates to achieve higher engagement. No spam, just timely, personalized communication that drives conversions.",
         "img": "/imgs/features/email.jpg"
       },
       {
@@ -38,7 +38,7 @@
       },
       {
         "label": "Real-Time Data Enrichment",
-        "description": "Enrich your leads with fresh, actionable info from multiple sources, automatically.",
+        "description": "Enrich your leads with fresh, actionable info from multiple sources, automatically. As leads enter your pipeline or progress through stages, we automatically pull in missing details, like company size, funding status, tech stack, or direct contact info, from reliable B2B databases and online sources. This eliminates manual research, ensures your data is accurate and complete, and provides your team with the crucial context needed for effective scoring and personalized outreach, right within your CRM.",
         "img": "/imgs/features/report.jpg"
       }
     ]
