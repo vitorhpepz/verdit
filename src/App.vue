@@ -15,9 +15,9 @@
 <script setup>
 import TheFooter from "./components/TheFooter.vue"
 import content from './content.json'
-import { useRoute, onBeforeRouteUpdate } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { trackPageView, initScrollDepthTracking, initTimeSpentTracking, initHeartbeatTracking } from './services/analytics'
-import { onMounted, watch } from 'vue'
+import { onMounted } from 'vue'
 
 const $route = useRoute()
 
@@ -29,20 +29,30 @@ const trackCurrentPage = () => {
     })
 }
 
+// Initialize tracking when Amplitude is ready
+const initTracking = () => {
+    // Check if Amplitude is ready
+    if (typeof window !== 'undefined' && window.amplitudeReady) {
+        console.log('Amplitude is ready, initializing tracking');
+        trackCurrentPage();
+        initScrollDepthTracking();
+        initTimeSpentTracking();
+        initHeartbeatTracking();
+    } else {
+        console.log('Amplitude not ready yet, waiting...');
+        // Wait for Amplitude to be ready
+        window.addEventListener('amplitudeReady', () => {
+            console.log('Amplitude is now ready, initializing tracking');
+            trackCurrentPage();
+            initScrollDepthTracking();
+            initTimeSpentTracking();
+            initHeartbeatTracking();
+        });
+    }
+}
+
 // Initialize tracking on mount
 onMounted(() => {
-    trackCurrentPage()
-    initScrollDepthTracking()
-    initTimeSpentTracking()
-    initHeartbeatTracking()
-})
-
-// Track page views on route changes
-onBeforeRouteUpdate((to, from) => {
-    trackPageView(to.path, {
-        page_name: to.name || to.path,
-        is_free_tool: to.path === '/freetool',
-        from_page: from.path
-    })
+    initTracking();
 })
 </script>

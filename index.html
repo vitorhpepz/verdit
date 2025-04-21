@@ -17,7 +17,41 @@
 			rel="stylesheet"
 		/>
 
-		<script src="https://cdn.amplitude.com/script/3d76c3348ceebace93e0316ad28f9d7c.js"></script><script>window.amplitude.init('3d76c3348ceebace93e0316ad28f9d7c', {"fetchRemoteConfig":true,"autocapture":true});</script>
+		<!-- Amplitude Analytics -->
+		<script src="https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js"></script>
+		<script>
+			// Create a global function to initialize Amplitude
+			window.initAmplitude = function() {
+				try {
+					// Initialize Amplitude
+					amplitude.init("76f57adf150ffaefaeb13f6d2f015a34", null, {
+						includeUtm: true,
+						includeReferrer: true,
+						trackingOptions: {
+							city: true,
+							country: true,
+							region: true,
+							dma: true,
+							ip_address: true
+						}
+					});
+					
+					// Log initialization for debugging
+					console.log("Amplitude initialized successfully");
+					
+					// Set a flag to indicate Amplitude is ready
+					window.amplitudeReady = true;
+					
+					// Dispatch an event to notify that Amplitude is ready
+					window.dispatchEvent(new Event('amplitudeReady'));
+				} catch (error) {
+					console.error("Error initializing Amplitude:", error);
+				}
+			};
+			
+			// Initialize Amplitude when the page loads
+			window.addEventListener('load', window.initAmplitude);
+		</script>
 
 		<!-- Single Page Apps for GitHub Pages -->
 		<script type="text/javascript">
