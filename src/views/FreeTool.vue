@@ -18,7 +18,7 @@
             </SubTitle>
           </div>
           <div class="text-center mt-6">
-            <BuyButton :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" />
+            <Button :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
           </div>
           <div style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
             <video class="responsive-video" autoplay loop muted playsinline>
@@ -33,7 +33,7 @@
             </a>.
           </div>
           <div class="text-center mt-6">
-            <BuyButton :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" />
+            <Button :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
           </div>
         </div>
       </Container>
@@ -80,7 +80,7 @@
           </ul>
         </div>
         <div class="text-center mt-12">
-          <BuyButton :isPrimary="false" buttonText="Get tool from GitHub" :isFreeTool="true" />
+          <Button :isPrimary="false" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
         </div>
       </Container>
     </Section>
@@ -105,7 +105,7 @@
               </div>
             </div>
             <button @click="handleLinkClick('/')" class="inline-block">
-              <Button class="bg-blue-700 text-white hover:bg-blue-800">
+              <Button :isPrimary="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'">
                 Explore Our Consulting Services
               </Button>
             </button>
@@ -127,7 +127,6 @@ import Section from "../components/Section.vue"
 import Button from "../components/Button.vue"
 import Title from "../components/Title.vue"
 import SubTitle from "../components/SubTitle.vue"
-import BuyButton from "../components/BuyButton.vue"
 import TheHeader from "../components/TheHeader.vue"
 
 function handleLinkClick(link) {

@@ -17,7 +17,7 @@
 	</div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import IconQuotes from "./icons/IconQuotes.vue"
 import content from '../content.json'
 </script>

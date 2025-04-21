@@ -23,7 +23,7 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<BuyButton :isPrimary="true" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic">Walk Away With a Custom Plan — Even if You Don't Hire Me</p>
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
@@ -67,7 +67,7 @@
 						⭐ Rated Top 1% on Upwork — 100+ projects delivered.
 					</SubTitle>
 					<br><br>
-					<BuyButton :isPrimary="true" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -80,7 +80,7 @@
 					<SubTitle class="text-white">
 						Discover exactly how AI can streamline your sales. No guesswork - just clear, actionable steps.
 					</SubTitle>
-					<BuyButton :isPrimary="false" :buttonText="'Get Your Free Strategy'" :buttonType="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Get Your Free Strategy'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
@@ -146,14 +146,9 @@
 <script setup>
 import Container from "../components/Container.vue"
 import Section from "../components/Section.vue"
-import Button from "../components/Button.vue"
-import BuyBlock from '../components/BuyBlock.vue';
-import BuyButton from '../components/BuyButton.vue';
+import Button from '../components/Button.vue';
 import Testimonials from "../components/Testimonials.vue"
 import PricingCards from "../components/PricingCards.vue"
-import IconTextDecoration2 from "../components/icons/IconTextDecoration2.vue"
-import IconPlay from "../components/icons/IconPlay.vue"
-import FeaturesChanger from "../components/FeaturesChanger.vue"
 import Title from "../components/Title.vue"
 import { ref } from "vue"
 import SubTitle from "../components/SubTitle.vue"

@@ -24,11 +24,13 @@
 					class="hidden rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100 md:block"
 				/> -->
 
-				<BuyButton 
+				<Button 
 					class="hidden md:inline-block" 
 					:isPrimary="true" 
 					:buttonText="isFreeTool ? 'Get tool from GitHub' : 'Get Your Free Strategy'"
 					:isFreeTool="isFreeTool"
+					:tallyOpen="isFreeTool ? '31BZpM' : undefined"
+					:whatButton="isFreeTool ? 'free_strategy' : 'free_strategy'"
 				/>
 
 				<!-- MOBILE MENU -->
@@ -72,10 +74,12 @@
 									/>
 								</template>
 								<hr class="my-2" />
-								<BuyButton 
+								<Button 
 									:isPrimary="true" 
 									:buttonText="isFreeTool ? 'Get tool from GitHub' : 'Get Your Free Strategy'"
 									:isFreeTool="isFreeTool"
+									:tallyOpen="isFreeTool ? '31BZpM' : undefined"
+									:whatButton="isFreeTool ? 'free_strategy' : 'free_strategy'"
 								/>
 							</nav>
 						</div>
@@ -92,7 +96,6 @@ import IconBars from "./icons/IconBars.vue"
 import IconX from "./icons/IconX.vue"
 import Button from "./Button.vue"
 import { ref } from "vue"
-import BuyButton from "./BuyButton.vue"
 import { RouterLink } from 'vue-router'
 
 const props = defineProps({
