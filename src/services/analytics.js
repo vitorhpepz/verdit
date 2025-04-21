@@ -74,6 +74,29 @@ export const trackChatInteraction = (action, properties = {}) => {
     amplitude.track('chat_interaction', { ...defaultProperties, ...properties })
 }
 
+// Track user heartbeat for "Current Live Users" metric
+export const trackHeartbeat = () => {
+    if (!isAmplitudeAvailable()) return
+    
+    const properties = {
+        url: window.location.pathname,
+        timestamp: new Date().toISOString()
+    }
+    
+    amplitude.track('heartbeat', properties)
+}
+
+// Initialize heartbeat tracking
+export const initHeartbeatTracking = () => {
+    if (!isAmplitudeAvailable()) return
+    
+    // Send initial heartbeat
+    trackHeartbeat()
+    
+    // Send heartbeat every 30 seconds
+    setInterval(trackHeartbeat, 30000)
+}
+
 // Initialize scroll depth tracking
 export const initScrollDepthTracking = () => {
     if (!isAmplitudeAvailable()) return

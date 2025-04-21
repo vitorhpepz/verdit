@@ -16,7 +16,7 @@
 import TheFooter from "./components/TheFooter.vue"
 import content from './content.json'
 import { useRoute, onBeforeRouteUpdate } from 'vue-router'
-import { trackPageView, initScrollDepthTracking, initTimeSpentTracking } from './services/analytics'
+import { trackPageView, initScrollDepthTracking, initTimeSpentTracking, initHeartbeatTracking } from './services/analytics'
 import { onMounted, watch } from 'vue'
 
 const $route = useRoute()
@@ -34,6 +34,7 @@ onMounted(() => {
     trackCurrentPage()
     initScrollDepthTracking()
     initTimeSpentTracking()
+    initHeartbeatTracking()
 })
 
 // Track page views on route changes
