@@ -50,32 +50,32 @@
         <div class="max-w-full mx-auto p-4">
           <ul class="list-disc list-inside lg:w-1/2 w-full mx-auto text-lg text-white">
             <li class="mb-4">
-              <strong>One-Click Efficiency:</strong> Instantly capture ongoing conversations and generate tailored responses with just a single click.
+              <strong>⚡ One-Click Efficiency:</strong> Instantly capture ongoing conversations and generate tailored responses with just a single click.
             </li>
             <li class="mb-4">
-              <strong>Personalized Writing Style:</strong> Add examples of your best client interactions to train the AI to write more like you and less like the usual robotic ChatGPT style.
+              <strong>✍️ Personalized Writing Style:</strong> Add examples of your best client interactions to train the AI to write more like you and less like the usual robotic ChatGPT style.
             </li>
             <li class="mb-4">
-              <strong>Context-Aware Intelligence:</strong> Effortlessly instruct the AI about the specifics of your business and the different roles it will perform. It crafts persuasive, customized replies that effectively engage your clients. Example:
+              <strong>🧠 Context-Aware Intelligence:</strong> Effortlessly instruct the AI about the specifics of your business and the different roles it will perform. It crafts persuasive, customized replies that effectively engage your clients. Example:
               <em>Respond to clients and inquiries to promote a $1,000 refrigerator. Highlight its spaciousness and grey design. Suggest responses that encourage moving forward with the purchase.</em> It will learn from communication examples you provide as well.
             </li>
             <li class="mb-4">
-              <strong>Works seamlessly with any website on Chrome:</strong> Salesforce, Gmail, Instagram, LinkedIn, WhatsApp, and more.
+              <strong>🌐 Works seamlessly with any website on Chrome:</strong> Salesforce, Gmail, Instagram, LinkedIn, WhatsApp, and more.
             </li>
             <li class="mb-4">
-              <strong>Seamlessly switches roles:</strong> Acting as a sales representative for leads, tech support, customer service agent, and more.
+              <strong>🔄 Seamlessly switches roles:</strong> Acting as a sales representative for leads, tech support, customer service agent, and more.
             </li>
             <li class="mb-4">
-              <strong>Review the generated response before sending it:</strong> Ensure every message is perfect and tailored to your client's needs.
+              <strong>👀 Review the generated response before sending it:</strong> Ensure every message is perfect and tailored to your client's needs.
             </li>
             <li class="mb-4">
-              <strong>Save valuable mental energy:</strong> Work longer hours, maintain sharper focus, and ultimately close more deals without burning out.
+              <strong>💪 Save valuable mental energy:</strong> Work longer hours, maintain sharper focus, and ultimately close more deals without burning out.
             </li>
             <li class="mb-4">
-              <strong>No copy and paste back and forth:</strong> Switching to other apps, or remembering keystroke combinations. Just click a button directly on the Chrome interface.
+              <strong>🎯 No copy and paste back and forth:</strong> Switching to other apps, or remembering keystroke combinations. Just click a button directly on the Chrome interface.
             </li>
             <li class="mb-4">
-              <strong>100% Open Source:</strong> Free to use, modify, and distribute. Join our community of contributors and help shape the future of AI-powered sales automation.
+              <strong>📖 100% Open Source:</strong> Free to use, modify, and distribute. Join our community of contributors and help shape the future of AI-powered sales automation.
             </li>
           </ul>
         </div>
