@@ -73,6 +73,12 @@
 			</Container>
 		</Section>
 
+		<Section id="pricing" class="bg-slate-900">
+			<Container class="text-white space-y-16">
+				<PricingCards />
+			</Container>
+		</Section>
+
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
@@ -82,12 +88,6 @@
 					</SubTitle>
 					<Button :isPrimary="false" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
 				</div>
-			</Container>
-		</Section>
-
-		<Section id="pricing" class="bg-slate-900">
-			<Container class="text-white space-y-16">
-				<PricingCards />
 			</Container>
 		</Section>
 
@@ -105,6 +105,7 @@
 				</div>
 			</Container>
 		</Section>
+
 
 		<Section id="contact" class="bg-gradient-to-br from-primary-600 to-primary-800">
 			<Container class="text-center text-white">
