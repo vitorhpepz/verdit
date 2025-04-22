@@ -17,42 +17,6 @@
 			rel="stylesheet"
 		/>
 
-		<!-- Amplitude Analytics -->
-		<script src="https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js"></script>
-		<script>
-			// Create a global function to initialize Amplitude
-			window.initAmplitude = function() {
-				try {
-					// Initialize Amplitude
-					amplitude.init("76f57adf150ffaefaeb13f6d2f015a34", null, {
-						includeUtm: true,
-						includeReferrer: true,
-						trackingOptions: {
-							city: true,
-							country: true,
-							region: true,
-							dma: true,
-							ip_address: true
-						}
-					});
-					
-					// Log initialization for debugging
-					console.log("Amplitude initialized successfully");
-					
-					// Set a flag to indicate Amplitude is ready
-					window.amplitudeReady = true;
-					
-					// Dispatch an event to notify that Amplitude is ready
-					window.dispatchEvent(new Event('amplitudeReady'));
-				} catch (error) {
-					console.error("Error initializing Amplitude:", error);
-				}
-			};
-			
-			// Initialize Amplitude when the page loads
-			window.addEventListener('load', window.initAmplitude);
-		</script>
-
 		<!-- Single Page Apps for GitHub Pages -->
 		<script type="text/javascript">
 			(function(l) {
@@ -66,8 +30,18 @@
 				}
 			}(window.location))
 		</script>
-		<script type="module" crossorigin src="/assets/index-212d954b.js"></script>
-		<link rel="stylesheet" href="/assets/index-eb06f496.css">
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BFEK93YCL"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-4BFEK93YCL');
+		</script>
+		<script type="module" crossorigin src="/assets/index-0a5830f7.js"></script>
+		<link rel="stylesheet" href="/assets/index-fc81f44c.css">
 	</head>
 	<body>
 		<div id="app"></div>
