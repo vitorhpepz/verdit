@@ -27,7 +27,7 @@
 				<Button 
 					class="hidden md:inline-block" 
 					:isPrimary="true" 
-					:buttonText="isFreeTool ? 'Estimate Your Growth Potential' : 'Estimate Your Growth Potential'"
+					:buttonText="buttonText"
 					:isFreeTool="isFreeTool"
 					:tallyOpen="isFreeTool ? '31BZpM' : undefined"
 					:whatButton="isFreeTool ? 'free_strategy' : 'free_strategy'"
@@ -76,7 +76,7 @@
 								<hr class="my-2" />
 								<Button 
 									:isPrimary="true" 
-									:buttonText="isFreeTool ? 'Estimate Your Growth Potential' : 'Estimate Your Growth Potential'"
+									:buttonText="buttonText"
 									:isFreeTool="isFreeTool"
 									:tallyOpen="isFreeTool ? '31BZpM' : undefined"
 									:whatButton="isFreeTool ? 'free_strategy' : 'free_strategy'"

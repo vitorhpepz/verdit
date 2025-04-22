@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TheHeader :isFreeTool="true" :buttonText="'Download Free'" :menuItems="[
+    <TheHeader :isFreeTool="true" :buttonText="'Get tool from GitHub'" :menuItems="[
       { label: 'Features', link: '#features' },
       { label: 'Our Consultancy Services', link: '/' },
       { label: 'Twitter', link: 'https://x.com/vitorpepz' }
@@ -18,7 +18,7 @@
             </SubTitle>
           </div>
           <div class="text-center mt-6">
-            <Button :isPrimary="true" buttonText="Estimate Your Growth Potential" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
+            <Button :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
           </div>
           <div style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
             <video class="responsive-video" autoplay loop muted playsinline>
@@ -33,7 +33,7 @@
             </a>.
           </div>
           <div class="text-center mt-6">
-            <Button :isPrimary="true" buttonText="Estimate Your Growth Potential" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
+            <Button :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
           </div>
         </div>
       </Container>
@@ -106,7 +106,7 @@
             </div>
             <button @click="handleLinkClick('/')" class="inline-block">
               <Button :isPrimary="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'">
-                Estimate Your Growth Potential
+                Check our Consultancy Services
               </Button>
             </button>
             <div>

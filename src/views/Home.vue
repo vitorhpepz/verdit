@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<TheHeader :isFreeTool="false" :menuItems="[
+		<TheHeader :isFreeTool="false" :buttonText="'Estimate Your Growth Potential'" :menuItems="[
 			{ label: 'Services', link: '#services' },
 			{ label: 'Testimonials', link: '#testimonials' },
 			{ label: 'Pricing', link: '#pricing' },
