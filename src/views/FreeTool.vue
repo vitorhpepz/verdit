@@ -43,7 +43,7 @@
     <Section id="about" class="bg-gradient-to-br from-primary-600 to-primary-800">
       <Container class="text-center">
         <div class="w-full max-w-2xl mx-auto space-y-6">
-          <div class="text-left space-y-4 text-white">
+          <div class="text-left space-y-4 text-white text-lg">
             <p>
               Hi! I'm Vitor (<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">@vitorpepz</a>), and I built <a href="https://verdit.site/freetool" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">verdit.site/freetool</a>, a Chrome extension that helps you craft professional responses to client inquiries using OpenAI GPT. I built it for myself to save me time answering clients FAQs and more. You can use it on WhatsApp, email, Instagram, LinkedIn or any website.
             </p>
