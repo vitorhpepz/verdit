@@ -1,6 +1,7 @@
 <template>
   <main>
     <TheHeader :isFreeTool="true" :buttonText="'Get tool from GitHub'" :menuItems="[
+      { label: 'About', link: '#about' },
       { label: 'Features', link: '#features' },
       { label: 'Our Consultancy Services', link: '/' },
       { label: 'Twitter', link: 'https://x.com/vitorpepz' }
@@ -39,16 +40,43 @@
       </Container>
     </Section>
 
-    <Section id="features" class="bg-gradient-to-br from-primary-600 to-primary-800">
+    <Section id="about" class="bg-gradient-to-br from-primary-600 to-primary-800">
+      <Container class="text-center">
+        <div class="w-full max-w-2xl mx-auto space-y-6">
+          <div class="text-left space-y-4 text-white">
+            <p>
+              Hi! I'm Vitor (<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">@vitorpepz</a>), and I built <a href="https://verdit.site/freetool" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">verdit.site/freetool</a>, a Chrome extension that helps you craft professional responses to client inquiries using OpenAI GPT. I built it for myself to save me time answering clients FAQs and more. You can use it on WhatsApp, email, Instagram, LinkedIn or any website.
+            </p>
+            <p>
+              The software works by internally getting the html content from the page where the conversation is happening, then converting it to Markdown and submitting it to GPT-4.1 together with the instructions. It will then try to post the content on the answer box (if no text appears but you see the green OK, you'll need to past it manually (Ctrl/Cmd + V)) so you can review the answer before sending.
+            </p>
+            <p>
+              I found it super useful to answer the FAQs from clients, but it also worked well with other requests - you can save the instructions for GPT with the FAQs, and it will more than often guess correctly a perfect good answer for that client, keeping the tone/voice of the FAQs you provided it.
+            </p>
+            <p>
+              It is MIT licensed, so you're free to build on top of it or even commercialize if you want so.
+            </p>
+            <p>
+              I hope it is useful for you! I'd love to hear your thoughts and ideas! (<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">@vitorpepz</a>)
+            </p>
+          </div>
+        </div>
+      </Container>
+    </Section>
+
+    <Section id="features" class="bg-white">
       <Container>
         <div class="w-full max-w-2xl space-y-4 mx-auto text-center mb-16">
-          <Title class="text-white">Powerful Features</Title>
-          <SubTitle class="text-white">
+          <Title class="text-slate-900">Powerful Features</Title>
+          <SubTitle class="text-slate-700">
             Everything you need to automate your sales communication and boost productivity
           </SubTitle>
         </div>
         <div class="max-w-full mx-auto p-4">
-          <ul class="list-disc list-inside lg:w-1/2 w-full mx-auto text-lg text-white">
+          <ul class="list-disc list-inside lg:w-1/2 w-full mx-auto text-lg text-slate-700">
+            <li class="mb-4">
+              <strong>📝 FAQ Automation:</strong> Save time by providing your FAQs to GPT, and it will automatically generate responses that match your tone and style. Perfect for handling common client inquiries efficiently.
+            </li>
             <li class="mb-4">
               <strong>⚡ One-Click Efficiency:</strong> Instantly capture ongoing conversations and generate tailored responses with just a single click.
             </li>
@@ -80,37 +108,37 @@
           </ul>
         </div>
         <div class="text-center mt-12">
-          <Button :isPrimary="false" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
+          <Button :isPrimary="true" buttonText="Get tool from GitHub" :isFreeTool="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'" />
         </div>
       </Container>
     </Section>
 
-    <Section class="bg-white">
+    <Section class="bg-gradient-to-br from-primary-600 to-primary-800">
       <Container class="text-center">
         <div class="w-full max-w-lg mx-auto space-y-6">
-          <Title>Want a Custom AI Solution for Your Business?</Title>
+          <Title class="text-white">Want a Custom AI Solution for Your Business?</Title>
           <div class="space-y-6">
             <div class="text-left space-y-4">
               <div>
-                <h3 class="font-display text-lg font-medium">AI-Powered Lead Scoring</h3>
-                <p class="text-slate-600">Instantly spot who's ready to buy and who's just browsing.</p>
+                <h3 class="font-display text-lg font-medium text-white">AI-Powered Lead Scoring</h3>
+                <p class="text-white/80">Instantly spot who's ready to buy and who's just browsing.</p>
               </div>
               <div>
-                <h3 class="font-display text-lg font-medium">Personalized Outreach on Autopilot</h3>
-                <p class="text-slate-600">Custom messages that actually get replies. No spam, just conversions.</p>
+                <h3 class="font-display text-lg font-medium text-white">Personalized Outreach on Autopilot</h3>
+                <p class="text-white/80">Custom messages that actually get replies. No spam, just conversions.</p>
               </div>
               <div>
-                <h3 class="font-display text-lg font-medium">Real-Time Data Enrichment</h3>
-                <p class="text-slate-600">Enrich your leads with fresh, actionable info from multiple sources, automatically.</p>
+                <h3 class="font-display text-lg font-medium text-white">Real-Time Data Enrichment</h3>
+                <p class="text-white/80">Enrich your leads with fresh, actionable info from multiple sources, automatically.</p>
               </div>
             </div>
             <button @click="handleLinkClick('/')" class="inline-block">
-              <Button :isPrimary="true" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'">
+              <Button :isPrimary="false" :tallyOpen="'31BZpM'" :whatButton="'free_strategy'">
                 Check our Consultancy Services
               </Button>
             </button>
             <div>
-              <a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 font-medium">
+              <a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 font-medium">
                 Follow Vitor on Twitter →
               </a>
             </div>
