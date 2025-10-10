@@ -122,7 +122,7 @@
 					
 					<!-- Image Section -->
 					<div class="flex items-center justify-end lg:w-2/5 w-full mt-4 lg:mt-0">
-						<img src="/myphoto.jpeg" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
+						<img src="/myphoto.jpg" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
 					</div>
 					</div>
 				</div>
