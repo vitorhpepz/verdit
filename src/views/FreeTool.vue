@@ -45,7 +45,7 @@
         <div class="w-full max-w-2xl mx-auto space-y-6">
           <div class="text-left space-y-4 text-white text-lg">
             <p>
-              Hi! I'm Vitor (<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">@vitorpepz</a>), and I built <a href="https://verdit.site/freetool" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">verdit.site/freetool</a>, a Chrome extension that helps you craft professional responses to client inquiries using OpenAI GPT. I built it for myself to save me time answering clients FAQs and more. You can use it on WhatsApp, email, Instagram, LinkedIn or any website.
+              Hi! I'm Vitor (<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">@vitorpepz</a>), and I built <a href="https://verditlabs.com/freetool" target="_blank" rel="noopener noreferrer" class="text-white hover:text-white/80 underline">verditlabs.com/freetool</a>, a Chrome extension that helps you craft professional responses to client inquiries using OpenAI GPT. I built it for myself to save me time answering clients FAQs and more. You can use it on WhatsApp, email, Instagram, LinkedIn or any website.
             </p>
             <p>
               The software works by internally getting the html content from the page where the conversation is happening, then converting it to Markdown and submitting it to GPT-4.1 together with the instructions. It will then try to post the content on the answer box (if no text appears but you see the green OK, you'll need to past it manually (Ctrl/Cmd + V)) so you can review the answer before sending.
