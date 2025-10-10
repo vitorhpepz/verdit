@@ -1,5 +1,5 @@
 <template>
-	<header class="shadow py-6 md:py-10 sticky top-0 z-10 bg-white">
+	<header class="shadow py-3 md:py-4 sticky top-0 z-10 bg-white">
 		<Container class="relative flex items-center justify-between gap-4 text-slate-900 text-base">
 			<div class="flex items-center gap-8">
 				<router-link :to="'/'" class="text-4xl font-bold">
@@ -25,6 +25,7 @@
 				/> -->
 
 				<Button 
+					v-if="buttonText"
 					class="hidden md:inline-block" 
 					:isPrimary="true" 
 					:buttonText="buttonText"
@@ -75,6 +76,7 @@
 								</template>
 								<hr class="my-2" />
 								<Button 
+									v-if="buttonText"
 									:isPrimary="true" 
 									:buttonText="buttonText"
 									:isFreeTool="isFreeTool"

@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<TheHeader :isFreeTool="false" :buttonText="'Estimate Your Growth Potential'" :menuItems="[
+		<TheHeader :isFreeTool="false" :menuItems="[
 			{ label: 'Services', link: '#services' },
 			{ label: 'Testimonials', link: '#testimonials' },
 			{ label: 'Pricing', link: '#pricing' },
@@ -8,23 +8,31 @@
 			{ label: 'Contact', link: '#contact' },
 			{ label: 'Opensource Sales AI Tool', link: '/freetool' }
 		]" />
-		<Section class="bg-white">
-			<Container class="space-y-12 sm:space-y-20">
-				<div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
-					<div class="space-y-4 sm:space-y-6">
-						<Title class="lg:text-7xl font-medium">
+		<Section class="bg-white !pt-12 !pb-8 sm:!pt-16 sm:!pb-12">
+			<Container class="space-y-12 sm:space-y-16">
+				<div class="w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
+					<div class="space-y-3 sm:space-y-4">
+						<Title class="lg:text-6xl font-medium">
 							<span class="text-primary-600">{{ content.hero.title.blue }}</span>
 							<span class="text-slate-900"> {{ content.hero.title.black }}</span>
 						</Title>
-						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700">
-							{{ content.hero.subtitle }}
+						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700" v-html="content.hero.subtitle">
 						</SubTitle>
+					</div>
+					
+					<!-- 4-Bullet Value Stack -->
+					<div class="max-w-2xl mx-auto pt-6 pb-2 text-center">
+						<p class="text-slate-700"><strong>AI-Powered Lead Scoring</strong> - Know exactly who's ready to buy</p>
+						<p class="text-slate-700"><strong>GPT-Based Outreach</strong> - Messages that actually get replies</p>
+						<p class="text-slate-700"><strong>CRM-Integrated Automations</strong> - HubSpot, Pipedrive, Airtable & more</p>
+						<p class="text-slate-700"><strong><a href="#pricing" class="text-primary-600 hover:text-primary-700 underline">And more</a></strong> - Custom solutions tailored to your needs</p>
 					</div>
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
-					<p class="text-slate-700 font-medium text-base italic">Walk Away With a Custom Plan — Even if You Don't Hire Me</p>
+					<Button :isPrimary="true" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
+					<p class="text-slate-700 font-medium text-base italic -mt-4">Walk away with a custom plan, even if you don't hire me</p>
+					
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
@@ -38,22 +46,19 @@
 
 		<Section
 			id="services"
-			class="bg-white overflow-hidden space-y-16 border-t border-slate-200"
+			class="bg-white overflow-hidden space-y-8 border-t border-slate-200 !py-8 sm:!py-12"
 		>
 			<Container>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
 					<Title>{{ content.services.subtitle }}</Title>
-					<SubTitle class="text-slate-700">
-						You get a system that works the way you do
-					</SubTitle>
 				</div>
 			</Container>
 
 			<TasksSlider />
 		</Section>
 
-		<Section id="testimonials" class="bg-slate-50">
-			<Container class="space-y-16">
+		<Section id="testimonials" class="bg-slate-50 !py-8 sm:!py-12">
+			<Container class="space-y-8">
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
 					<Title>{{ content.testimonials.title }}</Title>
 					<SubTitle>
@@ -63,11 +68,7 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<SubTitle class="text-white-700">
-						⭐ Rated Top 1% on Upwork — 100+ projects delivered.
-					</SubTitle>
-					<br><br>
-					<Button :isPrimary="true" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -82,11 +83,11 @@
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
-					<Title>Get Your Free Strategy Plan Today</Title>
+					<Title>Let's find your easiest wins with AI.</Title>
 					<SubTitle class="text-white">
-						Discover exactly how AI can streamline your sales. Walk away with clear and actionable steps.
+						I'll personally audit your current sales flow (website, CRM, and outreach process) and show you where automation can save time and increase conversions. No calls, no commitments. Just clear next steps you can use right away.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Estimate Your Growth Potential'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
@@ -105,7 +106,6 @@
 				</div>
 			</Container>
 		</Section>
-
 
 		<Section id="contact" class="bg-gradient-to-br from-primary-600 to-primary-800">
 			<Container class="text-center text-white">
@@ -141,6 +141,7 @@
 				</div>
 			</Container>
 		</Section>
+
 	</main>
 </template>
 

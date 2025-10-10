@@ -8,10 +8,10 @@
   },
   "hero": {
     "title": {
-      "blue": "Boost MRR, Trials & Signups",
-      "black": " While Slashing Sales Workload"
+      "blue": "Cut Sales Busywork.",
+      "black": " Double Replies. No New Hires."
     },
-    "subtitle": "Let Vitor Pepicon leverage 20 years of experience to build custom AI automations that increase signups, trials, and conversions without the guesswork or extra staff.",
+    "subtitle": "Custom AI sales automations, built by Vitor Pepicon (20+ years in tech).<br><strong>Top 1% on Upwork</strong>, 100+ projects delivered.",
     "trustedBy": {
       "prefix": "Trusted by:",
       "suffix": "...and other smart teams who hate manual work."
@@ -82,7 +82,7 @@
 "pricing": {
   "plans": [
     {
-      "name": "Free Strategy Exchange",
+      "name": "Personalized AI Sales Audit",
       "price": "Free",
       "description": "Email exchange to clarify your goals and map your automation potential.",
       "features": [
@@ -110,7 +110,7 @@
       "features": [
         "Map your current sales flow",
         "AI lead scoring: know who's hot instantly",
-        "GPT-based outreach that gets 2–3x more replies",
+        "GPT-based outreach that gets 2-3x more replies",
         "Automate follow-ups, lead routing, and deal updates",
         "Integrates cleanly with HubSpot, Airtable, Pipedrive, Zoho, etc.",
         "Delivered with 1:1 training + post-launch support",
@@ -135,7 +135,7 @@
   ]
 },
   "faq": {
-    "title": "Got Questions?",
+    "title": "FAQ",
     "items": [
       {
         "question": "Can you integrate with my current CRM and tools?",
