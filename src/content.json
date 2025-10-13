@@ -8,10 +8,10 @@
   },
   "hero": {
     "title": {
-      "blue": "Custom AI sales automation,",
-      "black": " no new SaaS to learn"
+      "blue": "Lead scoring, outreach and CRM automation, ",
+      "black": "no new SaaS"
     },
-    "subtitle": "AI-powered lead scoring, outreach, and CRM automation, integrated with your current stack, delivered without slowing your team down.<br>By Vitor Pepicon (<strong>Top 1% on Upwork</strong>, 100+ projects, 20 years experience)",
+    "subtitle": "All custom built on top of your current CRM tools.<br>By Vitor Pepicon (<strong>Top 1% on Upwork</strong> · 20+ yrs in tech)",
     "trustedBy": {
       "prefix": "Trusted by:",
       "suffix": "...and other smart teams who hate manual work."
