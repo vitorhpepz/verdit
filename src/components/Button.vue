@@ -63,9 +63,9 @@ const buttonClass = computed(() => {
 	}
 	
 	if (props.isPrimary) {
-		return 'bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg mb-4';
+		return 'bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg';
 	}
-	return 'bg-white text-blue-700 hover:bg-blue-700 hover:text-white font-bold py-4 px-8 shadow-lg mb-4';
+	return 'bg-white text-blue-700 hover:bg-blue-700 hover:text-white font-bold py-4 px-8 shadow-lg';
 })
 
 const emit = defineEmits(['click'])

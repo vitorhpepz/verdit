@@ -12,7 +12,7 @@
 			<Container class="space-y-12 sm:space-y-16">
 				<div class="w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
 					<div class="space-y-3 sm:space-y-4">
-						<Title class="lg:text-5xl font-medium">
+						<Title class="lg:text-6xl font-medium">
 							<span class="text-primary-600">{{ content.hero.title.blue }}</span>
 							<span class="text-slate-900"> {{ content.hero.title.black }}</span>
 						</Title>
@@ -24,7 +24,7 @@
 				
 				<div class="space-y-4 text-center">
 					<Button :isPrimary="true" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
-					<p class="text-slate-700 font-medium text-base italic -mt-1">Completely free, no obligation to hire me</p>
+					<p class="text-slate-700 font-medium text-base italic -mt-3">Completely free, no obligation to hire me</p>
 					
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
