@@ -23,7 +23,7 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic -mt-3">Completely free, no obligation to hire me</p>
 					
 					<div class="h-8"></div>
@@ -61,7 +61,7 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<Button :isPrimary="true" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -80,7 +80,7 @@
 					<SubTitle class="text-white">
 						I'll personally audit your current sales flow (website, CRM, and outreach process) and show you where automation can save time and increase conversions. No calls, no commitments. Just clear next steps you can use right away.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
