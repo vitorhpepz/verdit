@@ -20,17 +20,10 @@
 						</SubTitle>
 					</div>
 					
-					<!-- 4-Bullet Value Stack -->
-					<div class="max-w-2xl mx-auto pt-6 pb-2 text-center">
-						<p class="text-slate-700"><strong>AI-Powered Lead Scoring</strong> - Know exactly who's ready to buy</p>
-						<p class="text-slate-700"><strong>GPT-Based Outreach</strong> - Messages that actually get replies</p>
-						<p class="text-slate-700"><strong>CRM-Integrated Automations</strong> - HubSpot, Pipedrive, Airtable & more</p>
-						<p class="text-slate-700"><strong><a href="#pricing" class="text-primary-600 hover:text-primary-700 underline">And more</a></strong> - Custom solutions tailored to your needs</p>
-					</div>
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Let's find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic -mt-4">Walk away with a custom plan, even if you don't hire me</p>
 					
 					<div class="h-8"></div>
@@ -68,7 +61,7 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<Button :isPrimary="true" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Let's find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
