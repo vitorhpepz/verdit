@@ -24,7 +24,7 @@
 				
 				<div class="space-y-4 text-center">
 					<Button :isPrimary="true" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
-					<p class="text-slate-700 font-medium text-base italic -mt-2">Completely free, no obligation to hire me</p>
+					<p class="text-slate-700 font-medium text-base italic -mt-1">Completely free, no obligation to hire me</p>
 					
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
@@ -80,7 +80,7 @@
 					<SubTitle class="text-white">
 						I'll personally audit your current sales flow (website, CRM, and outreach process) and show you where automation can save time and increase conversions. No calls, no commitments. Just clear next steps you can use right away.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Get My Personalized AI Sales Audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Lets find your highest-leverage sale automation'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
