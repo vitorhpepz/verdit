@@ -10,13 +10,11 @@
 		]" />
 		<Section class="bg-white !pt-12 !pb-8 sm:!pt-16 sm:!pb-12">
 			<Container class="space-y-12 sm:space-y-16">
-				<div class="w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
+				<div class="w-full text-center space-y-4 sm:space-y-6">
 					<div class="space-y-3 sm:space-y-4">
-						<Title class="lg:text-6xl font-medium">
-							<span class="text-primary-600">{{ content.hero.title.blue }}</span>
-							<span class="text-slate-900"> {{ content.hero.title.black }}</span>
+						<Title class="text-2xl lg:text-6xl font-medium" v-html="content.hero.title.blue + content.hero.title.black">
 						</Title>
-						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700" v-html="content.hero.subtitle">
+						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700 text-sm lg:text-lg" v-html="content.hero.subtitle">
 						</SubTitle>
 					</div>
 					
@@ -43,7 +41,7 @@
 		>
 			<Container>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
-					<Title>{{ content.services.subtitle }}</Title>
+					<Title class="!text-base !text-3xl !sm:text-4xl">{{ content.services.subtitle }}</Title>
 				</div>
 			</Container>
 

@@ -8,10 +8,10 @@
   },
   "hero": {
     "title": {
-      "blue": "Lead scoring, outreach & CRM automation, ",
-      "black": "no new SaaS"
+      "blue": "<span style='color: #2563eb;'>Custom AI sales automation,</span>",
+      "black": "<br><span style='color: #0f172a;'>no new SaaS</span>"
     },
-    "subtitle": "All custom built on top of your current CRM tools.<br>By Vitor Pepicon (<strong>Top 1% @ Upwork</strong> · 20+ yrs in tech)",
+    "subtitle": "<br><strong>AI-powered lead scoring, outreach, CRM automation</strong><br>All custom built on top of your current CRM tools<br>By Vitor Pepicon (<strong>Top 1% on Upwork</strong>, 20+ yrs in tech)",
     "trustedBy": {
       "prefix": "Trusted by:",
       "suffix": "...and other smart teams who hate manual work."
@@ -19,7 +19,7 @@
   },
   "services": {
     "title": "Everything You Need to Sell Without Losing Your Mind",
-    "subtitle": "Bespoke automations, crafted to fit your flow, not force a new one",
+    "subtitle": "Built and deployed quietly while you and your team stay focused on your work.",
     "features": [
       {
         "label": "AI-Powered Lead Scoring",
@@ -166,10 +166,9 @@
   "about": {
     "title": "Hey, I'm Vitor Pepicon 👋",
     "content": [
-      "So, for about 20 years, I've been deep in the tech trenches, messing with everything from trading platforms to AI and smart contracts.",
-      "And the biggest thing I've learned is that it's never about just grabbing the fanciest tool off the shelf. It's really about getting a setup that actually clicks with how you already work. And then I see too many sales teams struggling, thinking they had to copy the big guys and just hire more people to fix problems. That's why I believe smart automations, built to fit your systems, are the right answer. Keeps you agile, lean, and making the most of current AI.",
-      "If you feel like you live in your inbox, drowning in manual tasks instead of actually selling, we should talk. When done right, this kind of automation frees you up to focus on closing deals and talking to the right leads. Let the tech handle the repetitive stuff that eats up your time.",
-      "Let's chat and see what that would look like with your current process and tools. We can sketch out some ideas and give you a clear plan. No pressure, no fluff."
+      "For about 20 years I've been deep in the tech trenches, building systems that make teams faster and less busy. From trading platforms to AI automations, I've learned that the best tools are the ones that quietly fit into how you already work.",
+      "Too many sales teams try to scale by hiring more people, when what they really need are smart automations that take care of the repetitive stuff. The right setup keeps you agile, efficient and focused on what actually drives revenue.",
+      "If you feel like you live in your inbox instead of closing deals, we should talk. I'll help you design automations that blend into your current tools, so your team stays productive while the tech does the heavy lifting. No pressure, no fluff, just practical ideas that work."
     ]
   },
   "footer": {
