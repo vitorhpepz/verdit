@@ -44,8 +44,8 @@
     ]
   },
   "testimonials": {
-    "title": "Small Teams. Big Results.",
-    "subtitle": "Here's what happens when founders stop winging sales ops.",
+    "title": "AI that helps you find, nurture, and close",
+    "subtitle": "",
     "items": [
       {
         "name": "Mark Kempton",
@@ -166,9 +166,10 @@
   "about": {
     "title": "Hey, I'm Vitor Pepicon 👋",
     "content": [
-      "For about 20 years I've been deep in the tech trenches, building systems that make teams faster and less busy. From trading platforms to AI automations, I've learned that the best tools are the ones that quietly fit into how you already work.",
-      "Too many sales teams try to scale by hiring more people, when what they really need are smart automations that take care of the repetitive stuff. The right setup keeps you agile, efficient and focused on what actually drives revenue.",
-      "If you feel like you live in your inbox instead of closing deals, we should talk. I'll help you design automations that blend into your current tools, so your team stays productive while the tech does the heavy lifting. No pressure, no fluff, just practical ideas that work."
+      "For about 20 years I've been building systems that help teams do more and stay less busy.",
+      "Now we're living in incredible times. AI can connect to the tools we already use and make them smarter. That changes everything.",
+      "These days my work is all about that. I help companies automate what's repetitive and bring AI where it truly helps. No new platforms, just simple and useful automations that make work flow better.",
+      "Take a look at my offers here on the website or send me a message. I'd love to show you how much faster and simpler your team can run with the right setup."
     ]
   },
   "footer": {

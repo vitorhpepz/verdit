@@ -51,10 +51,7 @@
 		<Section id="testimonials" class="bg-slate-50 !py-8 sm:!py-12">
 			<Container class="space-y-8">
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
-					<Title>{{ content.testimonials.title }}</Title>
-					<SubTitle>
-						{{ content.testimonials.subtitle }}
-					</SubTitle>
+					<h2 class="text-xl lg:text-3xl font-display tracking-tight text-center">{{ content.testimonials.title }}</h2>
 				</div>
 				<Testimonials />
 
