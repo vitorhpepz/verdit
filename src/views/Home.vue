@@ -12,7 +12,7 @@
 			<Container class="space-y-12 sm:space-y-16">
 				<div class="w-full text-center space-y-4 sm:space-y-6">
 					<div class="space-y-3 sm:space-y-4">
-						<Title class="text-xl lg:text-6xl font-medium" v-html="content.hero.title.blue + content.hero.title.black">
+						<Title class="text-2xl lg:text-6xl font-medium" v-html="content.hero.title.blue + content.hero.title.black">
 						</Title>
 						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700 text-sm lg:text-lg" v-html="content.hero.subtitle">
 						</SubTitle>
