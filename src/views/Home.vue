@@ -117,7 +117,7 @@
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center text-base">
 					<SubTitle v-text="'Have questions or requests? E-mail Vitor directly'" />
 					<SubTitle class="text-white-700 underline">
-						<a href="mailto:vitor@verditlabs.com?Subject=Contact%20via%20Verdit&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">
+						<a href="mailto:vitor@verditlabs.com?Subject=Contact%20via%20VerditLabs&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">
             				vitor@verditlabs.com
 						</a>
 					</SubTitle>

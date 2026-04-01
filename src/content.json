@@ -11,7 +11,7 @@
       "blue": "<span style='color: #2563eb;'>Custom AI sales automation,</span>",
       "black": "<br><span style='color: #0f172a;'>no new SaaS</span>"
     },
-    "subtitle": "<br><strong>AI-powered lead scoring, outreach, CRM automation</strong><br>All custom built on top of your current CRM tools<br>By Vitor Pepz (<strong>Top 1% on Upwork</strong>, 20+ yrs in tech)",
+    "subtitle": "<br><strong>AI-powered lead scoring, outreach, CRM automation</strong><br>All custom built on top of your current CRM tools<br>By Vitor Pepicon (<strong>Top 1% on Upwork</strong>, 20 years in tech)",
     "trustedBy": {
       "prefix": "Trusted by:",
       "suffix": "...and other smart teams who hate manual work."
@@ -164,16 +164,16 @@
     ]
   },
   "about": {
-    "title": "Hey, I'm Vitor Pepz 👋",
+    "title": "Hey, I'm Vitor Pepicon 👋",
     "content": [
-      "For about 20 years I've been building systems that help teams do more and stay less busy.",
-      "Now we're living in incredible times. AI can connect to the tools we already use and make them smarter. That changes everything.",
+      "Top 1% on Upwork, 100+ projects",
+      "We are living in incredible times. AI can connect to the tools we already use and make them smarter. That changes everything.",
       "These days my work is all about that. I help companies automate what's repetitive and bring AI where it truly helps. No new platforms, just simple and useful automations that make work flow better.",
       "Take a look at my offers here on the website or send me a message. I'd love to show you how much faster and simpler your team can run with the right setup."
     ]
   },
   "footer": {
-    "companyName": "Verdit",
+    "companyName": "VerditLabs",
     "tagline": "Outsell the Big Guys, With Less Hustle, More Flow.",
     "menuItems": [
       { "label": "Features", "link": "#features" },
