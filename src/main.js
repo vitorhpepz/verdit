@@ -6,7 +6,22 @@ import './main.css'
 
 const GA4_MEASUREMENT_ID = 'G-4BFEK93YCL'
 const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
-const TALLY_SUBMIT_EVENT_NAME = 'manual_event_SUBMIT_LEAD_FORM'
+
+function gtagSendEvent(url, eventParameters = {}) {
+  const callback = function () {
+    if (typeof url === 'string') {
+      window.location = url
+    }
+  }
+
+  window.gtag('event', 'conversion_event_default', {
+    event_callback: callback,
+    event_timeout: 2000,
+    ...eventParameters
+  })
+
+  return false
+}
 
 const app = createApp(App)
 const hostname = window.location.hostname
@@ -52,7 +67,7 @@ window.addEventListener('message', (event) => {
     return
   }
 
-  window.gtag('event', TALLY_SUBMIT_EVENT_NAME, {
+  gtagSendEvent(undefined, {
     form_id: payload.formId,
     form_name: payload.formName,
     submission_id: payload.id,
