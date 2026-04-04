@@ -8,7 +8,7 @@
 				<figcaption class="flex items-center justify-between gap-4">
 					<div class="space-y-1">
 						<h3 v-text="testimonial.name" class="font-display" />
-						<p v-text="testimonial.job" class="text-sm text-slate-500" />
+						<p v-text="testimonial.job" class="text-base sm:text-sm text-slate-500" />
 					</div>
 					<img :src="testimonial.src" :alt="testimonial.name" class="w-14 aspect-square rounded-full" />
 				</figcaption>

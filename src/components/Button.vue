@@ -2,7 +2,7 @@
 	<a
 		:class="[
 			'inline-block font-medium text-center py-2.5 px-4 rounded-full border transition-colors duration-300 cursor-pointer',
-			isPricingCard ? 'text-sm' : 'text-xl',
+			isPricingCard ? 'text-base sm:text-sm' : 'text-xl',
 			buttonClass
 		]"
 		:href="`#tally-open=${tallyOpen}${whatButton ? `&whatButton=${whatButton}` : ''}${emojiText ? `&emoji=${emojiText}` : ''}${emojiAnimation ? `&animation=${emojiAnimation}` : ''}`"

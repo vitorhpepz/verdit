@@ -7,13 +7,13 @@
 			{ label: 'FAQ', link: '#faq' },
 			{ label: 'Contact', link: '#contact' }
 		]" />
-		<Section class="bg-white !pt-12 !pb-8 sm:!pt-16 sm:!pb-12">
+		<Section class="bg-white !pt-20 !pb-8 sm:!pt-28 sm:!pb-12">
 			<Container class="space-y-12 sm:space-y-16">
 				<div class="w-full text-center space-y-4 sm:space-y-6">
-					<div class="space-y-3 sm:space-y-4">
+					<div class="space-y-12 sm:space-y-16">
 						<Title class="text-2xl lg:text-6xl font-medium" v-html="content.hero.title.black + content.hero.title.blue">
 						</Title>
-						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700 text-sm lg:text-lg" v-html="content.hero.subtitle">
+						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700 text-base lg:text-lg" v-html="content.hero.subtitle">
 						</SubTitle>
 					</div>
 					
@@ -29,7 +29,7 @@
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
 					<p class="font-display">{{ content.hero.trustedBy.suffix }}</p>
-					<p class="text-sm text-slate-600 max-w-2xl mx-auto">{{ content.hero.trustedBy.tagline }}</p>
+					<p class="text-base sm:text-sm text-slate-600 max-w-2xl mx-auto">{{ content.hero.trustedBy.tagline }}</p>
 				</div>
 				
 			</Container>
@@ -91,7 +91,7 @@
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
 					<div v-for="faq in content.faq.items" class="space-y-1 sm:space-y-4 w-full">
 						<h3 class="font-display text-lg">{{ faq.question }}</h3>
-						<p class="text-sm">{{ faq.answer }}</p>
+						<p class="text-base sm:text-sm">{{ faq.answer }}</p>
 					</div>
 				</div>
 			</Container>

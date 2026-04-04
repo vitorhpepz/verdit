@@ -8,7 +8,7 @@
 			<p
 				v-if="pricing.badge"
 				v-text="pricing.badge"
-				class="text-xs uppercase tracking-[0.2em] text-center font-semibold"
+				class="text-sm sm:text-xs uppercase tracking-[0.2em] text-center font-semibold"
 				:class="{ 'text-white': pricing.recommended, 'text-slate-400': !pricing.recommended }"
 			/>
 			<h3 v-text="pricing.price" class="font-display text-5xl text-center" />
@@ -28,7 +28,7 @@
 				:isPricingCard="true"
 				class="w-full transition-all duration-300 hover:scale-105"
 			/>
-			<div class="flex flex-col gap-4 text-sm">
+			<div class="flex flex-col gap-4 text-base sm:text-sm">
 				<div
 					v-for="feature in pricing.features"
 					class="flex items-start gap-4 group-hover:text-white transition-colors duration-300"
@@ -41,7 +41,7 @@
 			<p
 				v-if="pricing.bottomLine"
 				v-text="pricing.bottomLine"
-				class="text-sm leading-relaxed"
+				class="text-base sm:text-sm leading-relaxed"
 				:class="{ 'text-white': pricing.recommended, 'text-slate-300': !pricing.recommended }"
 			/>
 		</div>

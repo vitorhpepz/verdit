@@ -7,7 +7,7 @@
 					<component :is="task.icon" class="w-9" />
 				</div>
 				<h2 v-text="task.title" class="text-xl font-display" />
-				<p v-text="task.description" class="text-sm text-slate-600" />
+				<p v-text="task.description" class="text-base lg:text-sm text-slate-600" />
 			</div>
 		</div>
 
