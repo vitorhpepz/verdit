@@ -8,43 +8,44 @@
   },
   "hero": {
     "title": {
-      "blue": "<span style='color: #2563eb;'>Custom AI sales automation,</span>",
-      "black": "<br><span style='color: #0f172a;'>no new SaaS</span>"
+      "blue": " <span style='color: #2563eb;'>No new hires.</span>",
+      "black": "<span style='color: #0f172a;'>More clients.</span>"
     },
-    "subtitle": "<br><strong>AI-powered lead scoring, outreach, CRM automation</strong><br>All custom built on top of your current CRM tools<br>By Vitor Pepicon (<strong>Top 1% on Upwork</strong>, 20 years in tech)",
+    "subtitle": "I build AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, on autopilot, inside your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
     "trustedBy": {
       "prefix": "Trusted by:",
-      "suffix": "...and other smart teams who hate manual work."
+      "suffix": "...and other lean teams that automated before they hired.",
+      "tagline": "Built quietly into your existing stack while your team stays focused on closing deals."
     }
   },
   "services": {
-    "title": "Everything You Need to Sell Without Losing Your Mind",
-    "subtitle": "Built and deployed quietly while you and your team stay focused on your work.",
+    "title": "What I build for staffing teams",
+    "subtitle": "Every system is custom built around your client acquisition process. Nothing off the shelf.",
     "features": [
       {
-        "label": "AI-Powered Lead Scoring",
-        "description": "Instantly spot who's ready to buy and who's just browsing. We go beyond basic rules, using AI to analyze your specific data like website behaviour, email engagement, and enriched firmographics to identify prospects matching your ideal customer profile. This custom model learns over time, ensuring your sales team consistently focuses its energy on the highest-potential leads, directly surfaced within your CRM.",
+        "label": "AI Powered Prospect Scoring",
+        "description": "AI scores every prospect using your CRM data, engagement signals, and complete company details. Your sales team stops guessing and calls the hiring managers most likely to convert, right from inside your CRM.",
         "img": "/imgs/features/servers.jpg"
       },
       {
-        "label": "Personalized Outreach on Autopilot",
-        "description": "Custom messages that actually get replies, automatically. Trigger relevant, context-aware outreach based on lead scores, specific actions (like demo requests or content downloads), or enrichment data. We can leverage AI (like GPT) trained on your value proposition to draft initial messages or follow-ups that resonate, moving beyond generic templates to achieve higher engagement. No spam, just timely, personalized communication that drives conversions.",
+        "label": "Personalized Client Outreach on Autopilot",
+        "description": "AI powered sequences that write relevant messages for each role, to hiring managers and HR leaders. Real personalization at scale across email and optionally LinkedIn. You get replies from decision makers, not spam complaints.",
         "img": "/imgs/features/email.jpg"
       },
       {
-        "label": "CRM & Workflow Automation",
-        "description": "Follow-ups, lead routing, stage updates, all handled without lifting a finger.",
+        "label": "Prospect Research on Autopilot",
+        "description": "As companies enter your pipeline, missing data gets filled automatically, including company size, hiring volume, industry, and direct contacts, pulled from multiple B2B sources. No more manual LinkedIn stalking. Complete context on every prospect, inside your CRM.",
         "img": "/imgs/features/flowchart.jpg"
       },
       {
-        "label": "Real-Time Data Enrichment",
-        "description": "Enrich your leads with fresh, actionable info from multiple sources, automatically. As leads enter your pipeline or progress through stages, we automatically pull in missing details, like company size, funding status, tech stack, or direct contact info, from reliable B2B databases and online sources. This eliminates manual research, ensures your data is accurate and complete, and provides your team with the crucial context needed for effective scoring and personalized outreach, right within your CRM.",
-        "img": "/imgs/features/report.jpg"
+        "label": "Email Infrastructure & Deliverability",
+        "description": "Cold outreach only works if it hits the inbox. I set up sending domains, configure email authentication, warm up mailboxes, and monitor sender reputation so your emails land in the inbox. Production ready infrastructure that doesn't trigger spam filters.",
+        "img": "/imgs/features/servers.jpg"
       }
     ]
   },
   "testimonials": {
-    "title": "AI that helps you find, nurture, and close",
+    "title": "What clients say",
     "subtitle": "",
     "items": [
       {
@@ -80,57 +81,70 @@
     ]
   },
 "pricing": {
+  "intro": "No sales calls required. Pick a tier and go.",
   "plans": [
     {
-      "name": "Personalized AI Sales Audit",
+      "name": "Sales Audit",
       "price": "Free",
-      "description": "Email exchange to clarify your goals and map your automation potential.",
+      "description": "I review your client acquisition process, tools, and outreach, and reply with 2 to 3 high impact automation ideas within 48 hours.",
       "features": [
-        "Get actionable insights you can use immediately",
-        "Personalized recommendations for your business"
-      ]
-    },
-    {
-      "name": "AI Sales Jumpstart",
-      "price": "$750",
-      "description": "A fast, focused way to see what AI can do for your sales.",
-      "features": [
-        "90-minute strategy + audit session",
-        "Review of your tools, workflows, and bottlenecks",
-        "One real automation (lead scoring, GPT follow-ups, etc), fully set up in your tools so you don't have to imagine what it'll do. You'll see it working.",
-        "Actionable roadmap tailored to your stack",
-        "Apply this cost toward a full build",
-        "What you get: A working automation in your tools + a clear roadmap to save 10-20 hours/month and boost lead conversion by up to 30% without hiring anyone."
-      ]
-    },
-    {
-      "name": "Custom AI Sales Engine",
-      "price": "Starting at $3,500",
-      "description": "Replace manual work with smart, invisible systems, fully built around your real-life process.",
-      "features": [
-        "Map your current sales flow",
-        "AI lead scoring: know who's hot instantly",
-        "GPT-based outreach that gets 2-3x more replies",
-        "Automate follow-ups, lead routing, and deal updates",
-        "Integrates cleanly with HubSpot, Airtable, Pipedrive, Zoho, etc.",
-        "Delivered with 1:1 training + post-launch support",
-        "What you get: Save 20-40 hours/month, double your reply rates, and run like a team twice your size, but without adding headcount."
+        "Personalized review of your CRM and outreach process",
+        "Highest leverage client acquisition automation opportunities identified",
+        "Actionable recommendations you can use immediately",
+        "No calls, no commitments"
       ],
-      "recommended": true
+      "cta": "Get your free sales audit"
     },
     {
-      "name": "Monthly AI Sales Advisor",
-      "price": "From $2,500/mo",
-      "description": "Ongoing strategy, optimization, and iteration for teams who want to keep improving.",
+      "name": "Launchpad",
+      "price": "$1,500",
+      "description": "Your first AI outbound system, live in your stack within 2 weeks.",
       "features": [
-        "Monthly reviews + optimizations to keep everything sharp",
-        "New automations based on team needs and campaign changes",
-        "Performance reports with clear next steps",
-        "Add new channels or workflows (email, WhatsApp, LinkedIn, etc.)",
-        "Fast support via email or Slack",
-        "Weekly async Loom check-ins",
-        "What you get: A sales ops brain on retainer: turning data into deals and keeping your system evolving as fast as your pipeline."
-      ]
+        "Full audit plus ideal client profile",
+        "Email infrastructure setup (sending domains, authentication, and warmup)",
+        "One production-ready outreach sequence targeting hiring managers",
+        "Prospecting system configured with your ideal client criteria plus first campaign batch loaded and ready to send",
+        "30 minute video walkthrough of everything built",
+        "Cost applies toward a Full Build"
+      ],
+      "cta": "Get started",
+      "bottomLine": "What you get: hiring managers and HR leaders landing in your inbox within 2 weeks, plus a clear roadmap to scale."
+    },
+    {
+      "name": "Full Build",
+      "price": "Starting at $4,000",
+      "description": "Complete AI powered client acquisition engine, scoring, outreach, automation, and everything to run it.",
+      "features": [
+        "Everything in Launchpad, plus:",
+        "AI prospect scoring built into your CRM",
+        "Multi step AI powered outreach (email plus optional LinkedIn)",
+        "Automated follow-ups, prospect routing, deal updates",
+        "Automatic reply sorting (AI flags interested, not interested, and out-of-office)",
+        "Prospecting system configured with automatic data completion, first campaign loaded, scored, and ready to send",
+        "Performance reporting template",
+        "Works with HubSpot, Bullhorn, Pipedrive, Zoho, etc.",
+        "1:1 training plus 2 weeks post launch support"
+      ],
+      "cta": "Get started",
+      "bottomLine": "What you get: save 20 to 40 hours each month on client acquisition, double your reply rates, and fill your pipeline without hiring a sales rep.",
+      "recommended": true,
+      "badge": "Most popular"
+    },
+    {
+      "name": "Managed Ops",
+      "price": "$2,500/mo",
+      "description": "I run your client pipeline end to end, scoped for lean teams running 1 to 2 active outbound campaigns.",
+      "features": [
+        "Monthly prospect list refreshes with new target companies",
+        "Campaign monitoring: inbox placement, opens, and replies",
+        "Testing and optimizing outreach copy",
+        "Automatic reply sorting, interested prospects forwarded to you",
+        "Monthly performance report (data plus video walkthrough)",
+        "Additional campaigns or verticals scoped as add-ons",
+        "Fast support via email or Slack"
+      ],
+      "cta": "Get started",
+      "bottomLine": "What you get: a done for you client acquisition engine. I handle everything upstream of the client conversation."
     }
   ]
 },
@@ -139,7 +153,7 @@
     "items": [
       {
         "question": "Can you integrate with my current CRM and tools?",
-        "answer": "Absolutely. Works best if your tools play nice with Zapier, Make, or have an API, but we can handle the weird ones too."
+        "answer": "Yes. HubSpot, Bullhorn, Pipedrive, Zoho, and anything with an API or Zapier/Make integration. I also set up email infrastructure from scratch if you need outbound built from zero."
       },
       {
         "question": "Do I need technical expertise to work with you?",
@@ -147,7 +161,7 @@
       },
       {
         "question": "How quickly can I expect results?",
-        "answer": "Most teams see more replies, better lead quality, and fewer headaches within the first month."
+        "answer": "Launchpad clients see prospects flowing within 2 weeks. Full Build clients typically see measurable improvements in reply rates and pipeline within the first month."
       },
       {
         "question": "What if I'm not even sure what I need?",
@@ -155,26 +169,33 @@
       },
       {
         "question": "Is this just another AI tool?",
-        "answer": "Nope. This isn't some off-the-shelf tool. It's hands-on consulting plus custom-built automation tailored to your process, tools, and goals."
+        "answer": "No. I don't sell software. I build custom automation into your existing tools and, with Managed Ops, run your entire client outreach for you. Hands on consulting plus done for you execution."
       },
       {
         "question": "Do I need to commit to the monthly plan?",
-        "answer": "Not at all. You can stop after getting your Custom AI Sales Engine built and run it yourself. The monthly plan is optional for teams who want ongoing optimization and support."
+        "answer": "No. You can stop after the Full Build and run it yourself. Managed Ops is for teams who want me to operate and optimize the client pipeline month over month."
+      },
+      {
+        "question": "What's the difference between Full Build and Managed Ops?",
+        "answer": "Full Build installs the engine. Managed Ops means I run it. With Full Build, you get a complete system and training. With Managed Ops, I handle prospect lists, campaigns, inbox placement, and automatic reply sorting, and you just take the client meetings."
+      },
+      {
+        "question": "What does Managed Ops actually include each month?",
+        "answer": "Fresh prospect lists, campaign monitoring and optimization, testing different message versions on outreach copy, AI powered reply sorting with interested prospects forwarded to you, and a performance report with video walkthrough."
       }
     ]
   },
   "about": {
     "title": "Hey, I'm Vitor Pepicon 👋",
     "content": [
-      "Top 1% on Upwork, 100+ projects",
-      "We are living in incredible times. AI can connect to the tools we already use and make them smarter. That changes everything.",
-      "These days my work is all about that. I help companies automate what's repetitive and bring AI where it truly helps. No new platforms, just simple and useful automations that make work flow better.",
-      "Take a look at my offers here on the website or send me a message. I'd love to show you how much faster and simpler your team can run with the right setup."
+      "100+ projects as a Top 1% Upwork consultant. Now I focus on one thing: building AI powered client acquisition systems for staffing agencies that need more clients without hiring more reps.",
+      "I build prospect scoring, AI powered outreach to hiring managers, and CRM automations, and with Managed Ops, I run the whole pipeline for you. No new platforms. No new hires. Just more client meetings on your calendar.",
+      "Send me your setup and I'll reply with a free sales audit within 48 hours."
     ]
   },
   "footer": {
     "companyName": "VerditLabs",
-    "tagline": "Outsell the Big Guys, With Less Hustle, More Flow.",
+    "tagline": "AI powered client acquisition for staffing agencies.",
     "menuItems": [
       { "label": "Features", "link": "#features" },
       { "label": "Our Consultancy Services", "link": "/" },

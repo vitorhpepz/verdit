@@ -13,7 +13,7 @@
 
 		<!-- DESKTOP -->
 		<Container class="space-y-4 hidden lg:block">
-			<div class="grid grid-cols-3 gap-4">
+			<div class="grid grid-cols-2 xl:grid-cols-4 gap-6">
 				<div
 					v-for="task in tasks"
 					class="flex flex-col gap-4"
@@ -38,7 +38,6 @@ import { ref, shallowRef } from "vue"
 import content from '../content.json'
 
 const tasks = ref(content.services.features
-	.filter(feature => feature.label !== "CRM & Workflow Automation")
 	.map((feature, index) => ({
 		icon: shallowRef([IconTaskReporting, IconTaskInventory, IconTaskContacts][index % 3]),
 		title: feature.label,

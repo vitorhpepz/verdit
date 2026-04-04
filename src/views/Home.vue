@@ -5,14 +5,13 @@
 			{ label: 'Testimonials', link: '#testimonials' },
 			{ label: 'Pricing', link: '#pricing' },
 			{ label: 'FAQ', link: '#faq' },
-			{ label: 'Contact', link: '#contact' },
-			{ label: 'Opensource Sales AI Tool', link: '/freetool' }
+			{ label: 'Contact', link: '#contact' }
 		]" />
 		<Section class="bg-white !pt-12 !pb-8 sm:!pt-16 sm:!pb-12">
 			<Container class="space-y-12 sm:space-y-16">
 				<div class="w-full text-center space-y-4 sm:space-y-6">
 					<div class="space-y-3 sm:space-y-4">
-						<Title class="text-2xl lg:text-6xl font-medium" v-html="content.hero.title.blue + content.hero.title.black">
+						<Title class="text-2xl lg:text-6xl font-medium" v-html="content.hero.title.black + content.hero.title.blue">
 						</Title>
 						<SubTitle class="w-full max-w-2xl mx-auto text-slate-700 text-sm lg:text-lg" v-html="content.hero.subtitle">
 						</SubTitle>
@@ -21,15 +20,16 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
-					<p class="text-slate-700 font-medium text-base italic -mt-3">Completely free, no obligation to hire me</p>
+					<Button :isPrimary="true" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
+					<p class="text-slate-700 font-medium text-base italic -mt-3">No calls. I'll review your setup and reply within 48 hours.</p>
 					
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
 						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
 					</div>
-					<p class="font-display">{{ content.hero.trustedBy.suffix }}</p>					
+					<p class="font-display">{{ content.hero.trustedBy.suffix }}</p>
+					<p class="text-sm text-slate-600 max-w-2xl mx-auto">{{ content.hero.trustedBy.tagline }}</p>
 				</div>
 				
 			</Container>
@@ -41,6 +41,7 @@
 		>
 			<Container>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
+					<Title class="text-2xl lg:text-4xl">{{ content.services.title }}</Title>
 					<h2 class="text-xl lg:text-3xl font-display tracking-tight text-center">{{ content.services.subtitle }}</h2>
 				</div>
 			</Container>
@@ -56,7 +57,7 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<Button :isPrimary="true" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -64,6 +65,7 @@
 
 		<Section id="pricing" class="bg-slate-900">
 			<Container class="text-white space-y-16">
+				<p class="text-center text-slate-300 font-display">{{ content.pricing.intro }}</p>
 				<PricingCards />
 			</Container>
 		</Section>
@@ -71,11 +73,11 @@
 		<Section class="bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 			<Container class="text-center text-white">
 				<div class="w-full max-w-lg mx-auto space-y-6">
-					<Title>Let's find your easiest wins with AI.</Title>
+					<Title>Not sure where to start?</Title>
 					<SubTitle class="text-white">
-						I'll personally audit your current sales flow (website, CRM, and outreach process) and show you where automation can save time and increase conversions. No calls, no commitments. Just clear next steps you can use right away.
+						Send me your website, CRM setup, and a few words about your client acquisition process. I'll reply within 48 hours with a personalized audit and 2 to 3 automation ideas you can act on immediately.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Let\'s find your highest-leverage sales automation'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
@@ -115,17 +117,19 @@
 					</div>
 				</div>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center text-base">
-					<SubTitle v-text="'Have questions or requests? E-mail Vitor directly'" />
+					<SubTitle v-text="'Questions? I reply within 24 hours.'" />
 					<SubTitle class="text-white-700 underline">
 						<a href="mailto:vitor@verditlabs.com?Subject=Contact%20via%20VerditLabs&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">
             				vitor@verditlabs.com
 						</a>
 					</SubTitle>
-					<SubTitle class="text-white-700">
-						<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 hover:underline">
-							Follow Vitor on Twitter →
-						</a>
-					</SubTitle>
+					<div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+						<SubTitle class="text-white-700">
+							<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 hover:underline">
+								Follow Vitor on Twitter →
+							</a>
+						</SubTitle>
+					</div>
 				</div>
 			</Container>
 		</Section>

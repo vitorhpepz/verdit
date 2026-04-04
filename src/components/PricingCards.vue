@@ -5,6 +5,12 @@
 			class="group w-full p-6 sm:p-8 rounded-3xl flex flex-col gap-6 sm:gap-10 transition-all duration-300 border-2 border-transparent hover:border-white hover:shadow-2xl hover:-translate-y-4"
 			:class="{ 'bg-primary-600': pricing.recommended }"
 		>
+			<p
+				v-if="pricing.badge"
+				v-text="pricing.badge"
+				class="text-xs uppercase tracking-[0.2em] text-center font-semibold"
+				:class="{ 'text-white': pricing.recommended, 'text-slate-400': !pricing.recommended }"
+			/>
 			<h3 v-text="pricing.price" class="font-display text-5xl text-center" />
 			<div class="space-y-2">
 				<p v-text="pricing.name" class="text-lg font-display text-center" />
@@ -17,7 +23,7 @@
 			</div>
 			<Button
 				:whatButton="getWhatButton(pricing.price)"
-				v-text="pricing.price === 'Free' ? 'Estimate Your Growth Potential' : 'Get started'"
+				v-text="pricing.cta || 'Get started'"
 				:isPrimary="pricing.recommended"
 				:isPricingCard="true"
 				class="w-full transition-all duration-300 hover:scale-105"
@@ -32,6 +38,12 @@
 					<span v-text="feature" />
 				</div>
 			</div>
+			<p
+				v-if="pricing.bottomLine"
+				v-text="pricing.bottomLine"
+				class="text-sm leading-relaxed"
+				:class="{ 'text-white': pricing.recommended, 'text-slate-300': !pricing.recommended }"
+			/>
 		</div>
 	</div>
 </template>
