@@ -20,7 +20,7 @@
 				</div>
 				
 				<div class="space-y-4 text-center">
-					<Button :isPrimary="true" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get your free outreach audit'" :whatButton="'free_strategy'" />
 					<p class="text-slate-700 font-medium text-base italic -mt-3">No calls. I'll review your setup and reply within 48 hours.</p>
 					
 					<div class="h-8"></div>
@@ -57,7 +57,7 @@
 				<Testimonials />
 
 				<div class="text-center">
-					<Button :isPrimary="true" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="true" :buttonText="'Get your free outreach audit'" :whatButton="'free_strategy'" />
 				</div>
 				
 			</Container>
@@ -65,7 +65,7 @@
 
 		<Section id="pricing" class="bg-slate-900">
 			<Container class="text-white space-y-16">
-				<p class="text-center text-slate-300 font-display">{{ content.pricing.intro }}</p>
+				<Title class="text-center text-white">{{ content.pricing.intro }}</Title>
 				<PricingCards />
 			</Container>
 		</Section>
@@ -77,7 +77,7 @@
 					<SubTitle class="text-white">
 						Send me your website, CRM setup, and a few words about your client acquisition process. I'll reply within 48 hours with a personalized audit and 2 to 3 automation ideas you can act on immediately.
 					</SubTitle>
-					<Button :isPrimary="false" :buttonText="'Get your free sales audit'" :whatButton="'free_strategy'" />
+					<Button :isPrimary="false" :buttonText="'Get your free outreach audit'" :whatButton="'free_strategy'" />
 				</div>
 			</Container>
 		</Section>
@@ -105,7 +105,7 @@
 					<!-- Text Section -->
 					<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-start text-left">
 						<Title class="mb-6 text-left">{{ content.about.title }}</Title>
-						<SubTitle class="text-white mb-4 text-left" v-for="paragraph in content.about.content">
+						<SubTitle class="text-white mb-5 text-left text-lg lg:text-xl leading-relaxed" v-for="paragraph in content.about.content">
 							{{ paragraph }}
 						</SubTitle>
 					</div>

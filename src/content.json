@@ -84,7 +84,7 @@
   "intro": "No sales calls required. Pick a tier and go.",
   "plans": [
     {
-      "name": "Sales Audit",
+      "name": "Outreach Audit",
       "price": "Free",
       "description": "I review your client acquisition process, tools, and outreach, and reply with 2 to 3 high impact automation ideas within 48 hours.",
       "features": [
@@ -93,7 +93,7 @@
         "Actionable recommendations you can use immediately",
         "No calls, no commitments"
       ],
-      "cta": "Get your free sales audit"
+      "cta": "Get your free outreach audit"
     },
     {
       "name": "Launchpad",
@@ -186,11 +186,13 @@
     ]
   },
   "about": {
-    "title": "Hey, I'm Vitor Pepicon 👋",
+    "title": "",
     "content": [
-      "100+ projects as a Top 1% Upwork consultant. Now I focus on one thing: building AI powered client acquisition systems for staffing agencies that need more clients without hiring more reps.",
-      "I build prospect scoring, AI powered outreach to hiring managers, and CRM automations, and with Managed Ops, I run the whole pipeline for you. No new platforms. No new hires. Just more client meetings on your calendar.",
-      "Send me your setup and I'll reply with a free sales audit within 48 hours."
+      "Hi! 👋",
+      "I help staffing agencies get more clients without hiring more reps. I build AI powered outbound systems that put hiring managers on your calendar, and with Managed Ops, I run the whole thing for you.",
+      "No new platforms. No new hires. Just more clients.",
+      "Send me your setup and I'll reply with a free outreach audit within 48 hours.",
+      "Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered."
     ]
   },
   "footer": {
