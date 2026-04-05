@@ -1,7 +1,7 @@
 <template>
 	<header class="shadow py-3 md:py-4 sticky top-0 z-10 bg-white">
 		<Container class="relative flex items-center justify-between gap-4 text-slate-900 text-base">
-			<div class="flex items-center gap-8">
+			<div class="flex items-center gap-8 md:gap-12 lg:gap-16">
 				<div class="flex items-center gap-3">
 					<router-link :to="'/'" class="text-4xl font-bold">
 						Verdit<span class="text-primary-600">Labs</span>

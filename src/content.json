@@ -11,7 +11,7 @@
       "blue": " <span style='color: #2563eb;'>No new hires.</span>",
       "black": "<span style='color: #0f172a;'>More clients.</span>"
     },
-    "subtitle": "I build AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, on autopilot, inside your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
+    "subtitle": "I build and run AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, on autopilot, in your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
     "trustedBy": {
       "prefix": "Trusted by:",
       "suffix": "...and other lean teams that automated before they hired.",
@@ -19,7 +19,7 @@
     }
   },
   "services": {
-    "title": "What I build for staffing teams",
+    "title": "What I build and run for you",
     "subtitle": "Every system is custom built around your client acquisition process. Nothing off the shelf.",
     "features": [
       {
@@ -81,70 +81,55 @@
     ]
   },
 "pricing": {
-  "intro": "No sales calls required. Pick a tier and go.",
+  "intro": "I build the system. Then I run it for you.",
   "plans": [
     {
       "name": "Outreach Audit",
       "price": "Free",
-      "description": "I review your client acquisition process, tools, and outreach, and reply with 2 to 3 high impact automation ideas within 48 hours.",
+      "description": "I review your outreach process, tools, and setup, and reply with 2-3 high impact automation ideas within 48 hours.",
       "features": [
         "Personalized review of your CRM and outreach process",
-        "Highest leverage client acquisition automation opportunities identified",
+        "Highest leverage automation opportunities identified",
         "Actionable recommendations you can use immediately",
         "No calls, no commitments"
       ],
       "cta": "Get your free outreach audit"
     },
     {
-      "name": "Launchpad",
-      "price": "$1,500",
-      "description": "Your first AI outbound system, live in your stack within 2 weeks.",
-      "features": [
-        "Full audit plus ideal client profile",
-        "Email infrastructure setup (sending domains, authentication, and warmup)",
-        "One production-ready outreach sequence targeting hiring managers",
-        "Prospecting system configured with your ideal client criteria plus first campaign batch loaded and ready to send",
-        "30 minute video walkthrough of everything built",
-        "Cost applies toward a Full Build"
-      ],
-      "cta": "Get started",
-      "bottomLine": "What you get: hiring managers and HR leaders landing in your inbox within 2 weeks, plus a clear roadmap to scale."
-    },
-    {
-      "name": "Full Build",
-      "price": "Starting at $4,000",
-      "description": "Complete AI powered client acquisition engine, scoring, outreach, automation, and everything to run it.",
-      "features": [
-        "Everything in Launchpad, plus:",
-        "AI prospect scoring built into your CRM",
-        "Multi step AI powered outreach (email plus optional LinkedIn)",
-        "Automated follow-ups, prospect routing, deal updates",
-        "Automatic reply sorting (AI flags interested, not interested, and out-of-office)",
-        "Prospecting system configured with automatic data completion, first campaign loaded, scored, and ready to send",
-        "Performance reporting template",
-        "Works with HubSpot, Bullhorn, Pipedrive, Zoho, etc.",
-        "1:1 training plus 2 weeks post launch support"
-      ],
-      "cta": "Get started",
-      "bottomLine": "What you get: save 20 to 40 hours each month on client acquisition, double your reply rates, and fill your pipeline without hiring a sales rep.",
-      "recommended": true,
-      "badge": "Most popular"
-    },
-    {
-      "name": "Managed Ops",
+      "name": "Full Service",
       "price": "$2,500/mo",
-      "description": "I run your client pipeline end to end, scoped for lean teams running 1 to 2 active outbound campaigns.",
+      "description": "I build your AI outbound system, then run it for you. Every engagement is scoped to what you actually need. Not everything below will apply, and that's fine. You take the client meetings. I handle everything upstream.",
       "features": [
-        "Monthly prospect list refreshes with new target companies",
-        "Campaign monitoring: inbox placement, opens, and replies",
-        "Testing and optimizing outreach copy",
-        "Automatic reply sorting, interested prospects forwarded to you",
-        "Monthly performance report (data plus video walkthrough)",
-        "Additional campaigns or verticals scoped as add-ons",
-        "Fast support via email or Slack"
+        {
+          "heading": "Month 1 - Setup",
+          "items": [
+            "Email infrastructure (sending domains, authentication, warmup)",
+            "AI prospect scoring built into your CRM",
+            "AI powered outreach sequences (email + optional LinkedIn)",
+            "Automated follow-ups, prospect routing, deal updates",
+            "Automatic reply sorting",
+            "Prospecting system configured with your ideal client criteria",
+            "First campaign loaded and live",
+            "1:1 training walkthrough"
+          ]
+        },
+        {
+          "heading": "Month 2+ - Ongoing",
+          "items": [
+            "Monthly prospect list refreshes with new target companies",
+            "Campaign monitoring: inbox placement, opens, and replies",
+            "Testing and optimizing outreach copy",
+            "Interested prospects forwarded to you",
+            "Monthly performance report with video walkthrough",
+            "Additional campaigns or verticals scoped as add-ons",
+            "Fast support via email or Slack"
+          ]
+        }
       ],
       "cta": "Get started",
-      "bottomLine": "What you get: a done for you client acquisition engine. I handle everything upstream of the client conversation."
+      "bottomLine": "What you get: a done for you client acquisition engine that fills your pipeline month after month, without hiring a sales rep.",
+      "recommended": true,
+      "badge": "3-month minimum"
     }
   ]
 },
@@ -161,7 +146,7 @@
       },
       {
         "question": "How quickly can I expect results?",
-        "answer": "Launchpad clients see prospects flowing within 2 weeks. Full Build clients typically see measurable improvements in reply rates and pipeline within the first month."
+        "answer": "Most clients see the system live in month 1, with reply rates and pipeline improving as campaigns compound through months 2 and 3."
       },
       {
         "question": "What if I'm not even sure what I need?",
@@ -169,19 +154,15 @@
       },
       {
         "question": "Is this just another AI tool?",
-        "answer": "No. I don't sell software. I build custom automation into your existing tools and, with Managed Ops, run your entire client outreach for you. Hands on consulting plus done for you execution."
+        "answer": "No. I don't sell software. I build custom automation into your existing tools and run your entire client outreach for you on an ongoing basis. Hands on consulting plus done for you execution."
       },
       {
-        "question": "Do I need to commit to the monthly plan?",
-        "answer": "No. You can stop after the Full Build and run it yourself. Managed Ops is for teams who want me to operate and optimize the client pipeline month over month."
+        "question": "What's the minimum commitment?",
+        "answer": "3 months. Month 1 is setup. Months 2-3 are when results start compounding. After that, continue month to month as long as it's working for you."
       },
       {
-        "question": "What's the difference between Full Build and Managed Ops?",
-        "answer": "Full Build installs the engine. Managed Ops means I run it. With Full Build, you get a complete system and training. With Managed Ops, I handle prospect lists, campaigns, inbox placement, and automatic reply sorting, and you just take the client meetings."
-      },
-      {
-        "question": "What does Managed Ops actually include each month?",
-        "answer": "Fresh prospect lists, campaign monitoring and optimization, testing different message versions on outreach copy, AI powered reply sorting with interested prospects forwarded to you, and a performance report with video walkthrough."
+        "question": "What happens in month 1?",
+        "answer": "I build everything: email infrastructure, prospect scoring, outreach sequences, and your first campaign goes live. By the end of month 1, hiring managers are already hitting your inbox."
       }
     ]
   },
@@ -189,7 +170,7 @@
     "title": "",
     "content": [
       "Hi! 👋",
-      "I help staffing agencies get more clients without hiring more reps. I build AI powered outbound systems that put hiring managers on your calendar, and with Managed Ops, I run the whole thing for you.",
+      "I help staffing agencies get more clients without hiring more reps. I build AI powered outbound systems that put hiring managers on your calendar, and I run the whole thing for you.",
       "No new platforms. No new hires. Just more clients.",
       "Send me your setup and I'll reply with a free outreach audit within 48 hours.",
       "Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered."

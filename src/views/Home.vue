@@ -75,7 +75,7 @@
 				<div class="w-full max-w-lg mx-auto space-y-6">
 					<Title>Not sure where to start?</Title>
 					<SubTitle class="text-white">
-						Send me your website, CRM setup, and a few words about your client acquisition process. I'll reply within 48 hours with a personalized audit and 2 to 3 automation ideas you can act on immediately.
+						I'll build your outbound system and run it month after month, but first, let's see where you stand. Send me your website, CRM setup, and a few words about your outreach process. I'll reply within 48 hours with a personalized audit and 2-3 automation ideas.
 					</SubTitle>
 					<Button :isPrimary="false" :buttonText="'Get your free outreach audit'" :whatButton="'free_strategy'" />
 				</div>

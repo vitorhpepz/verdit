@@ -15,7 +15,7 @@
               <span class="text-slate-900"> Sales AI Tool</span>
             </Title>
             <SubTitle class="w-full max-w-2xl mx-auto text-slate-700">
-              Save time answering clients on WhatsApp, email, Instagram, LinkedIn and more. Your AI-powered assistant for sales and business growth.
+              Save time answering clients on WhatsApp, email, Instagram, LinkedIn and more. Your AI powered assistant for sales and business growth.
             </SubTitle>
           </div>
           <div class="text-center mt-6">
@@ -78,13 +78,13 @@
               <strong>📝 FAQ Automation:</strong> Save time by providing your FAQs to GPT, and it will automatically generate responses that match your tone and style. Perfect for handling common client inquiries efficiently.
             </li>
             <li class="mb-4">
-              <strong>⚡ One-Click Efficiency:</strong> Instantly capture ongoing conversations and generate tailored responses with just a single click.
+              <strong>⚡ One Click Efficiency:</strong> Instantly capture ongoing conversations and generate tailored responses with just a single click.
             </li>
             <li class="mb-4">
               <strong>✍️ Personalized Writing Style:</strong> Add examples of your best client interactions to train the AI to write more like you and less like the usual robotic ChatGPT style.
             </li>
             <li class="mb-4">
-              <strong>🧠 Context-Aware Intelligence:</strong> Effortlessly instruct the AI about the specifics of your business and the different roles it will perform. It crafts persuasive, customized replies that effectively engage your clients. Example:
+              <strong>🧠 Context Aware Intelligence:</strong> Effortlessly instruct the AI about the specifics of your business and the different roles it will perform. It crafts persuasive, customized replies that effectively engage your clients. Example:
               <em>Respond to clients and inquiries to promote a $1,000 refrigerator. Highlight its spaciousness and grey design. Suggest responses that encourage moving forward with the purchase.</em> It will learn from communication examples you provide as well.
             </li>
             <li class="mb-4">
@@ -103,7 +103,7 @@
               <strong>🎯 No copy and paste back and forth:</strong> Switching to other apps, or remembering keystroke combinations. Just click a button directly on the Chrome interface.
             </li>
             <li class="mb-4">
-              <strong>📖 100% Open Source:</strong> Free to use, modify, and distribute. Join our community of contributors and help shape the future of AI-powered sales automation.
+              <strong>📖 100% Open Source:</strong> Free to use, modify, and distribute. Join our community of contributors and help shape the future of AI powered sales automation.
             </li>
           </ul>
         </div>
@@ -120,7 +120,7 @@
           <div class="space-y-6">
             <div class="text-left space-y-4">
               <div>
-                <h3 class="font-display text-lg font-medium text-white">AI-Powered Lead Scoring</h3>
+                <h3 class="font-display text-lg font-medium text-white">AI Powered Lead Scoring</h3>
                 <p class="text-white/80">Instantly spot who's ready to buy and who's just browsing.</p>
               </div>
               <div>
@@ -128,7 +128,7 @@
                 <p class="text-white/80">Custom messages that actually get replies. No spam, just conversions.</p>
               </div>
               <div>
-                <h3 class="font-display text-lg font-medium text-white">Real-Time Data Enrichment</h3>
+                <h3 class="font-display text-lg font-medium text-white">Real Time Data Enrichment</h3>
                 <p class="text-white/80">Enrich your leads with fresh, actionable info from multiple sources, automatically.</p>
               </div>
             </div>
