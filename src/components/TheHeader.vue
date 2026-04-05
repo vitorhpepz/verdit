@@ -77,7 +77,6 @@
 										class="p-4 hover:bg-slate-100 rounded-lg text-left"
 									/>
 								</template>
-								<hr class="my-2" />
 								<Button 
 									v-if="buttonText"
 									:isPrimary="true" 

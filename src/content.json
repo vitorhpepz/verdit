@@ -14,32 +14,36 @@
     "subtitle": "I build and run AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, on autopilot, in your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
     "trustedBy": {
       "prefix": "Trusted by:",
-      "suffix": "...and other lean teams that automated before they hired.",
-      "tagline": "Built quietly into your existing stack while your team stays focused on closing deals."
+      "_suffixBackup": "...and other lean teams that automated before they hired.",
+      "tagline": ""
     }
   },
   "services": {
     "title": "What I build and run for you",
-    "subtitle": "Every system is custom built around your client acquisition process. Nothing off the shelf.",
+    "subtitle": "Every system is custom built around your client acquisition process.",
     "features": [
       {
         "label": "AI Powered Prospect Scoring",
-        "description": "AI scores every prospect using your CRM data, engagement signals, and complete company details. Your sales team stops guessing and calls the hiring managers most likely to convert, right from inside your CRM.",
+        "description": "AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.",
+        "benchmark": "Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.",
         "img": "/imgs/features/servers.jpg"
       },
       {
         "label": "Personalized Client Outreach on Autopilot",
-        "description": "AI powered sequences that write relevant messages for each role, to hiring managers and HR leaders. Real personalization at scale across email and optionally LinkedIn. You get replies from decision makers, not spam complaints.",
+        "description": "AI powered sequences that write relevant, role specific messages to hiring managers and HR leaders. Every message references something specific about their company, not a template.",
+        "benchmark": "AI personalized outreach gets 2x higher reply rates compared to static email sequences. Most clients see 5 to 15 interested replies per month.",
         "img": "/imgs/features/email.jpg"
       },
       {
         "label": "Prospect Research on Autopilot",
-        "description": "As companies enter your pipeline, missing data gets filled automatically, including company size, hiring volume, industry, and direct contacts, pulled from multiple B2B sources. No more manual LinkedIn stalking. Complete context on every prospect, inside your CRM.",
+        "description": "As companies enter your pipeline, missing data gets filled in automatically: company size, hiring volume, industry, decision maker contacts. No more manual LinkedIn stalking.",
+        "benchmark": "Automating prospect research saves your team 10 to 15 hours per week and ensures every outreach goes to a verified, complete contact.",
         "img": "/imgs/features/flowchart.jpg"
       },
       {
-        "label": "Email Infrastructure & Deliverability",
-        "description": "Cold outreach only works if it hits the inbox. I set up sending domains, configure email authentication, warm up mailboxes, and monitor sender reputation so your emails land in the inbox. Production ready infrastructure that doesn't trigger spam filters.",
+        "label": "Email Infrastructure and Inbox Placement",
+        "description": "I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.",
+        "benchmark": "Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.",
         "img": "/imgs/features/servers.jpg"
       }
     ]
@@ -75,7 +79,7 @@
       {
         "name": "Gary Nezri",
         "job": "Gnla Transportation LLC",
-        "text": "I have never known a better and more professional developer in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.",
+        "text": "I have never known a better and more professional in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.",
         "src": "/imgs/testimonials/peter-renolds.webp"
       }
     ]
@@ -146,7 +150,7 @@
       },
       {
         "question": "How quickly can I expect results?",
-        "answer": "Most clients see the system live in month 1, with reply rates and pipeline improving as campaigns compound through months 2 and 3."
+        "answer": "Weeks 1 and 2: I build everything. Week 3: first outreach goes live. Week 4 onward: replies start coming in. Most clients see a steady flow of interested prospects by the end of month 2."
       },
       {
         "question": "What if I'm not even sure what I need?",
@@ -163,6 +167,22 @@
       {
         "question": "What happens in month 1?",
         "answer": "I build everything: email infrastructure, prospect scoring, outreach sequences, and your first campaign goes live. By the end of month 1, hiring managers are already hitting your inbox."
+      },
+      {
+        "question": "How many interested prospects should I expect?",
+        "answer": "It depends on your market and offer, but most campaigns generate 5 to 15 interested replies per month once everything is running. Some clients see results as early as week 3."
+      },
+      {
+        "question": "What metrics do I see?",
+        "answer": "Every month you get a report showing prospects contacted, emails sent, open rate, reply rate, and interested prospects forwarded to you. Full transparency, no vanity metrics."
+      },
+      {
+        "question": "Will this hurt my email domain or reputation?",
+        "answer": "No. I set up separate sending domains that redirect to yours. Your main domain is never used for outbound. If anything goes wrong with a sending domain, your primary email and website are completely unaffected."
+      },
+      {
+        "question": "Will my prospect lists be shared with other clients?",
+        "answer": "No. Your data stays yours. I never share prospect lists, campaign copy, or outreach strategies between clients."
       }
     ]
   },

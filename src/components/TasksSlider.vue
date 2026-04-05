@@ -7,7 +7,10 @@
 					<component :is="task.icon" class="w-9" />
 				</div>
 				<h2 v-text="task.title" class="text-xl font-display" />
-				<p v-text="task.description" class="text-base lg:text-sm text-slate-600" />
+				<div class="space-y-3">
+					<p v-text="task.description" class="text-base lg:text-sm text-slate-600" />
+					<p v-text="task.benchmark" class="text-base lg:text-sm text-slate-600" />
+				</div>
 			</div>
 		</div>
 
@@ -22,7 +25,10 @@
 						<component :is="task.icon" class="w-9" />
 					</div>
 					<h2 v-text="task.title" class="text-xl font-display" />
-					<p v-text="task.description" class="text-sm text-slate-600" />
+					<div class="space-y-3">
+						<p v-text="task.description" class="text-sm text-slate-600" />
+						<p v-text="task.benchmark" class="text-sm text-slate-600" />
+					</div>
 				</div>
 			</div>
 		</Container>
@@ -41,6 +47,7 @@ const tasks = ref(content.services.features
 	.map((feature, index) => ({
 		icon: shallowRef([IconTaskReporting, IconTaskInventory, IconTaskContacts][index % 3]),
 		title: feature.label,
-		description: feature.description
+		description: feature.description,
+		benchmark: feature.benchmark
 	})))
 </script>

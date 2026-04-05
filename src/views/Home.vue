@@ -42,7 +42,7 @@
 			<Container>
 				<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
 					<Title class="text-2xl lg:text-4xl">{{ content.services.title }}</Title>
-					<h2 class="text-xl lg:text-3xl font-display tracking-tight text-center">{{ content.services.subtitle }}</h2>
+					<h2 class="text-base lg:text-xl font-display tracking-tight text-center">{{ content.services.subtitle }}</h2>
 				</div>
 			</Container>
 
