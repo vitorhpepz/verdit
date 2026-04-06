@@ -31,7 +31,7 @@
       {
         "label": "Personalized Client Outreach on Autopilot",
         "description": "AI powered sequences that write relevant, role specific messages to hiring managers and HR leaders. Every message references something specific about their company, not a template.",
-        "benchmark": "AI personalized outreach gets 2x higher reply rates compared to static email sequences. Most clients see 5 to 15 interested replies per month.",
+        "benchmark": "AI personalized outreach gets much higher reply rates compared to static email sequences.",
         "img": "/imgs/features/email.jpg"
       },
       {
@@ -105,7 +105,7 @@
       "description": "I build your AI outbound system, then run it for you. Every engagement is scoped to what you actually need. Not everything below will apply, and that's fine. You take the client meetings. I handle everything upstream.",
       "features": [
         {
-          "heading": "Month 1 - Setup",
+          "heading": "Month 1: Setup",
           "items": [
             "Email infrastructure (sending domains, authentication, warmup)",
             "AI prospect scoring built into your CRM",
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "heading": "Month 2+ - Ongoing",
+          "heading": "Month 2+: Ongoing",
           "items": [
             "Monthly prospect list refreshes with new target companies",
             "Campaign monitoring: inbox placement, opens, and replies",
