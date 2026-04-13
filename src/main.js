@@ -4,17 +4,22 @@ import router from './router.js'
 
 import './main.css'
 
-const GA4_MEASUREMENT_ID = 'G-4BFEK93YCL'
 const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
+const GOOGLE_ADS_SEND_TO = 'AW-18056474257/q1rqCL2VnpscEJHd_6FD'
 
 function gtagSendEvent(url, eventParameters = {}) {
+  if (!window.gtag) {
+    return false
+  }
+
   const callback = function () {
     if (typeof url === 'string') {
       window.location = url
     }
   }
 
-  window.gtag('event', 'conversion_event_default', {
+  window.gtag('event', 'conversion', {
+    send_to: GOOGLE_ADS_SEND_TO,
     event_callback: callback,
     event_timeout: 2000,
     ...eventParameters
@@ -63,11 +68,13 @@ window.addEventListener('message', (event) => {
     return
   }
 
-  if (!payload || payload.formId !== LANDING_PAGE_TALLY_FORM_ID || !window.gtag) {
+  if (!payload || payload.formId !== LANDING_PAGE_TALLY_FORM_ID) {
     return
   }
 
   gtagSendEvent(undefined, {
+    value: 1.0,
+    currency: 'BRL',
     form_id: payload.formId,
     form_name: payload.formName,
     submission_id: payload.id,
