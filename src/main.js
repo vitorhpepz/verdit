@@ -5,7 +5,7 @@ import router from './router.js'
 import './main.css'
 
 const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
-const GOOGLE_ADS_SEND_TO = 'AW-18056474257/q1rqCL2VnpscEJHd_6FD'
+const GOOGLE_ADS_SEND_TO = 'AW-18087059433/BmHRCMqQvZscEOm_yrBD'
 
 function gtagSendEvent(url, eventParameters = {}) {
   if (!window.gtag) {
