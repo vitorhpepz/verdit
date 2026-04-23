@@ -3,9 +3,9 @@
 		<Container class="relative flex items-center justify-between gap-4 text-slate-900 text-base">
 			<div class="flex items-center gap-8 md:gap-12 lg:gap-16">
 				<div class="flex items-center gap-3">
-					<router-link :to="'/'" class="text-4xl font-bold">
+					<a href="/" class="text-4xl font-bold">
 						Verdit<span class="text-primary-600">Labs</span>
-					</router-link>
+					</a>
 					<span class="text-sm sm:text-base text-slate-600 font-bold">by Vitor Pepicon</span>
 				</div>
 				<nav class="items-center gap-3 hidden md:flex">
@@ -100,7 +100,6 @@ import IconBars from "./icons/IconBars.vue"
 import IconX from "./icons/IconX.vue"
 import Button from "./Button.vue"
 import { ref } from "vue"
-import { RouterLink } from 'vue-router'
 
 const props = defineProps({
 	menuItems: Array,

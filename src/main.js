@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router.js'
 
 import './main.css'
 
@@ -50,10 +49,6 @@ function trackPageView(path) {
   })
 }
 
-router.afterEach((to) => {
-  trackPageView(to.fullPath)
-})
-
 window.addEventListener('message', (event) => {
   if (typeof event.data !== 'string' || !event.data.includes('Tally.FormSubmitted')) {
     return
@@ -82,8 +77,5 @@ window.addEventListener('message', (event) => {
   })
 })
 
-app.use(router)
-router.isReady().then(() => {
-  trackPageView(router.currentRoute.value.fullPath)
-  app.mount('#app')
-})
+app.mount('#app')
+trackPageView(window.location.pathname + window.location.search + window.location.hash)
