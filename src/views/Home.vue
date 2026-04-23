@@ -130,6 +130,9 @@
 							</a>
 						</SubTitle>
 					</div>
+					<p class="pt-8">
+						<a href="/privacy-policy" class="inline-flex rounded-lg border border-white/30 px-4 py-2 text-base font-medium text-white transition-colors hover:bg-white hover:text-primary-700">Privacy Policy</a>
+					</p>
 				</div>
 			</Container>
 		</Section>
