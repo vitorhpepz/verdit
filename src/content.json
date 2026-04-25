@@ -23,22 +23,22 @@
     "subtitle": "Every system is custom built around your client acquisition process.",
     "features": [
       {
-        "label": "AI Powered Prospect Scoring",
-        "description": "AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.",
-        "benchmark": "Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.",
-        "img": "/imgs/features/servers.jpg"
+        "label": "Verified Decision-Maker Data on Autopilot",
+        "description": "As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.",
+        "benchmark": "The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.",
+        "img": "/imgs/features/flowchart.jpg"
       },
       {
         "label": "Personalized Client Outreach That Feels Relevant",
-        "description": "We generate role-specific messages using a mix of real signals and proven industry patterns, so outreach feels tailored without relying on generic templates.",
+        "description": "Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.",
         "benchmark": "The result: more replies and better conversations with hiring managers and HR leaders.",
         "img": "/imgs/features/email.jpg"
       },
       {
-        "label": "Prospect Research on Autopilot",
-        "description": "As companies enter your pipeline, missing data gets filled in automatically: company size, hiring volume, industry, decision maker contacts. No more manual LinkedIn stalking.",
-        "benchmark": "Automating prospect research saves your team 10 to 15 hours per week and ensures every outreach goes to a verified, complete contact.",
-        "img": "/imgs/features/flowchart.jpg"
+        "label": "AI Powered Prospect Scoring",
+        "description": "AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.",
+        "benchmark": "Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.",
+        "img": "/imgs/features/servers.jpg"
       },
       {
         "label": "Email Infrastructure and Inbox Placement",
