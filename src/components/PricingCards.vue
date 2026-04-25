@@ -8,7 +8,7 @@
 			<p
 				v-if="pricing.badge"
 				v-text="pricing.badge"
-				class="text-sm sm:text-xs uppercase tracking-[0.2em] text-center font-semibold"
+				class="text-base sm:text-lg uppercase tracking-[0.2em] text-center font-semibold"
 				:class="{ 'text-white': pricing.recommended, 'text-slate-400': !pricing.recommended }"
 			/>
 			<h3 v-text="pricing.price" class="font-display text-5xl text-center" />
