@@ -13,7 +13,7 @@
 				<article class="mx-auto max-w-3xl space-y-8 text-slate-700">
 					<header class="space-y-4">
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
-						<p class="text-base"><strong>Last updated:</strong> April 23, 2026</p>
+						<p class="text-base"><strong>Last updated:</strong> April 25, 2026</p>
 						<p>
 							VerditLabs is operated by Vitor Pepicon as a sole proprietorship based in Brazil. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
@@ -61,6 +61,20 @@
 					</section>
 
 					<section class="space-y-3">
+						<h2 class="font-display text-2xl text-slate-900">Our outbound emails</h2>
+						<p>Every commercial email we send includes our valid postal address, accurately identifies the sender, uses a non-deceptive subject line, and contains a working opt-out mechanism. We honor opt-outs within 10 business days and usually the same day.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h3 class="font-display text-xl text-slate-900">How to opt out</h3>
+						<p>Two ways, either works:</p>
+						<ul class="list-disc space-y-2 pl-6">
+							<li>Reply to any email with "stop," "unsubscribe," or any similar message</li>
+							<li>Email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a></li>
+						</ul>
+					</section>
+
+					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">Your rights</h2>
 						<p>Anyone we've contacted or collected data about can:</p>
 						<ul class="list-disc space-y-2 pl-6">
@@ -69,20 +83,41 @@
 							<li>Ask us to delete it</li>
 							<li>Ask us to stop contacting them</li>
 						</ul>
-						<p><strong>If you're in Texas</strong>, the Texas Data Privacy and Security Act gives you these rights explicitly, plus the right to opt out of processing for targeted advertising, sale of personal data, or profiling that produces legal effects. We don't do any of those things, but the right applies.</p>
-						<p><strong>If you're in California</strong>, the California Consumer Privacy Act gives you similar rights. We don't sell or share your personal information as CCPA defines those terms.</p>
-						<p><strong>If you're in the EU or UK</strong>, GDPR gives you rights to access, correction, deletion, objection, and data portability.</p>
 						<p>To exercise any of these rights, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> with your request. We'll respond within 30 days. We won't penalize you for exercising these rights.</p>
+						<p>To verify your identity before fulfilling a request, we'll match the email address you contact us from against the data we hold. For deletion or access requests where the match isn't clear, we may ask for additional information sufficient to confirm you are the person the data relates to. We won't ask for more than is necessary.</p>
+						<p>If we deny your request, we'll explain why and you can appeal by replying to our response. We'll review the appeal and respond within a reasonable time.</p>
+						<p>You can also designate an authorized agent to make a request on your behalf. We'll ask the agent for written proof of your authorization and may contact you directly to confirm.</p>
 					</section>
 
 					<section class="space-y-3">
-						<h2 class="font-display text-2xl text-slate-900">How to opt out of outbound emails</h2>
-						<p>Two ways, either works:</p>
-						<ol class="list-decimal space-y-2 pl-6">
-							<li>Reply to any email with "stop," "unsubscribe," or any similar message</li>
-							<li>Email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a></li>
-						</ol>
-						<p>We honor opt-outs within 10 business days and usually the same day.</p>
+						<h3 class="font-display text-xl text-slate-900">California residents</h3>
+						<p>The California Consumer Privacy Act (CCPA) gives California residents specific rights over their personal information. This applies to business contacts as well as consumers, since California's B2B exemption sunset in January 2023.</p>
+						<p><strong>Categories of personal information we collect:</strong></p>
+						<ul class="list-disc space-y-2 pl-6">
+							<li><em>Identifiers</em> - name, business email address</li>
+							<li><em>Professional or employment-related information</em> - job title, employer, company size, publicly available information about the company's hiring activity</li>
+							<li><em>Internet or network activity</em> (website visitors only) - pages visited, device type, approximate location</li>
+						</ul>
+						<p><strong>Sources of this information:</strong> public business directories, professional networking sites, licensed B2B data providers, our website analytics, and information clients share with us.</p>
+						<p><strong>Purposes:</strong> sending relevant B2B outreach on behalf of our clients, delivering contracted services to clients, and operating our website.</p>
+						<p><strong>We do not sell or share personal information</strong> as the CCPA defines those terms. We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
+						<p>You have the right to know, access, correct, and delete your personal information, the right to opt out of sale or sharing (not applicable to us), the right to limit use of sensitive personal information (not applicable to us), and the right to non-discrimination for exercising any of these rights.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h3 class="font-display text-xl text-slate-900">Texas residents</h3>
+						<p>The Texas Data Privacy and Security Act gives Texas residents the rights to access, correct, delete, and obtain a copy of their personal data, plus the right to opt out of processing for targeted advertising, sale of personal data, or profiling that produces legal effects. We don't do any of those things, but the right applies.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h3 class="font-display text-xl text-slate-900">Other US states</h3>
+						<p>Residents of Virginia, Colorado, Connecticut, Utah, Oregon, Montana, Iowa, Delaware, New Hampshire, New Jersey, Tennessee, Minnesota, Maryland, Indiana, Kentucky, Rhode Island, and other states with comprehensive privacy laws may have similar rights to access, correction, deletion, and opt-out. Many of these laws contain exemptions for business contact data collected in a commercial context, but we'll respond to good-faith requests regardless of whether the law technically applies.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h3 class="font-display text-xl text-slate-900">EU and UK residents</h3>
+						<p>GDPR and UK GDPR give you rights to access, correction, deletion, restriction of processing, objection, and data portability. Because we rely on legitimate interest for prospect outreach, you have a specific right to object to that processing - exercising it stops the outreach immediately, no questions asked.</p>
+						<p>If your data is transferred outside the EEA or UK (for example, to our systems in Brazil or to US-based vendors), the transfer is covered by Standard Contractual Clauses or equivalent safeguards in our agreements with those vendors.</p>
 					</section>
 
 					<section class="space-y-3">
