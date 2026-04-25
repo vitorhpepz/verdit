@@ -77,9 +77,8 @@
 
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">How to opt out of outbound emails</h2>
-						<p>Three ways, any of them works:</p>
+						<p>Two ways, either works:</p>
 						<ol class="list-decimal space-y-2 pl-6">
-							<li>Use the one-click unsubscribe button shown by Gmail, Outlook, or your email client at the top of the message</li>
 							<li>Reply to any email with "stop," "unsubscribe," or any similar message</li>
 							<li>Email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a></li>
 						</ol>
