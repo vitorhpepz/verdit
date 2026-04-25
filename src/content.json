@@ -29,9 +29,9 @@
         "img": "/imgs/features/servers.jpg"
       },
       {
-        "label": "Personalized Client Outreach on Autopilot",
-        "description": "AI powered sequences that write relevant, role specific messages to hiring managers and HR leaders. Every message references something specific about their company, not a template.",
-        "benchmark": "AI personalized outreach gets much higher reply rates compared to static email sequences.",
+        "label": "Personalized Client Outreach That Feels Relevant",
+        "description": "We generate role-specific messages using a mix of real signals and proven industry patterns, so outreach feels tailored without relying on generic templates.",
+        "benchmark": "The result: more replies and better conversations with hiring managers and HR leaders.",
         "img": "/imgs/features/email.jpg"
       },
       {
