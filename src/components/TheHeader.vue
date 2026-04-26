@@ -111,6 +111,11 @@ const props = defineProps({
 })
 
 const showMobileMenu = ref(false)
+const DEFAULT_SCROLL_OFFSET = 0
+const sectionScrollOffsets = {
+	'#services': -60,
+	'#testimonials': -60
+}
 
 function isExternalLink(link) {
 	return link.startsWith('http') || link.startsWith('mailto:') || link.startsWith('tel:')
@@ -125,7 +130,10 @@ function handleLinkClick(link) {
 		showMobileMenu.value = false
 		const element = document.querySelector(link)
 		if (element) {
-			element.scrollIntoView({ behavior: 'smooth' })
+			const scrollOffset = sectionScrollOffsets[link] ?? DEFAULT_SCROLL_OFFSET
+			const top = element.getBoundingClientRect().top + window.scrollY + scrollOffset
+			window.history.pushState(null, '', link)
+			window.scrollTo({ top, behavior: 'smooth' })
 		}
 	} else if (isExternalLink(link)) {
 		showMobileMenu.value = false

@@ -107,14 +107,13 @@
         {
           "heading": "Month 1: Setup",
           "items": [
-            "Email infrastructure (sending domains, authentication, warmup)",
-            "AI prospect scoring built into your CRM",
-            "AI powered outreach sequences (email + optional LinkedIn)",
-            "Automated follow-ups, prospect routing, deal updates",
-            "Automatic reply sorting",
-            "Prospecting system configured with your ideal client criteria",
+            "Email infrastructure (dedicated sending domains, authentication, mailbox warmup)",
+            "Verified decision-maker data pulled automatically into your pipeline",
+            "Role-specific outreach sequences built for your niche (email + optional LinkedIn)",
+            "AI prospect scoring integrated with your CRM",
+            "Prospecting system configured to your ideal client criteria",
             "First campaign loaded and live",
-            "1:1 training walkthrough"
+            "1:1 onboarding walkthrough"
           ]
         },
         {
