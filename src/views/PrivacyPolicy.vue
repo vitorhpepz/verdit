@@ -13,7 +13,7 @@
 				<article class="mx-auto max-w-3xl space-y-8 text-slate-700">
 					<header class="space-y-4">
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
-						<p class="text-base"><strong>Last updated:</strong> April 25, 2026</p>
+						<p class="text-base"><strong>Last updated:</strong> April 26, 2026</p>
 						<p>
 							VerditLabs is operated by Vitor Pepicon as a sole proprietorship based in Brazil. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
@@ -31,7 +31,11 @@
 
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">What data we collect</h2>
-						<p><strong>From website visitors:</strong> standard analytics data (pages visited, approximate location, device type). We don't use tracking pixels or third-party ad networks.</p>
+						<div class="space-y-3">
+							<p><strong>From website visitors:</strong> we use Google Analytics and Google Ads tags to understand how visitors find and use our site and to measure the performance of advertising campaigns. These tools collect pages visited, approximate location, device type, referral source, and a unique identifier stored in cookies. Google may use this data to build advertising audiences and serve ads to you on other sites within its network.</p>
+							<p>We use Cookiebot to manage your cookie preferences. When you first visit the site, you can accept, reject, or customize which categories of cookies are set. You can change your choice at any time by clicking the cookie preferences link in our footer. We honor the Global Privacy Control (GPC) browser signal automatically - if your browser sends GPC, we treat it as an opt-out of sharing for advertising purposes without requiring further action from you.</p>
+							<p>You can also opt out of Google Analytics tracking using <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google's browser add-on</a> and manage ad personalization in your <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google Ads settings</a>.</p>
+						</div>
 						<p><strong>From prospects we contact on behalf of clients:</strong> business contact information sourced from public business directories, professional networking sites, and licensed B2B data providers. This typically includes name, job title, business email address, company name, company size, and publicly available information about the company's hiring activity. We do not collect sensitive personal information.</p>
 						<p><strong>From clients:</strong> name, business email, company information, and any data you share with us during our engagement (CRM exports, outreach templates, ideal client criteria).</p>
 					</section>
@@ -100,7 +104,7 @@
 						</ul>
 						<p><strong>Sources of this information:</strong> public business directories, professional networking sites, licensed B2B data providers, our website analytics, and information clients share with us.</p>
 						<p><strong>Purposes:</strong> sending relevant B2B outreach on behalf of our clients, delivering contracted services to clients, and operating our website.</p>
-						<p><strong>We do not sell or share personal information</strong> as the CCPA defines those terms. We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
+						<p>We do not sell personal information for money. However, our use of Google Ads tags may constitute "sharing" of personal information for cross-context behavioral advertising as the CCPA defines that term. You can opt out of this sharing at any time using the "Your Privacy Choices" link in our footer, by adjusting your cookie preferences, or by enabling Global Privacy Control in your browser - we honor GPC automatically. We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
 						<p>You have the right to know, access, correct, and delete your personal information, the right to opt out of sale or sharing (not applicable to us), the right to limit use of sensitive personal information (not applicable to us), and the right to non-discrimination for exercising any of these rights.</p>
 					</section>
 
