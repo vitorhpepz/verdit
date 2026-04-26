@@ -44,7 +44,7 @@
 						<h2 class="font-display text-2xl text-slate-900">How we use this data</h2>
 						<p>We use prospect data to send relevant B2B outreach to people whose professional role matches what our clients offer. Our legal basis for this is legitimate interest: the outreach is tied to the recipient's professional responsibilities, not their personal life.</p>
 						<p>We use client data to deliver the services you've hired us for.</p>
-						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. We don't use your data to train AI models.</p>
+						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. Website visitor data collected through Google Analytics and Google Ads tags is handled separately, as described above and in the California residents section. We don't use your data to train AI models.</p>
 					</section>
 
 					<section class="space-y-3">
