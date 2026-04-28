@@ -57,7 +57,6 @@
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">Universal opt-out signals</h2>
 						<p>We honor the Global Privacy Control (GPC) browser signal automatically across every jurisdiction where it applies. If your browser sends GPC, we treat it as a valid opt-out of sale and sharing of personal information for cross-context behavioral advertising, and as an opt-out of targeted advertising under state laws that recognize universal opt-out mechanisms - including California, Colorado, Connecticut, Delaware, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, and Texas. You don't need to take any further action; the signal itself is the request.</p>
-						<p>If you also use the Cookiebot banner to set preferences, GPC takes precedence: a GPC signal overrides an "accept all" choice in Cookiebot for advertising-related cookies.</p>
 					</section>
 
 					<section class="space-y-3">
