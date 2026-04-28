@@ -13,7 +13,7 @@
 				<article class="mx-auto max-w-3xl space-y-8 text-slate-700">
 					<header class="space-y-4">
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
-						<p class="text-base"><strong>Last updated:</strong> April 26, 2026</p>
+						<p class="text-base"><strong>Last updated:</strong> April 28, 2026</p>
 						<p>
 							VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
@@ -33,11 +33,12 @@
 						<h2 class="font-display text-2xl text-slate-900">What data we collect</h2>
 						<div class="space-y-3">
 							<p><strong>From website visitors:</strong> we use Google Analytics and Google Ads tags to understand how visitors find and use our site and to measure the performance of advertising campaigns. These tools collect pages visited, approximate location, device type, referral source, and a unique identifier stored in cookies. Google may use this data to build advertising audiences and serve ads to you on other sites within its network.</p>
-							<p>We use Cookiebot to manage your cookie preferences. When you first visit the site, you can accept, reject, or customize which categories of cookies are set. You can change your choice at any time by clicking the Cookiebot icon in the bottom-left corner of any page. We honor the Global Privacy Control (GPC) browser signal automatically - if your browser sends GPC, we treat it as an opt-out of sharing for advertising purposes without requiring further action from you.</p>
+							<p>We use Cookiebot to manage your cookie preferences. When you first visit the site, you can accept, reject, or customize which categories of cookies are set. You can change your choice at any time by clicking the Cookiebot icon in the bottom-left corner of any page.</p>
 							<p>You can also opt out of Google Analytics tracking using <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google's browser add-on</a> and manage ad personalization in your <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google Ads settings</a>.</p>
 						</div>
-						<p><strong>From prospects we contact on behalf of clients:</strong> business contact information sourced from public business directories, professional networking sites, and licensed B2B data providers. This typically includes name, job title, business email address, company name, company size, and publicly available information about the company's hiring activity. We do not collect sensitive personal information.</p>
+						<p><strong>From prospects we contact on behalf of clients:</strong> business contact information sourced from public business directories, professional networking sites, and licensed B2B data providers. This typically includes name, job title, business email address, company name, company size, and publicly available information about the company's hiring activity.</p>
 						<p><strong>From clients:</strong> name, business email, company information, and any data you share with us during our engagement (CRM exports, outreach templates, ideal client criteria).</p>
+						<p>We do not collect sensitive personal information as defined under state privacy laws. This includes government identifiers (Social Security numbers, driver's license numbers, passport numbers); financial account numbers, payment card numbers, or account credentials; precise geolocation; racial or ethnic origin; religious beliefs; union membership; genetic or biometric data; health, sex life, or sexual orientation information; the contents of mail, email, or text messages; and citizenship or immigration status. If we ever begin collecting any of this information, we'll update this policy and obtain opt-in consent where required.</p>
 					</section>
 
 					<section class="space-y-3">
@@ -46,6 +47,17 @@
 						<p>We use client data to deliver the services you've hired us for.</p>
 						<p>If you reply to our outreach, we may add your contact information and reply content to our CRM to manage the conversation.</p>
 						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. Website visitor data collected through Google Analytics and Google Ads tags is handled separately, as described above and in the California residents section. We don't use your data to train AI models.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h2 class="font-display text-2xl text-slate-900">Data minimization</h2>
+						<p>We limit our collection of personal data to what is reasonably necessary and proportionate to the purposes described in this policy. We don't collect, retain, or use personal data for purposes that aren't disclosed here, and we don't collect more data than we need to send relevant outreach on behalf of our clients.</p>
+					</section>
+
+					<section class="space-y-3">
+						<h2 class="font-display text-2xl text-slate-900">Universal opt-out signals</h2>
+						<p>We honor the Global Privacy Control (GPC) browser signal automatically across every jurisdiction where it applies. If your browser sends GPC, we treat it as a valid opt-out of sale and sharing of personal information for cross-context behavioral advertising, and as an opt-out of targeted advertising under state laws that recognize universal opt-out mechanisms - including California, Colorado, Connecticut, Delaware, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, and Texas. You don't need to take any further action; the signal itself is the request.</p>
+						<p>If you also use the Cookiebot banner to set preferences, GPC takes precedence: a GPC signal overrides an "accept all" choice in Cookiebot for advertising-related cookies.</p>
 					</section>
 
 					<section class="space-y-3">
@@ -87,11 +99,12 @@
 							<li>Ask us to correct it</li>
 							<li>Ask us to delete it</li>
 							<li>Ask us to stop contacting them</li>
+							<li>Ask for a portable copy of their data, where applicable state law provides that right</li>
 						</ul>
-						<p>To exercise any of these rights, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> with your request. We'll respond within 30 days. We won't penalize you for exercising these rights.</p>
+						<p>To exercise any of these rights, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> with your request. We'll confirm receipt within 10 business days and respond substantively within 45 days. If we need more time because of the complexity or volume of requests, we may extend this period by an additional 45 days, and we'll let you know within the original 45-day window. We won't penalize you for exercising these rights.</p>
 						<p>To verify your identity before fulfilling a request, we'll match the email address you contact us from against the data we hold. For deletion or access requests where the match isn't clear, we may ask for additional information sufficient to confirm you are the person the data relates to. We won't ask for more than is necessary.</p>
-						<p>If we deny your request, we'll explain why and you can appeal by replying to our response. We'll review the appeal and respond within a reasonable time.</p>
-						<p>You can also designate an authorized agent to make a request on your behalf. We'll ask the agent for written proof of your authorization and may contact you directly to confirm.</p>
+						<p>If we deny your request, we'll explain why in writing. You can appeal by replying to our denial within 60 days. We'll review the appeal and respond within 60 days of receiving it, with a written explanation of the action taken and the reasons for that decision. If we deny the appeal, we'll provide you with a way to contact your state attorney general if you believe your rights have not been respected.</p>
+						<p>You can designate an authorized agent to submit a request on your behalf. For California residents, the agent must provide either (1) a power of attorney under California Probate Code sections 4000-4465, or (2) signed written permission from you authorizing the agent to act, plus proof of the agent's identity. We may also contact you directly to verify your identity and confirm you authorized the request. For residents of other states, we'll ask for similar written proof of authorization.</p>
 					</section>
 
 					<section class="space-y-3">
@@ -105,18 +118,19 @@
 						</ul>
 						<p><strong>Sources of this information:</strong> public business directories, professional networking sites, licensed B2B data providers, our website analytics, and information clients share with us.</p>
 						<p><strong>Purposes:</strong> sending relevant B2B outreach on behalf of our clients, delivering contracted services to clients, and operating our website.</p>
-						<p>We do not sell personal information for money. However, our use of Google Ads tags may constitute "sharing" of personal information for cross-context behavioral advertising as the CCPA defines that term. You can opt out of this sharing at any time by adjusting your cookie preferences through the Cookiebot icon in the bottom-left corner of any page, or by enabling Global Privacy Control in your browser - we honor GPC automatically. We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
-						<p>You have the right to know, access, correct, and delete your personal information, the right to opt out of sale or sharing (not applicable to us), the right to limit use of sensitive personal information (not applicable to us), and the right to non-discrimination for exercising any of these rights.</p>
+						<p>We do not sell personal information for money. However, our use of Google Ads tags may constitute "sharing" of personal information for cross-context behavioral advertising as the CCPA defines that term. You can opt out of this sharing at any time by adjusting your cookie preferences through the Cookiebot icon in the bottom-left corner of any page, or by enabling Global Privacy Control in your browser (see "Universal opt-out signals" above). We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
+						<p>You have the right to know, access, correct, and delete your personal information, the right to opt out of sale or sharing, the right to limit use of sensitive personal information, and the right to non-discrimination for exercising any of these rights.</p>
 					</section>
 
 					<section class="space-y-3">
 						<h3 class="font-display text-xl text-slate-900">Texas residents</h3>
-						<p>The Texas Data Privacy and Security Act gives Texas residents the rights to access, correct, delete, and obtain a copy of their personal data, plus the right to opt out of processing for targeted advertising, sale of personal data, or profiling that produces legal effects. We don't do any of those things, but the right applies.</p>
+						<p>The Texas Data Privacy and Security Act gives Texas residents the rights to access, correct, delete, and obtain a copy of their personal data, plus the right to opt out of processing for targeted advertising, sale of personal data, or profiling that produces legal effects. We don't sell personal data or engage in profiling that produces legal effects, but the rights apply.</p>
 					</section>
 
 					<section class="space-y-3">
 						<h3 class="font-display text-xl text-slate-900">Other US states</h3>
-						<p>Residents of Virginia, Colorado, Connecticut, Utah, Oregon, Montana, Iowa, Delaware, New Hampshire, New Jersey, Tennessee, Minnesota, Maryland, Indiana, Kentucky, Rhode Island, and other states with comprehensive privacy laws may have similar rights to access, correction, deletion, and opt-out. Many of these laws contain exemptions for business contact data collected in a commercial context, but we'll respond to good-faith requests regardless of whether the law technically applies.</p>
+						<p>Residents of Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Utah, and Virginia have rights under their state's comprehensive privacy law. Depending on the state, these may include the right to access, correct, delete, and obtain a portable copy of personal data, plus the right to opt out of targeted advertising, sale of personal data, and profiling that produces legal or similarly significant effects. Many of these laws contain exemptions for personal data collected in a business-to-business context, but we'll respond to good-faith requests regardless of whether the law technically applies to us.</p>
+						<p>Where state law requires opt-in consent before processing sensitive personal data, we don't process sensitive personal data and so don't rely on consent for that purpose.</p>
 					</section>
 
 					<section class="space-y-3">
