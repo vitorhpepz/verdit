@@ -15,7 +15,7 @@
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
 						<p class="text-base"><strong>Last updated:</strong> April 26, 2026</p>
 						<p>
-							VerditLabs is operated by Vitor Pepicon as a sole proprietorship based in Brazil. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
+							VerditLabs is operated by Vitor Pepicon as a sole proprietorship. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
 					</header>
 
@@ -42,8 +42,9 @@
 
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">How we use this data</h2>
-						<p>We use prospect data to send relevant B2B outreach to people whose professional role matches what our clients offer. Our legal basis for this is legitimate interest: the outreach is tied to the recipient's professional responsibilities, not their personal life.</p>
+						<p>We use prospect data to send relevant B2B outreach to people whose professional role matches what our clients offer. The outreach is tied to the recipient's professional responsibilities, not their personal life.</p>
 						<p>We use client data to deliver the services you've hired us for.</p>
+						<p>If you reply to our outreach, we may add your contact information and reply content to our CRM to manage the conversation.</p>
 						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. Website visitor data collected through Google Analytics and Google Ads tags is handled separately, as described above and in the California residents section. We don't use your data to train AI models.</p>
 					</section>
 
@@ -119,12 +120,6 @@
 					</section>
 
 					<section class="space-y-3">
-						<h3 class="font-display text-xl text-slate-900">EU and UK residents</h3>
-						<p>GDPR and UK GDPR give you rights to access, correction, deletion, restriction of processing, objection, and data portability. Because we rely on legitimate interest for prospect outreach, you have a specific right to object to that processing - exercising it stops the outreach immediately, no questions asked.</p>
-						<p>If your data is transferred outside the EEA or UK (for example, to our systems in Brazil or to US-based vendors), the transfer is covered by Standard Contractual Clauses or equivalent safeguards in our agreements with those vendors.</p>
-					</section>
-
-					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">Data security</h2>
 						<p>Data is stored in the systems listed above, all of which use industry-standard encryption and access controls. We limit access to data to what's needed to run the service.</p>
 					</section>
@@ -145,7 +140,7 @@
 							Vitor Pepicon<br>
 							VerditLabs<br>
 							<a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a><br>
-							Rua Leonardo Mota 400/501, Meireles, Fortaleza, Ceará, Brazil
+							539 W Commerce St, Suite 1728, Dallas, TX 75208
 						</address>
 					</section>
 				</article>
