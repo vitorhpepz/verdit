@@ -15,7 +15,7 @@
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
 						<p class="text-base"><strong>Last updated:</strong> April 26, 2026</p>
 						<p>
-							VerditLabs is operated by Vitor Pepicon as a sole proprietorship. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
+							VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
 					</header>
 
