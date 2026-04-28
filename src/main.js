@@ -5,9 +5,23 @@ import './main.css'
 
 const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
 const GOOGLE_ADS_SEND_TO = 'AW-18056474257/q1rqCL2VnpscEJHd_6FD'
+const COOKIEBOT_EVENT_NAMES = ['CookiebotOnConsentReady', 'CookiebotOnAccept', 'CookiebotOnDecline']
+
+function hasCookiebotConsent(category) {
+  const consent = window.Cookiebot && window.Cookiebot.consent
+  return !!(consent && consent[category])
+}
+
+function hasAnalyticsConsent() {
+  return hasCookiebotConsent('statistics')
+}
+
+function hasMarketingConsent() {
+  return hasCookiebotConsent('marketing')
+}
 
 function gtagSendEvent(url, eventParameters = {}) {
-  if (!window.gtag) {
+  if (!window.gtag || !hasMarketingConsent()) {
     return false
   }
 
@@ -37,7 +51,7 @@ const isPrivateNetworkHost =
   /^172\.(1[6-9]|2\d|3[0-1])\./.test(hostname)
 
 function trackPageView(path) {
-  if (!window.gtag) {
+  if (!window.gtag || !hasAnalyticsConsent()) {
     return
   }
 
@@ -78,4 +92,12 @@ window.addEventListener('message', (event) => {
 })
 
 app.mount('#app')
-trackPageView(window.location.pathname + window.location.search + window.location.hash)
+
+function trackCurrentPageView() {
+  trackPageView(window.location.pathname + window.location.search + window.location.hash)
+}
+
+trackCurrentPageView()
+COOKIEBOT_EVENT_NAMES.forEach((eventName) => {
+  window.addEventListener(eventName, trackCurrentPageView, { once: eventName === 'CookiebotOnConsentReady' })
+})
