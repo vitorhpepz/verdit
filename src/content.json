@@ -11,7 +11,7 @@
       "blue": " <span style='color: #2563eb;'>No new hires.</span>",
       "black": "<span style='color: #0f172a;'>More clients.</span>"
     },
-    "subtitle": "I build and run AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, on autopilot, in your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
+    "subtitle": "I run AI outbound systems for staffing agencies that fill your client pipeline with hiring managers and HR leaders, in your existing tools.<br>By Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong>",
     "trustedBy": {
       "prefix": "Trusted by:",
       "_suffixBackup": "...and other lean teams that automated before they hired.",
@@ -19,7 +19,7 @@
     }
   },
   "services": {
-    "title": "What I build and run for you",
+    "title": "What I run for you",
     "subtitle": "Every system is custom built around your client acquisition process.",
     "features": [
       {
@@ -85,7 +85,7 @@
     ]
   },
 "pricing": {
-  "intro": "I build the system. Then I run it for you.",
+  "intro": "I run it for you.",
   "plans": [
     {
       "name": "Outreach Audit",
@@ -157,7 +157,7 @@
       },
       {
         "question": "Is this just another AI tool?",
-        "answer": "No. I don't sell software. I build custom automation into your existing tools and run your entire client outreach for you on an ongoing basis. Hands on consulting plus done for you execution."
+        "answer": "No. I don't sell software. I run your entire client outreach for you on an ongoing basis, with custom automation built into your existing tools. Hands on consulting plus done for you execution."
       },
       {
         "question": "What's the minimum commitment?",
@@ -189,7 +189,7 @@
     "title": "",
     "content": [
       "Hi! 👋",
-      "I help staffing agencies get more clients without hiring more reps. I build AI powered outbound systems that put hiring managers on your calendar, and I run the whole thing for you.",
+      "I help staffing agencies get more clients without hiring more reps. I run AI powered outbound systems that put hiring managers on your calendar. Setup, sequences, infrastructure, all of it.",
       "No new platforms. No new hires. Just more clients.",
       "Send me your setup and I'll reply with a free outreach audit within 48 hours.",
       "Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered."
