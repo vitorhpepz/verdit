@@ -158,14 +158,14 @@ const partners = ref([
 		name: "Inwave",
 		src: `${__BASE_PATH__}/imgs/partners/inwave.png`,
 	},
-	{
-		name: "Petrobras",
-		src: `${__BASE_PATH__}/imgs/partners/br.png`,
-	},
-	{
-		name: "Ambidados",
-		src: `${__BASE_PATH__}/imgs/partners/ambidados.png`,
-	},
+	// {
+	// 	name: "Petrobras",
+	// 	src: `${__BASE_PATH__}/imgs/partners/br.png`,
+	// },
+	// {
+	// 	name: "Ambidados",
+	// 	src: `${__BASE_PATH__}/imgs/partners/ambidados.png`,
+	// },
 	{
 		name: "MyBI",
 		src: `${__BASE_PATH__}/imgs/partners/mybi.png`,
