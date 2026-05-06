@@ -26,7 +26,22 @@
 					<div class="h-8"></div>
 					<p class="font-display">{{ content.hero.trustedBy.prefix }}</p>
 					<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
-						<img v-for="partner in partners" :src="partner.src" :alt="partner.name" class="h-10 sm:h-12" />
+						<component
+							v-for="partner in partners"
+							:key="partner.name"
+							:is="partner.link ? 'a' : 'span'"
+							:href="partner.link"
+							:target="partner.link ? '_blank' : null"
+							:rel="partner.link ? 'noopener noreferrer' : null"
+							class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80"
+							:aria-label="partner.name"
+						>
+							<span v-if="partner.labelBelow" class="flex flex-col items-center justify-center gap-1">
+								<img :src="partner.src" :alt="partner.name" :class="partner.imageClass || 'h-8 sm:h-9'" />
+								<span class="font-display text-[10px] sm:text-xs leading-none text-slate-700">Blue Lake Web Design</span>
+							</span>
+							<img v-else :src="partner.src" :alt="partner.name" :class="partner.class || 'h-10 sm:h-12'" />
+						</component>
 					</div>
 					<p class="font-display">{{ content.hero.trustedBy.suffix }}</p>
 					<p class="text-base sm:text-sm text-slate-600 max-w-2xl mx-auto">{{ content.hero.trustedBy.tagline }}</p>
@@ -125,8 +140,14 @@
 					</SubTitle>
 					<div class="flex flex-col sm:flex-row items-center justify-center gap-3">
 						<SubTitle class="text-white-700">
-							<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 hover:underline">
-								Follow Vitor on Twitter →
+							<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 underline hover:text-white">
+								Twitter
+							</a>
+						</SubTitle>
+						<span class="hidden sm:inline text-white/50">|</span>
+						<SubTitle class="text-white-700">
+							<a href="https://www.linkedin.com/in/vitorpepicon" target="_blank" rel="noopener noreferrer" class="text-white-700 underline hover:text-white">
+								LinkedIn
 							</a>
 						</SubTitle>
 					</div>
@@ -157,6 +178,8 @@ const partners = ref([
 	{
 		name: "Inwave",
 		src: `${__BASE_PATH__}/imgs/partners/inwave.png`,
+		link: "https://www.inwave.online/en",
+		class: "h-7 sm:h-8",
 	},
 	// {
 	// 	name: "Petrobras",
@@ -169,6 +192,20 @@ const partners = ref([
 	{
 		name: "MyBI",
 		src: `${__BASE_PATH__}/imgs/partners/mybi.png`,
+		link: "https://www.mybi.com.br/",
+	},
+	{
+		name: "WGMI Labs",
+		src: `${__BASE_PATH__}/imgs/partners/wgmi-labs.png`,
+		link: "https://www.wgmilabs.com",
+		class: "h-12 sm:h-14",
+	},
+	{
+		name: "Blue Lake Web Design",
+		src: `${__BASE_PATH__}/imgs/partners/blue-lake-web-design.png`,
+		link: "https://bluelakewebdesign.com",
+		labelBelow: true,
+		imageClass: "h-10 sm:h-11",
 	},
 ])
 </script> 

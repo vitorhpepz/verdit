@@ -53,14 +53,8 @@
     "subtitle": "",
     "items": [
       {
-        "name": "Mark Kempton",
-        "job": "SAS PointsPrizes",
-        "text": "Super responsive, highly professional. We're already planning the next project.",
-        "src": "/imgs/testimonials/mark.jpeg"
-      },
-      {
         "name": "Eric Plotts",
-        "job": "MoveRocket.com",
+        "job": "Blue Lake Web Design",
         "text": "Vitor is a beast. Honest, smart, hardworking. One of the best I've worked with.",
         "src": "/imgs/testimonials/eric.jpeg"
       },
@@ -81,6 +75,12 @@
         "job": "Gnla Transportation LLC",
         "text": "I have never known a better and more professional in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.",
         "src": "/imgs/testimonials/peter-renolds.webp"
+      },
+      {
+        "name": "Mark Kempton",
+        "job": "SAS PointsPrizes",
+        "text": "Super responsive, highly professional. We're already planning the next project.",
+        "src": "/imgs/testimonials/mark.jpeg"
       }
     ]
   },
@@ -201,7 +201,8 @@
     "menuItems": [
       { "label": "Features", "link": "#features" },
       { "label": "Our Consultancy Services", "link": "/" },
-      { "label": "Twitter", "link": "https://x.com/vitorpepz" }
+      { "label": "Twitter", "link": "https://x.com/vitorpepz" },
+      { "label": "LinkedIn", "link": "https://www.linkedin.com/in/vitorpepicon" }
     ]
   }
 }
