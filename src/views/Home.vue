@@ -99,8 +99,8 @@
 
 		<Section id="faq" class="bg-slate-50 bg-[url('/imgs/bg-faq.jpg')] bg-contain bg-right bg-no-repeat">
 			<Container class="space-y-16">
-				<div class="w-full max-w-2xl space-y-4">
-					<Title>{{ content.faq.title }}</Title>
+				<div class="w-full max-w-2xl mx-auto space-y-4 text-center">
+					<Title class="text-center">{{ content.faq.title }}</Title>
 				</div>
 
 				<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
