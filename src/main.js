@@ -6,8 +6,13 @@ import './main.css'
 const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
 const GOOGLE_ADS_SEND_TO = 'AW-18056474257/q1rqCL2VnpscEJHd_6FD'
 const COOKIEBOT_EVENT_NAMES = ['CookiebotOnConsentReady', 'CookiebotOnAccept', 'CookiebotOnDecline']
+const TRACKING_ENABLED = window.VERDIT_TRACKING_ENABLED === true
 
 function hasCookiebotConsent(category) {
+  if (!TRACKING_ENABLED) {
+    return false
+  }
+
   const consent = window.Cookiebot && window.Cookiebot.consent
   return !!(consent && consent[category])
 }
@@ -21,7 +26,7 @@ function hasMarketingConsent() {
 }
 
 function gtagSendEvent(url, eventParameters = {}) {
-  if (!window.gtag || !hasMarketingConsent()) {
+  if (!TRACKING_ENABLED || !window.gtag || !hasMarketingConsent()) {
     return false
   }
 
@@ -51,7 +56,7 @@ const isPrivateNetworkHost =
   /^172\.(1[6-9]|2\d|3[0-1])\./.test(hostname)
 
 function trackPageView(path) {
-  if (!window.gtag || !hasAnalyticsConsent()) {
+  if (!TRACKING_ENABLED || !window.gtag || !hasAnalyticsConsent()) {
     return
   }
 
@@ -63,33 +68,35 @@ function trackPageView(path) {
   })
 }
 
-window.addEventListener('message', (event) => {
-  if (typeof event.data !== 'string' || !event.data.includes('Tally.FormSubmitted')) {
-    return
-  }
+if (TRACKING_ENABLED) {
+  window.addEventListener('message', (event) => {
+    if (typeof event.data !== 'string' || !event.data.includes('Tally.FormSubmitted')) {
+      return
+    }
 
-  let payload
+    let payload
 
-  try {
-    payload = JSON.parse(event.data).payload
-  } catch (error) {
-    console.error('Failed to parse Tally submission payload', error)
-    return
-  }
+    try {
+      payload = JSON.parse(event.data).payload
+    } catch (error) {
+      console.error('Failed to parse Tally submission payload', error)
+      return
+    }
 
-  if (!payload || payload.formId !== LANDING_PAGE_TALLY_FORM_ID) {
-    return
-  }
+    if (!payload || payload.formId !== LANDING_PAGE_TALLY_FORM_ID) {
+      return
+    }
 
-  gtagSendEvent(undefined, {
-    value: 1.0,
-    currency: 'BRL',
-    form_id: payload.formId,
-    form_name: payload.formName,
-    submission_id: payload.id,
-    debug_mode: isPrivateNetworkHost
+    gtagSendEvent(undefined, {
+      value: 1.0,
+      currency: 'BRL',
+      form_id: payload.formId,
+      form_name: payload.formName,
+      submission_id: payload.id,
+      debug_mode: isPrivateNetworkHost
+    })
   })
-})
+}
 
 app.mount('#app')
 
@@ -97,7 +104,9 @@ function trackCurrentPageView() {
   trackPageView(window.location.pathname + window.location.search + window.location.hash)
 }
 
-trackCurrentPageView()
-COOKIEBOT_EVENT_NAMES.forEach((eventName) => {
-  window.addEventListener(eventName, trackCurrentPageView, { once: eventName === 'CookiebotOnConsentReady' })
-})
+if (TRACKING_ENABLED) {
+  trackCurrentPageView()
+  COOKIEBOT_EVENT_NAMES.forEach((eventName) => {
+    window.addEventListener(eventName, trackCurrentPageView, { once: eventName === 'CookiebotOnConsentReady' })
+  })
+}

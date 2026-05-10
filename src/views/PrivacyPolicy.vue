@@ -13,7 +13,7 @@
 				<article class="mx-auto max-w-3xl space-y-8 text-slate-700">
 					<header class="space-y-4">
 						<Title class="text-3xl lg:text-5xl">Privacy Policy</Title>
-						<p class="text-base"><strong>Last updated:</strong> April 28, 2026</p>
+						<p class="text-base"><strong>Last updated:</strong> May 10, 2026</p>
 						<p>
 							VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
 						</p>
@@ -32,9 +32,7 @@
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">What data we collect</h2>
 						<div class="space-y-3">
-							<p><strong>From website visitors:</strong> we use Google Analytics and Google Ads tags to understand how visitors find and use our site and to measure the performance of advertising campaigns. These tools collect pages visited, approximate location, device type, referral source, and a unique identifier stored in cookies. Google may use this data to build advertising audiences and serve ads to you on other sites within its network.</p>
-							<p>We use Cookiebot to manage your cookie preferences. When you first visit the site, you can accept, reject, or customize which categories of cookies are set. You can change your choice at any time by clicking the Cookiebot icon in the bottom-left corner of any page.</p>
-							<p>You can also opt out of Google Analytics tracking using <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google's browser add-on</a> and manage ad personalization in your <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 underline">Google Ads settings</a>.</p>
+							<p><strong>From website visitors:</strong> we do not currently run Google Analytics, Google Ads tags, or Cookiebot on this website. If we re-enable analytics or advertising tags, we'll update this policy and restore cookie controls before using them.</p>
 						</div>
 						<p><strong>From prospects we contact on behalf of clients:</strong> business contact information sourced from public business directories, professional networking sites, and licensed B2B data providers. This typically includes name, job title, business email address, company name, company size, and publicly available information about the company's hiring activity.</p>
 						<p><strong>From clients:</strong> name, business email, company information, and any data you share with us during our engagement (CRM exports, outreach templates, ideal client criteria).</p>
@@ -46,7 +44,7 @@
 						<p>We use prospect data to send relevant B2B outreach to people whose professional role matches what our clients offer. The outreach is tied to the recipient's professional responsibilities, not their personal life.</p>
 						<p>We use client data to deliver the services you've hired us for.</p>
 						<p>If you reply to our outreach, we may add your contact information and reply content to our CRM to manage the conversation.</p>
-						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. Website visitor data collected through Google Analytics and Google Ads tags is handled separately, as described above and in the California residents section. We don't use your data to train AI models.</p>
+						<p>We don't sell, rent, or share prospect or client data with anyone outside the vendors listed below. We don't use your data to train AI models.</p>
 					</section>
 
 					<section class="space-y-3">
@@ -56,7 +54,7 @@
 
 					<section class="space-y-3">
 						<h2 class="font-display text-2xl text-slate-900">Universal opt-out signals</h2>
-						<p>We honor the Global Privacy Control (GPC) browser signal automatically across every jurisdiction where it applies. If your browser sends GPC, we treat it as a valid opt-out of sale and sharing of personal information for cross-context behavioral advertising, and as an opt-out of targeted advertising under state laws that recognize universal opt-out mechanisms - including California, Colorado, Connecticut, Delaware, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, and Texas. You don't need to take any further action; the signal itself is the request.</p>
+						<p>We do not currently use Google Analytics, Google Ads, Cookiebot, advertising pixels, retargeting, or targeted advertising technologies. If your browser sends a Global Privacy Control (GPC) signal, we treat it as a valid opt-out signal where applicable, including for any future sale, sharing, or targeted advertising activity that could be covered by state privacy laws.</p>
 					</section>
 
 					<section class="space-y-3">
@@ -66,6 +64,7 @@
 							<li><strong>Smartlead</strong> — email sending and campaign management</li>
 							<li><strong>Enrichment providers</strong> (such as Apollo, Clay, or similar) — prospect research and data verification</li>
 							<li><strong>CRM platforms</strong> (such as HubSpot, Bullhorn, or the CRM our client uses) — pipeline and contact management</li>
+							<li><strong>Website hosting and security providers</strong> — hosting the website, serving pages, maintaining uptime, and protecting against abuse</li>
 						</ul>
 						<p>If you're a client, we'll tell you specifically which tools are in use for your engagement.</p>
 					</section>
@@ -113,11 +112,11 @@
 						<ul class="list-disc space-y-2 pl-6">
 							<li><em>Identifiers</em> - name, business email address</li>
 							<li><em>Professional or employment-related information</em> - job title, employer, company size, publicly available information about the company's hiring activity</li>
-							<li><em>Internet or network activity</em> (website visitors only) - pages visited, device type, approximate location</li>
+							<li><em>Internet or network activity</em> (website visitors only) - basic technical logs, such as IP address, browser type, device type, requested pages, referring page, and timestamps, where processed by our hosting or security providers</li>
 						</ul>
-						<p><strong>Sources of this information:</strong> public business directories, professional networking sites, licensed B2B data providers, our website analytics, and information clients share with us.</p>
+						<p><strong>Sources of this information:</strong> public business directories, professional networking sites, licensed B2B data providers, website hosting and security providers, and information clients share with us.</p>
 						<p><strong>Purposes:</strong> sending relevant B2B outreach on behalf of our clients, delivering contracted services to clients, and operating our website.</p>
-						<p>We do not sell personal information for money. However, our use of Google Ads tags may constitute "sharing" of personal information for cross-context behavioral advertising as the CCPA defines that term. You can opt out of this sharing at any time by adjusting your cookie preferences through the Cookiebot icon in the bottom-left corner of any page, or by enabling Global Privacy Control in your browser (see "Universal opt-out signals" above). We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
+						<p>We do not sell personal information for money, and we do not currently share personal information for cross-context behavioral advertising. We do not use or disclose sensitive personal information for purposes that would trigger the right to limit, but the right exists and you can invoke it.</p>
 						<p>You have the right to know, access, correct, and delete your personal information, the right to opt out of sale or sharing, the right to limit use of sensitive personal information, and the right to non-discrimination for exercising any of these rights.</p>
 					</section>
 
