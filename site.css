@@ -41,22 +41,6 @@
   color: #fff;
 }
 
-/* Contact */
-.contact-copy p {
-  color: #fff;
-  font-size: 1.125rem;
-  letter-spacing: -0.025em;
-  line-height: 1.625;
-  margin-bottom: 1.25rem;
-  text-align: left;
-}
-
-@media (min-width: 1024px) {
-  .contact-copy p {
-    font-size: 1.25rem;
-  }
-}
-
 /* FAQ */
 .faq-heading {
   font-family: lexend, sans-serif;
@@ -273,25 +257,6 @@
 }
 
 /* Services */
-.service-copy > * + * {
-  margin-top: 1rem;
-}
-
-.service-copy > p {
-  color: #475569;
-  font-size: 1rem;
-}
-
-.service-copy > p + p {
-  margin-top: 0.75rem;
-}
-
-@media (min-width: 1024px) {
-  .service-copy > p {
-    font-size: 0.875rem;
-  }
-}
-
 .service-heading {
   font-family: lexend, sans-serif;
   font-size: 1.25rem;
@@ -301,12 +266,39 @@
 .service-mobile {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 42rem;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
+}
+
+.service-text {
+  color: #475569;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .service-text {
+    font-size: 0.875rem;
+  }
+}
+
+.service-desc {
+  color: #fff;
+  font-size: 1.125rem;
+  letter-spacing: -0.025em;
+  line-height: 1.625;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .service-desc {
+    font-size: 1.25rem;
+  }
 }
 
 /* Testimonials */
