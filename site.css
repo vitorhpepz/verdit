@@ -1,5 +1,6 @@
 /* Shared semantic classes — reduces Tailwind verbosity across pages */
 
+/* ── Layout ── */
 .section-container {
   width: 100%;
   max-width: 80rem;
@@ -9,6 +10,49 @@
   padding-right: 1rem;
 }
 
+/* ── Header & nav ── */
+.site-header {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .site-header { padding-top: 1rem; padding-bottom: 1rem; }
+}
+
+.logo { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; }
+
+.byline { font-size: 0.875rem; color: #475569; font-weight: 700; }
+@media (min-width: 640px) { .byline { font-size: 1rem; } }
+
+.desktop-nav { display: none; align-items: center; gap: 0.75rem; }
+@media (min-width: 768px) { .desktop-nav { display: flex; } }
+
+.nav-link { border-radius: 0.5rem; padding: 0.375rem 0.75rem; transition: background-color .3s; }
+.nav-link:hover { background-color: #f1f5f9; }
+
+.nav-link-mobile { padding: 1rem; border-radius: 0.5rem; text-align: left; transition: background-color .3s; }
+.nav-link-mobile:hover { background-color: #f1f5f9; }
+
+.menu-overlay { position: fixed; inset: 0; background-color: rgb(226 232 240 / .5); backdrop-filter: blur(4px); }
+.mobile-menu-panel {
+  padding: 1rem;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 3.5rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+}
+
+.icon-sm { width: 1.25rem; height: 1.25rem; fill: currentColor; }
+
+/* ── Buttons ── */
 .btn-primary {
   display: inline-block;
   font-weight: 700;
@@ -41,20 +85,29 @@
 }
 .btn-secondary:hover { background-color: #1d4ed8; color: #fff; }
 
-.nav-link {
-  border-radius: 0.5rem;
-  padding: 0.375rem 0.75rem;
-  transition: background-color .3s;
+/* ── Hero & Partners ── */
+.partner-logo {
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .3s;
 }
-.nav-link:hover { background-color: #f1f5f9; }
+.partner-logo:hover { opacity: 0.8; }
+@media (min-width: 640px) { .partner-logo { height: 4rem; } }
 
-.nav-link-mobile {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: left;
-  transition: background-color .3s;
+/* ── Services ── */
+.service-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.nav-link-mobile:hover { background-color: #f1f5f9; }
 
 .icon-wrap {
   border-radius: 0.5rem;
@@ -70,6 +123,12 @@
   aspect-ratio: 1;
   fill: currentColor;
 }
+
+.feature-item { display: flex; align-items: flex-start; gap: 1rem; transition: color .3s; }
+.group:hover .feature-item { color: #fff; }
+
+/* ── Testimonials ── */
+.testimonial-col { display: inline-block; width: 100%; padding-top: 1rem; }
 
 .testimonial-card {
   position: relative;
@@ -97,20 +156,41 @@
   line-height: 1.625;
 }
 
-.testimonial-photo {
-  width: 3.5rem;
-  aspect-ratio: 1;
-  border-radius: 9999px;
-}
+.testimonial-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  transition: color .3s;
-}
-.group:hover .feature-item { color: #fff; }
+.testimonial-photo { width: 3.5rem; aspect-ratio: 1; border-radius: 9999px; }
+.testimonial-author { font-size: 1rem; color: #64748b; }
+@media (min-width: 640px) { .testimonial-author { font-size: 0.875rem; } }
 
+/* ── FAQ ── */
+.faq-item { width: 100%; }
+.faq-item > * + * { margin-top: 0.25rem; }
+@media (min-width: 640px) { .faq-item > * + * { margin-top: 1rem; } }
+
+/* ── About / services section ── */
+.service-heading { font-size: 1.25rem; line-height: 1.75rem; font-family: lexend, sans-serif; }
+
+.service-text { font-size: 1rem; color: #475569; }
+@media (min-width: 1024px) { .service-text { font-size: 0.875rem; } }
+
+.service-desc {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  letter-spacing: -0.025em;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+@media (min-width: 1024px) { .service-desc { font-size: 1.25rem; } }
+
+.icon-lg { width: 2.25rem; aspect-ratio: 1; }
+
+/* ── FAQ ── */
+.faq-heading { font-family: lexend, sans-serif; font-size: 1.125rem; line-height: 1.75rem; }
+.faq-text { font-size: 1rem; }
+@media (min-width: 640px) { .faq-text { font-size: 0.875rem; } }
+
+/* ── Privacy policy ── */
 .prose-link { color: #2563eb; text-decoration: underline; }
 .prose-link:hover { color: #1d4ed8; }
 

@@ -23,36 +23,36 @@
 		<main class="text-slate-900 bg-white min-h-screen">
 
 			<!-- Header -->
-			<header class="shadow py-3 md:py-4 sticky top-0 z-10 bg-white">
+			<header class="site-header">
 				<div class="container xl:max-w-7xl mx-auto px-4 relative flex items-center justify-between gap-4 text-slate-900 text-base">
 					<div class="flex items-center gap-8 md:gap-12 lg:gap-16">
 						<div class="flex items-center gap-3">
-							<a href="/" class="text-4xl font-bold">Verdit<span class="text-primary-600">Labs</span></a>
-							<span class="text-sm sm:text-base text-slate-600 font-bold">by Vitor Pepicon</span>
+							<a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
+							<span class="byline">by Vitor Pepicon</span>
 						</div>
-						<nav class="items-center gap-3 hidden md:flex">
-							<a href="/#services" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Services</a>
-							<a href="/#testimonials" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Testimonials</a>
-							<a href="/#pricing" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Pricing</a>
-							<a href="/#faq" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">FAQ</a>
-							<a href="/#contact" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Contact</a>
+						<nav class="desktop-nav">
+							<a href="/#services" class="nav-link">Services</a>
+							<a href="/#testimonials" class="nav-link">Testimonials</a>
+							<a href="/#pricing" class="nav-link">Pricing</a>
+							<a href="/#faq" class="nav-link">FAQ</a>
+							<a href="/#contact" class="nav-link">Contact</a>
 						</nav>
 					</div>
 					<div class="flex items-center gap-4">
 						<!-- Mobile menu button -->
 						<div class="md:hidden">
 							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" class="w-5 h-5 fill-current"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-								<svg id="icon-x" class="w-5 h-5 fill-current hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+								<svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
-							<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
-							<div id="mobile-menu" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
+							<div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
+							<div id="mobile-menu" class="mobile-menu-panel hidden">
 								<nav class="flex flex-col">
-									<a href="/#services" class="p-4 hover:bg-slate-100 rounded-lg text-left">Services</a>
-									<a href="/#testimonials" class="p-4 hover:bg-slate-100 rounded-lg text-left">Testimonials</a>
-									<a href="/#pricing" class="p-4 hover:bg-slate-100 rounded-lg text-left">Pricing</a>
-									<a href="/#faq" class="p-4 hover:bg-slate-100 rounded-lg text-left">FAQ</a>
-									<a href="/#contact" class="p-4 hover:bg-slate-100 rounded-lg text-left">Contact</a>
+									<a href="/#services" class="nav-link-mobile">Services</a>
+									<a href="/#testimonials" class="nav-link-mobile">Testimonials</a>
+									<a href="/#pricing" class="nav-link-mobile">Pricing</a>
+									<a href="/#faq" class="nav-link-mobile">FAQ</a>
+									<a href="/#contact" class="nav-link-mobile">Contact</a>
 								</nav>
 							</div>
 						</div>

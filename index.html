@@ -30,19 +30,19 @@
 		<main class="text-slate-900 bg-white min-h-screen">
 
 			<!-- Header -->
-			<header class="shadow py-3 md:py-4 sticky top-0 z-10 bg-white">
+			<header class="site-header">
 				<div class="section-container relative flex items-center justify-between gap-4 text-slate-900 text-base">
 					<div class="flex items-center gap-8 md:gap-12 lg:gap-16">
 						<div class="flex items-center gap-3">
-							<a href="/" class="text-4xl font-bold">Verdit<span class="text-primary-600">Labs</span></a>
-							<span class="text-sm sm:text-base text-slate-600 font-bold">by Vitor Pepicon</span>
+							<a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
+							<span class="byline">by Vitor Pepicon</span>
 						</div>
-						<nav class="items-center gap-3 hidden md:flex">
-							<a href="#services" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Services</a>
-							<a href="#testimonials" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Testimonials</a>
-							<a href="#pricing" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Pricing</a>
-							<a href="#faq" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">FAQ</a>
-							<a href="#contact" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Contact</a>
+						<nav class="desktop-nav">
+							<a href="#services" class="nav-link">Services</a>
+							<a href="#testimonials" class="nav-link">Testimonials</a>
+							<a href="#pricing" class="nav-link">Pricing</a>
+							<a href="#faq" class="nav-link">FAQ</a>
+							<a href="#contact" class="nav-link">Contact</a>
 						</nav>
 					</div>
 					<div class="flex items-center gap-4">
@@ -50,11 +50,11 @@
 						<!-- Mobile menu button -->
 						<div class="md:hidden">
 							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" class="w-5 h-5 fill-current"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-								<svg id="icon-x" class="w-5 h-5 fill-current hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+								<svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
-							<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
-							<div id="mobile-menu" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
+							<div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
+							<div id="mobile-menu" class="mobile-menu-panel hidden">
 								<nav class="flex flex-col">
 									<a href="#services" class="nav-link-mobile">Services</a>
 									<a href="#testimonials" class="nav-link-mobile">Testimonials</a>
@@ -86,16 +86,16 @@
 						<div class="h-8"></div>
 						<p class="font-display">Trusted by:</p>
 						<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
-							<a href="https://www.inwave.online/en" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="Inwave">
+							<a href="https://www.inwave.online/en" target="_blank" rel="noopener noreferrer" class="partner-logo" aria-label="Inwave">
 								<img src="/imgs/partners/inwave.png" alt="Inwave" class="h-7 sm:h-8" />
 							</a>
-							<a href="https://www.mybi.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="MyBI">
+							<a href="https://www.mybi.com.br/" target="_blank" rel="noopener noreferrer" class="partner-logo" aria-label="MyBI">
 								<img src="/imgs/partners/mybi.png" alt="MyBI" class="h-10 sm:h-12" />
 							</a>
-							<a href="https://www.wgmilabs.com" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="WGMI Labs">
+							<a href="https://www.wgmilabs.com" target="_blank" rel="noopener noreferrer" class="partner-logo" aria-label="WGMI Labs">
 								<img src="/imgs/partners/wgmi-labs.png" alt="WGMI Labs" class="h-12 sm:h-14" />
 							</a>
-							<a href="https://bluelakewebdesign.com" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="Blue Lake Web Design">
+							<a href="https://bluelakewebdesign.com" target="_blank" rel="noopener noreferrer" class="partner-logo" aria-label="Blue Lake Web Design">
 								<span class="flex flex-col items-center justify-center gap-1">
 									<img src="/imgs/partners/blue-lake-web-design.png" alt="Blue Lake Web Design" class="h-10 sm:h-11" />
 									<span class="font-display text-[10px] sm:text-xs leading-none text-slate-700">Blue Lake Web Design</span>
@@ -117,44 +117,44 @@
 
 				<!-- Tasks - Mobile -->
 				<div class="lg:hidden flex flex-col gap-4">
-					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+					<div class="service-mobile">
 						<div class="icon-wrap">
-							<svg aria-hidden="true" class="w-9 aspect-square"><use href="/imgs/icons.svg#icon-task-contacts"></use></svg>
+							<svg aria-hidden="true" class="icon-lg"><use href="/imgs/icons.svg#icon-task-contacts"></use></svg>
 						</div>
-						<h2 class="text-xl font-display">Verified Decision-Maker Data on Autopilot</h2>
+						<h2 class="service-heading">Verified Decision-Maker Data on Autopilot</h2>
 						<div class="space-y-3">
-							<p class="text-base lg:text-sm text-slate-600">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
-							<p class="text-base lg:text-sm text-slate-600">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
+							<p class="service-text">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
+							<p class="service-text">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
 						</div>
 					</div>
-					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+					<div class="service-mobile">
 						<div class="icon-wrap">
-							<svg aria-hidden="true" class="w-9 aspect-square"><use href="/imgs/icons.svg#icon-task-inventory"></use></svg>
+							<svg aria-hidden="true" class="icon-lg"><use href="/imgs/icons.svg#icon-task-inventory"></use></svg>
 						</div>
-						<h2 class="text-xl font-display">Personalized Client Outreach That Feels Relevant</h2>
+						<h2 class="service-heading">Personalized Client Outreach That Feels Relevant</h2>
 						<div class="space-y-3">
-							<p class="text-base lg:text-sm text-slate-600">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
-							<p class="text-base lg:text-sm text-slate-600">The result: more replies and better conversations with hiring managers and HR leaders.</p>
+							<p class="service-text">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
+							<p class="service-text">The result: more replies and better conversations with hiring managers and HR leaders.</p>
 						</div>
 					</div>
-					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+					<div class="service-mobile">
 						<div class="icon-wrap">
 							<svg aria-hidden="true" class="h-9 w-9" fill="none"><use href="/imgs/icons.svg#icon-task-reporting"></use></svg>
 						</div>
-						<h2 class="text-xl font-display">AI Powered Prospect Scoring</h2>
+						<h2 class="service-heading">AI Powered Prospect Scoring</h2>
 						<div class="space-y-3">
-							<p class="text-base lg:text-sm text-slate-600">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
-							<p class="text-base lg:text-sm text-slate-600">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
+							<p class="service-text">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
+							<p class="service-text">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
 						</div>
 					</div>
-					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+					<div class="service-mobile">
 						<div class="icon-wrap">
-							<svg aria-hidden="true" class="w-9 aspect-square" fill="none"><use href="/imgs/icons.svg#icon-task-cloud"></use></svg>
+							<svg aria-hidden="true" class="icon-lg" fill="none"><use href="/imgs/icons.svg#icon-task-cloud"></use></svg>
 						</div>
-						<h2 class="text-xl font-display">Email Infrastructure and Inbox Placement</h2>
+						<h2 class="service-heading">Email Infrastructure and Inbox Placement</h2>
 						<div class="space-y-3">
-							<p class="text-base lg:text-sm text-slate-600">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
-							<p class="text-base lg:text-sm text-slate-600">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
+							<p class="service-text">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
+							<p class="service-text">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
 						</div>
 					</div>
 				</div>
@@ -164,42 +164,42 @@
 					<div class="grid grid-cols-2 xl:grid-cols-4 gap-6">
 						<div class="flex flex-col gap-4">
 							<div class="icon-wrap">
-								<svg aria-hidden="true" class="w-9 aspect-square"><use href="/imgs/icons.svg#icon-task-contacts"></use></svg>
+								<svg aria-hidden="true" class="icon-lg"><use href="/imgs/icons.svg#icon-task-contacts"></use></svg>
 							</div>
-							<h2 class="text-xl font-display">Verified Decision-Maker Data on Autopilot</h2>
+							<h2 class="service-heading">Verified Decision-Maker Data on Autopilot</h2>
 							<div class="space-y-3">
-								<p class="text-sm text-slate-600">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
-								<p class="text-sm text-slate-600">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
+								<p class="service-text">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
+								<p class="service-text">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
 							</div>
 						</div>
 						<div class="flex flex-col gap-4">
 							<div class="icon-wrap">
-								<svg aria-hidden="true" class="w-9 aspect-square"><use href="/imgs/icons.svg#icon-task-inventory"></use></svg>
+								<svg aria-hidden="true" class="icon-lg"><use href="/imgs/icons.svg#icon-task-inventory"></use></svg>
 							</div>
-							<h2 class="text-xl font-display">Personalized Client Outreach That Feels Relevant</h2>
+							<h2 class="service-heading">Personalized Client Outreach That Feels Relevant</h2>
 							<div class="space-y-3">
-								<p class="text-sm text-slate-600">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
-								<p class="text-sm text-slate-600">The result: more replies and better conversations with hiring managers and HR leaders.</p>
+								<p class="service-text">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
+								<p class="service-text">The result: more replies and better conversations with hiring managers and HR leaders.</p>
 							</div>
 						</div>
 						<div class="flex flex-col gap-4">
 							<div class="icon-wrap">
 								<svg aria-hidden="true" class="h-9 w-9" fill="none"><use href="/imgs/icons.svg#icon-task-reporting"></use></svg>
 							</div>
-							<h2 class="text-xl font-display">AI Powered Prospect Scoring</h2>
+							<h2 class="service-heading">AI Powered Prospect Scoring</h2>
 							<div class="space-y-3">
-								<p class="text-sm text-slate-600">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
-								<p class="text-sm text-slate-600">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
+								<p class="service-text">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
+								<p class="service-text">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
 							</div>
 						</div>
 						<div class="flex flex-col gap-4">
 							<div class="icon-wrap">
-								<svg aria-hidden="true" class="w-9 aspect-square" fill="none"><use href="/imgs/icons.svg#icon-task-cloud"></use></svg>
+								<svg aria-hidden="true" class="icon-lg" fill="none"><use href="/imgs/icons.svg#icon-task-cloud"></use></svg>
 							</div>
-							<h2 class="text-xl font-display">Email Infrastructure and Inbox Placement</h2>
+							<h2 class="service-heading">Email Infrastructure and Inbox Placement</h2>
 							<div class="space-y-3">
-								<p class="text-sm text-slate-600">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
-								<p class="text-sm text-slate-600">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
+								<p class="service-text">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
+								<p class="service-text">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
 							</div>
 						</div>
 					</div>
@@ -213,71 +213,71 @@
 						<h2 class="text-xl lg:text-3xl font-display tracking-tight text-center">What clients say</h2>
 					</div>
 					<div class="sm:columns-2 lg:columns-3">
-						<div class="inline-block w-full pt-4">
+						<div class="testimonial-col">
 							<figure class="testimonial-card">
 								<svg aria-hidden="true" width="105" height="78" class="testimonial-quote"><use href="/imgs/icons.svg#icon-quote"></use></svg>
 								<blockquote class="testimonial-text">Vitor is a beast. Honest, smart, hardworking. One of the best I've worked with.</blockquote>
 								<hr />
-								<figcaption class="flex items-center justify-between gap-4">
+								<figcaption class="testimonial-footer">
 									<div class="space-y-1">
 										<h3 class="font-display">Eric Plotts</h3>
-										<p class="text-base sm:text-sm text-slate-500">Blue Lake Web Design</p>
+										<p class="testimonial-author">Blue Lake Web Design</p>
 									</div>
 									<img src="/imgs/testimonials/eric.jpeg" alt="Eric Plotts" class="testimonial-photo" />
 								</figcaption>
 							</figure>
 						</div>
-						<div class="inline-block w-full pt-4">
+						<div class="testimonial-col">
 							<figure class="testimonial-card">
 								<svg aria-hidden="true" width="105" height="78" class="testimonial-quote"><use href="/imgs/icons.svg#icon-quote"></use></svg>
 								<blockquote class="testimonial-text">Amazing experience with Vitor!! Will continue to work with him longterm.</blockquote>
 								<hr />
-								<figcaption class="flex items-center justify-between gap-4">
+								<figcaption class="testimonial-footer">
 									<div class="space-y-1">
 										<h3 class="font-display">Brandon Priest</h3>
-										<p class="text-base sm:text-sm text-slate-500">WgmiLabs.com</p>
+										<p class="testimonial-author">WgmiLabs.com</p>
 									</div>
 									<img src="/imgs/testimonials/brandon.jpeg" alt="Brandon Priest" class="testimonial-photo" />
 								</figcaption>
 							</figure>
 						</div>
-						<div class="inline-block w-full pt-4">
+						<div class="testimonial-col">
 							<figure class="testimonial-card">
 								<svg aria-hidden="true" width="105" height="78" class="testimonial-quote"><use href="/imgs/icons.svg#icon-quote"></use></svg>
 								<blockquote class="testimonial-text">Vitor is amazing! He did exactly what needed to be done and was fun to work with. He is very good at communication when we needed anything or had questions... The project was a huge success and we'll continue working together on this project for smaller portions of it.</blockquote>
 								<hr />
-								<figcaption class="flex items-center justify-between gap-4">
+								<figcaption class="testimonial-footer">
 									<div class="space-y-1">
 										<h3 class="font-display">Jacobo Escobar</h3>
-										<p class="text-base sm:text-sm text-slate-500">Founder, Web3 Gaming Platform</p>
+										<p class="testimonial-author">Founder, Web3 Gaming Platform</p>
 									</div>
 									<img src="/imgs/testimonials/jacobo.jpeg" alt="Jacobo Escobar" class="testimonial-photo" />
 								</figcaption>
 							</figure>
 						</div>
-						<div class="inline-block w-full pt-4">
+						<div class="testimonial-col">
 							<figure class="testimonial-card">
 								<svg aria-hidden="true" width="105" height="78" class="testimonial-quote"><use href="/imgs/icons.svg#icon-quote"></use></svg>
 								<blockquote class="testimonial-text">I have never known a better and more professional in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.</blockquote>
 								<hr />
-								<figcaption class="flex items-center justify-between gap-4">
+								<figcaption class="testimonial-footer">
 									<div class="space-y-1">
 										<h3 class="font-display">Gary Nezri</h3>
-										<p class="text-base sm:text-sm text-slate-500">Gnla Transportation LLC</p>
+										<p class="testimonial-author">Gnla Transportation LLC</p>
 									</div>
 									<img src="/imgs/testimonials/peter-renolds.webp" alt="Gary Nezri" class="testimonial-photo" />
 								</figcaption>
 							</figure>
 						</div>
-						<div class="inline-block w-full pt-4">
+						<div class="testimonial-col">
 							<figure class="testimonial-card">
 								<svg aria-hidden="true" width="105" height="78" class="testimonial-quote"><use href="/imgs/icons.svg#icon-quote"></use></svg>
 								<blockquote class="testimonial-text">Super responsive, highly professional. We're already planning the next project.</blockquote>
 								<hr />
-								<figcaption class="flex items-center justify-between gap-4">
+								<figcaption class="testimonial-footer">
 									<div class="space-y-1">
 										<h3 class="font-display">Mark Kempton</h3>
-										<p class="text-base sm:text-sm text-slate-500">SAS PointsPrizes</p>
+										<p class="testimonial-author">SAS PointsPrizes</p>
 									</div>
 									<img src="/imgs/testimonials/mark.jpeg" alt="Mark Kempton" class="testimonial-photo" />
 								</figcaption>
@@ -306,19 +306,19 @@
 							</div>
 							<a href="#tally-open=nGYAdZ&whatButton=free_&emoji=👋&animation=wave" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-transparent text-white border-white hover:bg-white/10 font-medium transition-all duration-300 hover:scale-105">Get your free outreach audit</a>
 							<div class="flex flex-col gap-4 text-base sm:text-sm">
-								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+								<div class="feature-item text-slate-400">
 									<svg class="icon-check"><use href="/imgs/icons.svg#icon-check"></use></svg>
 									<span>Personalized review of your CRM and outreach process</span>
 								</div>
-								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+								<div class="feature-item text-slate-400">
 									<svg class="icon-check"><use href="/imgs/icons.svg#icon-check"></use></svg>
 									<span>Highest leverage automation opportunities identified</span>
 								</div>
-								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+								<div class="feature-item text-slate-400">
 									<svg class="icon-check"><use href="/imgs/icons.svg#icon-check"></use></svg>
 									<span>Actionable recommendations you can use immediately</span>
 								</div>
-								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+								<div class="feature-item text-slate-400">
 									<svg class="icon-check"><use href="/imgs/icons.svg#icon-check"></use></svg>
 									<span>No calls, no commitments</span>
 								</div>
@@ -419,49 +419,49 @@
 						<h2 class="text-3xl sm:text-4xl font-display tracking-tight text-center">FAQ</h2>
 					</div>
 					<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">Can you integrate with my current CRM and tools?</h3>
-							<p class="text-base sm:text-sm">Yes. HubSpot, Bullhorn, Pipedrive, Zoho, and anything with an API or Zapier/Make integration. I also set up email infrastructure from scratch if you need outbound built from zero.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">Can you integrate with my current CRM and tools?</h3>
+							<p class="faq-text">Yes. HubSpot, Bullhorn, Pipedrive, Zoho, and anything with an API or Zapier/Make integration. I also set up email infrastructure from scratch if you need outbound built from zero.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">Do I need technical expertise to work with you?</h3>
-							<p class="text-base sm:text-sm">Zero. You focus on selling, I'll handle the nerdy stuff behind the curtain.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">Do I need technical expertise to work with you?</h3>
+							<p class="faq-text">Zero. You focus on selling, I'll handle the nerdy stuff behind the curtain.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">How quickly can I expect results?</h3>
-							<p class="text-base sm:text-sm">Weeks 1 and 2: I build everything. Week 3: first outreach goes live. Week 4 onward: replies start coming in. Most clients see a steady flow of interested prospects by the end of month 2.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">How quickly can I expect results?</h3>
+							<p class="faq-text">Weeks 1 and 2: I build everything. Week 3: first outreach goes live. Week 4 onward: replies start coming in. Most clients see a steady flow of interested prospects by the end of month 2.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">What if I'm not even sure what I need?</h3>
-							<p class="text-base sm:text-sm">No problem: bring your chaos to the email exchange and I'll bring the clarity.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">What if I'm not even sure what I need?</h3>
+							<p class="faq-text">No problem: bring your chaos to the email exchange and I'll bring the clarity.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">Is this just another AI tool?</h3>
-							<p class="text-base sm:text-sm">No. I don't sell software. I run your entire client outreach for you on an ongoing basis, with custom automation built into your existing tools. Hands on consulting plus done for you execution.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">Is this just another AI tool?</h3>
+							<p class="faq-text">No. I don't sell software. I run your entire client outreach for you on an ongoing basis, with custom automation built into your existing tools. Hands on consulting plus done for you execution.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">What's the minimum commitment?</h3>
-							<p class="text-base sm:text-sm">3 months. Month 1 is setup. Months 2-3 are when results start compounding. After that, continue month to month as long as it's working for you.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">What's the minimum commitment?</h3>
+							<p class="faq-text">3 months. Month 1 is setup. Months 2-3 are when results start compounding. After that, continue month to month as long as it's working for you.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">What happens in month 1?</h3>
-							<p class="text-base sm:text-sm">I build everything: email infrastructure, prospect scoring, outreach sequences, and your first campaign goes live. By the end of month 1, hiring managers are already hitting your inbox.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">What happens in month 1?</h3>
+							<p class="faq-text">I build everything: email infrastructure, prospect scoring, outreach sequences, and your first campaign goes live. By the end of month 1, hiring managers are already hitting your inbox.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">How many interested prospects should I expect?</h3>
-							<p class="text-base sm:text-sm">It depends on your market and offer, but most campaigns generate 5 to 15 interested replies per month once everything is running. Some clients see results as early as week 3.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">How many interested prospects should I expect?</h3>
+							<p class="faq-text">It depends on your market and offer, but most campaigns generate 5 to 15 interested replies per month once everything is running. Some clients see results as early as week 3.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">What metrics do I see?</h3>
-							<p class="text-base sm:text-sm">Every month you get a report showing prospects contacted, emails sent, open rate, reply rate, and interested prospects forwarded to you. Full transparency, no vanity metrics.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">What metrics do I see?</h3>
+							<p class="faq-text">Every month you get a report showing prospects contacted, emails sent, open rate, reply rate, and interested prospects forwarded to you. Full transparency, no vanity metrics.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">Will this hurt my email domain or reputation?</h3>
-							<p class="text-base sm:text-sm">No. I set up separate sending domains that redirect to yours. Your main domain is never used for outbound. If anything goes wrong with a sending domain, your primary email and website are completely unaffected.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">Will this hurt my email domain or reputation?</h3>
+							<p class="faq-text">No. I set up separate sending domains that redirect to yours. Your main domain is never used for outbound. If anything goes wrong with a sending domain, your primary email and website are completely unaffected.</p>
 						</div>
-						<div class="space-y-1 sm:space-y-4 w-full">
-							<h3 class="font-display text-lg">Will my prospect lists be shared with other clients?</h3>
-							<p class="text-base sm:text-sm">No. Your data stays yours. I never share prospect lists, campaign copy, or outreach strategies between clients.</p>
+						<div class="faq-item">
+							<h3 class="faq-heading">Will my prospect lists be shared with other clients?</h3>
+							<p class="faq-text">No. Your data stays yours. I never share prospect lists, campaign copy, or outreach strategies between clients.</p>
 						</div>
 					</div>
 				</div>
@@ -474,11 +474,11 @@
 						<div class="flex flex-col lg:flex-row items-start lg:items-center lg:justify-start mb-6">
 							<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-start text-left">
 								<h2 class="text-3xl sm:text-4xl font-display tracking-tight mb-6 text-left"></h2>
-								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Hi! 👋</p>
-								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">I help staffing agencies get more clients without hiring more reps. I run AI powered outbound systems that put hiring managers on your calendar. Setup, sequences, infrastructure, all of it.</p>
-								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">No new platforms. No new hires. Just more clients.</p>
-								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Send me your setup and I'll reply with a free outreach audit within 48 hours.</p>
-								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered.</p>
+								<p class="service-desc">Hi! 👋</p>
+								<p class="service-desc">I help staffing agencies get more clients without hiring more reps. I run AI powered outbound systems that put hiring managers on your calendar. Setup, sequences, infrastructure, all of it.</p>
+								<p class="service-desc">No new platforms. No new hires. Just more clients.</p>
+								<p class="service-desc">Send me your setup and I'll reply with a free outreach audit within 48 hours.</p>
+								<p class="service-desc">Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered.</p>
 							</div>
 							<div class="flex items-center justify-end lg:w-2/5 w-full mt-4 lg:mt-0">
 								<img src="/imgs/myphoto.jpg" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
