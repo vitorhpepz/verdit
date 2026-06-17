@@ -19,4 +19,12 @@ if (mobileToggle) {
 		iconBars.classList.remove('hidden')
 		iconX.classList.add('hidden')
 	})
+	mobileMenu.querySelectorAll('a').forEach(link => {
+		link.addEventListener('click', () => {
+			mobileMenu.classList.add('hidden')
+			mobileOverlay.classList.add('hidden')
+			iconBars.classList.remove('hidden')
+			iconX.classList.add('hidden')
+		})
+	})
 }
