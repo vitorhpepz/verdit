@@ -12,6 +12,7 @@
     <noscript><link rel="stylesheet" href="/fonts/inter-local.css"></noscript>
 
     <link rel="stylesheet" href="/tailwind.css">
+		<link rel="stylesheet" href="/site.css">
   </head>
   <body>
     <main>
@@ -33,12 +34,12 @@
           <div class="flex items-center gap-4">
             <a href="#tally-open=31BZpM&whatButton=free_strategy" class="hidden md:inline-block bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg rounded-full">Get tool from GitHub</a>
             <div class="md:hidden">
-              <button id="mobile-menu-toggle-ft" class="p-2 md:hidden relative z-10">
-                <svg id="icon-bars-ft" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5h14a1 1 0 010 2H3a1 1 0 110-2zm0 4h14a1 1 0 010 2H3a1 1 0 110-2zm0 4h14a1 1 0 010 2H3a1 1 0 110-2z" clip-rule="evenodd"/></svg>
-                <svg id="icon-x-ft" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 011.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              <button id="mobile-menu-toggle" class="p-2 md:hidden relative z-10">
+                <svg id="icon-bars" class="w-5 h-5 fill-current"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+                <svg id="icon-x" class="w-5 h-5 fill-current hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
               </button>
-              <div id="mobile-menu-overlay-ft" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
-              <div id="mobile-menu-ft" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
+              <div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
+              <div id="mobile-menu" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
                 <nav class="flex flex-col">
                   <a href="#about" class="p-4 hover:bg-slate-100 rounded-lg text-left">About</a>
                   <a href="#features" class="p-4 hover:bg-slate-100 rounded-lg text-left">Features</a>
@@ -110,28 +111,6 @@
 
     </main>
 
-    <script>
-      // Mobile menu toggle for freetool page
-      const mobileToggleFt = document.getElementById('mobile-menu-toggle-ft')
-      const mobileMenuFt = document.getElementById('mobile-menu-ft')
-      const mobileOverlayFt = document.getElementById('mobile-menu-overlay-ft')
-      const iconBarsFt = document.getElementById('icon-bars-ft')
-      const iconXFt = document.getElementById('icon-x-ft')
-
-      if (mobileToggleFt) {
-        mobileToggleFt.addEventListener('click', () => {
-          mobileMenuFt.classList.toggle('hidden')
-          mobileOverlayFt.classList.toggle('hidden')
-          iconBarsFt.classList.toggle('hidden')
-          iconXFt.classList.toggle('hidden')
-        })
-        mobileOverlayFt.addEventListener('click', () => {
-          mobileMenuFt.classList.add('hidden')
-          mobileOverlayFt.classList.add('hidden')
-          iconBarsFt.classList.remove('hidden')
-          iconXFt.classList.add('hidden')
-        })
-      }
-    </script>
+    <script src="/site.js" defer></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
 
 		<!-- Generated Tailwind CSS (static, no build step needed) -->
 		<link rel="stylesheet" href="/tailwind.css">
+		<link rel="stylesheet" href="/site.css">
 
 		<!-- Custom Fonts - Self-hosted for better performance -->
 		<link rel="preload" href="/fonts/inter-local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -41,12 +42,8 @@
 						<!-- Mobile menu button -->
 						<div class="md:hidden">
 							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-current">
-									<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-								</svg>
-								<svg id="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5 fill-current hidden">
-									<path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
-								</svg>
+								<svg id="icon-bars" class="w-5 h-5 fill-current"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="w-5 h-5 fill-current hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
 							<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
 							<div id="mobile-menu" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
@@ -71,14 +68,14 @@
 							<h1 class="text-3xl lg:text-5xl font-display tracking-tight">Privacy Policy</h1>
 							<p class="text-base"><strong>Last updated:</strong> May 10, 2026</p>
 							<p>
-								VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> and I'll answer personally.
+								VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="prose-link">vitor@verditlabs.com</a> and I'll answer personally.
 							</p>
 						</header>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Who this policy covers</h2>
+							<h2 class="policy-h2">Who this policy covers</h2>
 							<p>This policy applies to:</p>
-							<ul class="list-disc space-y-2 pl-6">
+							<ul class="policy-ul">
 								<li>Visitors to verditlabs.com</li>
 								<li>Prospects we contact through outbound email as part of our services for clients</li>
 								<li>Clients who engage VerditLabs directly</li>
@@ -86,7 +83,7 @@
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">What data we collect</h2>
+							<h2 class="policy-h2">What data we collect</h2>
 							<div class="space-y-3">
 								<p><strong>From website visitors:</strong> we do not currently run Google Analytics, Google Ads tags, or Cookiebot on this website. If we re-enable analytics or advertising tags, we'll update this policy and restore cookie controls before using them.</p>
 							</div>
@@ -96,7 +93,7 @@
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">How we use this data</h2>
+							<h2 class="policy-h2">How we use this data</h2>
 							<p>We use prospect data to send relevant B2B outreach to people whose professional role matches what our clients offer. The outreach is tied to the recipient's professional responsibilities, not their personal life.</p>
 							<p>We use client data to deliver the services you've hired us for.</p>
 							<p>If you reply to our outreach, we may add your contact information and reply content to our CRM to manage the conversation.</p>
@@ -104,19 +101,19 @@
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Data minimization</h2>
+							<h2 class="policy-h2">Data minimization</h2>
 							<p>We limit our collection of personal data to what is reasonably necessary and proportionate to the purposes described in this policy. We don't collect, retain, or use personal data for purposes that aren't disclosed here, and we don't collect more data than we need to send relevant outreach on behalf of our clients.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Universal opt-out signals</h2>
+							<h2 class="policy-h2">Universal opt-out signals</h2>
 							<p>We do not currently use Google Analytics, Google Ads, Cookiebot, advertising pixels, retargeting, or targeted advertising technologies. If your browser sends a Global Privacy Control (GPC) signal, we treat it as a valid opt-out signal where applicable, including for any future sale, sharing, or targeted advertising activity that could be covered by state privacy laws.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Vendors who process data on our behalf</h2>
+							<h2 class="policy-h2">Vendors who process data on our behalf</h2>
 							<p>We use the following third-party tools to run our service. Each operates under a Data Processing Addendum that restricts them to processing data only for our business purposes:</p>
-							<ul class="list-disc space-y-2 pl-6">
+							<ul class="policy-ul">
 								<li><strong>Smartlead</strong> — email sending and campaign management</li>
 								<li><strong>Enrichment providers</strong> (such as Apollo, Clay, or similar) — prospect research and data verification</li>
 								<li><strong>CRM platforms</strong> (such as HubSpot, Bullhorn, or the CRM our client uses) — pipeline and contact management</li>
@@ -126,46 +123,46 @@
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">How long we keep data</h2>
+							<h2 class="policy-h2">How long we keep data</h2>
 							<p>Prospect data is retained only as long as it's useful for active outreach, and no longer than 24 months from collection. If you unsubscribe or ask us to stop contacting you, we keep a suppression record (just your email address) so we don't contact you again. We don't add you back.</p>
 							<p>Client data is retained for the duration of the engagement plus 12 months for accounting and reference purposes.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Our outbound emails</h2>
+							<h2 class="policy-h2">Our outbound emails</h2>
 							<p>Every commercial email we send includes our valid postal address, accurately identifies the sender, uses a non-deceptive subject line, and contains a working opt-out mechanism. We honor opt-outs within 10 business days and usually the same day.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h3 class="font-display text-xl text-slate-900">How to opt out</h3>
+							<h3 class="policy-h3">How to opt out</h3>
 							<p>Two ways, either works:</p>
-							<ul class="list-disc space-y-2 pl-6">
+							<ul class="policy-ul">
 								<li>Reply to any email with "stop," "unsubscribe," or any similar message</li>
-								<li>Email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a></li>
+								<li>Email <a href="mailto:vitor@verditlabs.com" class="prose-link">vitor@verditlabs.com</a></li>
 							</ul>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Your rights</h2>
+							<h2 class="policy-h2">Your rights</h2>
 							<p>Anyone we've contacted or collected data about can:</p>
-							<ul class="list-disc space-y-2 pl-6">
+							<ul class="policy-ul">
 								<li>Ask what data we hold about them</li>
 								<li>Ask us to correct it</li>
 								<li>Ask us to delete it</li>
 								<li>Ask us to stop contacting them</li>
 								<li>Ask for a portable copy of their data, where applicable state law provides that right</li>
 							</ul>
-							<p>To exercise any of these rights, email <a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a> with your request. We'll confirm receipt within 10 business days and respond substantively within 45 days. If we need more time because of the complexity or volume of requests, we may extend this period by an additional 45 days, and we'll let you know within the original 45-day window. We won't penalize you for exercising these rights.</p>
+							<p>To exercise any of these rights, email <a href="mailto:vitor@verditlabs.com" class="prose-link">vitor@verditlabs.com</a> with your request. We'll confirm receipt within 10 business days and respond substantively within 45 days. If we need more time because of the complexity or volume of requests, we may extend this period by an additional 45 days, and we'll let you know within the original 45-day window. We won't penalize you for exercising these rights.</p>
 							<p>To verify your identity before fulfilling a request, we'll match the email address you contact us from against the data we hold. For deletion or access requests where the match isn't clear, we may ask for additional information sufficient to confirm you are the person the data relates to. We won't ask for more than is necessary.</p>
 							<p>If we deny your request, we'll explain why in writing. You can appeal by replying to our denial within 60 days. We'll review the appeal and respond within 60 days of receiving it, with a written explanation of the action taken and the reasons for that decision. If we deny the appeal, we'll provide you with a way to contact your state attorney general if you believe your rights have not been respected.</p>
 							<p>You can designate an authorized agent to submit a request on your behalf. For California residents, the agent must provide either (1) a power of attorney under California Probate Code sections 4000-4465, or (2) signed written permission from you authorizing the agent to act, plus proof of the agent's identity. We may also contact you directly to verify your identity and confirm you authorized the request. For residents of other states, we'll ask for similar written proof of authorization.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h3 class="font-display text-xl text-slate-900">California residents</h3>
+							<h3 class="policy-h3">California residents</h3>
 							<p>The California Consumer Privacy Act (CCPA) gives California residents specific rights over their personal information. This applies to business contacts as well as consumers, since California's B2B exemption sunset in January 2023.</p>
 							<p><strong>Categories of personal information we collect:</strong></p>
-							<ul class="list-disc space-y-2 pl-6">
+							<ul class="policy-ul">
 								<li><em>Identifiers</em> - name, business email address</li>
 								<li><em>Professional or employment-related information</em> - job title, employer, company size, publicly available information about the company's hiring activity</li>
 								<li><em>Internet or network activity</em> (website visitors only) - basic technical logs, such as IP address, browser type, device type, requested pages, referring page, and timestamps, where processed by our hosting or security providers</li>
@@ -177,37 +174,37 @@
 						</section>
 
 						<section class="space-y-3">
-							<h3 class="font-display text-xl text-slate-900">Texas residents</h3>
+							<h3 class="policy-h3">Texas residents</h3>
 							<p>The Texas Data Privacy and Security Act gives Texas residents the rights to access, correct, delete, and obtain a copy of their personal data, plus the right to opt out of processing for targeted advertising, sale of personal data, or profiling that produces legal effects. We don't sell personal data or engage in profiling that produces legal effects, but the rights apply.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h3 class="font-display text-xl text-slate-900">Other US states</h3>
+							<h3 class="policy-h3">Other US states</h3>
 							<p>Residents of Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Utah, and Virginia have rights under their state's comprehensive privacy law. Depending on the state, these may include the right to access, correct, delete, and obtain a portable copy of personal data, plus the right to opt out of targeted advertising, sale of personal data, and profiling that produces legal or similarly significant effects. Many of these laws contain exemptions for personal data collected in a business-to-business context, but we'll respond to good-faith requests regardless of whether the law technically applies to us.</p>
 							<p>Where state law requires opt-in consent before processing sensitive personal data, we don't process sensitive personal data and so don't rely on consent for that purpose.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Data security</h2>
+							<h2 class="policy-h2">Data security</h2>
 							<p>Data is stored in the systems listed above, all of which use industry-standard encryption and access controls. We limit access to data to what's needed to run the service.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Children's data</h2>
+							<h2 class="policy-h2">Children's data</h2>
 							<p>Our services are for businesses. We don't knowingly collect data from anyone under 18.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Changes to this policy</h2>
+							<h2 class="policy-h2">Changes to this policy</h2>
 							<p>If we make meaningful changes, we'll update the "Last updated" date at the top and, where appropriate, notify affected parties.</p>
 						</section>
 
 						<section class="space-y-3">
-							<h2 class="font-display text-2xl text-slate-900">Contact</h2>
+							<h2 class="policy-h2">Contact</h2>
 							<address class="not-italic">
 								Vitor Pepicon<br>
 								VerditLabs<br>
-								<a href="mailto:vitor@verditlabs.com" class="text-primary-600 hover:text-primary-700 underline">vitor@verditlabs.com</a><br>
+								<a href="mailto:vitor@verditlabs.com" class="prose-link">vitor@verditlabs.com</a><br>
 								539 W Commerce St, Suite 1728, Dallas, TX 75208
 							</address>
 						</section>
@@ -217,27 +214,6 @@
 
 		</main>
 
-		<script>
-			const mobileToggle = document.getElementById('mobile-menu-toggle')
-			const mobileMenu = document.getElementById('mobile-menu')
-			const mobileOverlay = document.getElementById('mobile-menu-overlay')
-			const iconBars = document.getElementById('icon-bars')
-			const iconX = document.getElementById('icon-x')
-
-			if (mobileToggle) {
-				mobileToggle.addEventListener('click', () => {
-					mobileMenu.classList.toggle('hidden')
-					mobileOverlay.classList.toggle('hidden')
-					iconBars.classList.toggle('hidden')
-					iconX.classList.toggle('hidden')
-				})
-				mobileOverlay.addEventListener('click', () => {
-					mobileMenu.classList.add('hidden')
-					mobileOverlay.classList.add('hidden')
-					iconBars.classList.remove('hidden')
-					iconX.classList.add('hidden')
-				})
-			}
-		</script>
+		<script src="/site.js" defer></script>
 	</body>
 </html>
