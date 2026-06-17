@@ -23,20 +23,6 @@
 			rel="stylesheet"
 		/>
 
-		<!-- Single Page Apps for GitHub Pages -->
-		<script type="text/javascript">
-			(function(l) {
-				if (l.search[1] === '/' ) {
-					var decoded = l.search.slice(1).split('&').map(function(s) { 
-						return s.replace(/~and~/g, '&')
-					}).join('?');
-					window.history.replaceState(null, null,
-						l.pathname.slice(0, -1) + decoded + l.hash
-					);
-				}
-			}(window.location))
-		</script>
-
 		<script>
 			// Set this to true to re-enable Cookiebot, Google Analytics, and Google Ads tracking.
 			window.VERDIT_TRACKING_ENABLED = false;
@@ -100,7 +86,590 @@
 		</script>
 	</head>
 	<body>
-		<div id="app"></div>
-		<script type="module" src="/src/main.js"></script>
+		<main class="text-slate-900 bg-white min-h-screen">
+
+			<!-- Header -->
+			<header class="shadow py-3 md:py-4 sticky top-0 z-10 bg-white">
+				<div class="container xl:max-w-7xl mx-auto px-4 relative flex items-center justify-between gap-4 text-slate-900 text-base">
+					<div class="flex items-center gap-8 md:gap-12 lg:gap-16">
+						<div class="flex items-center gap-3">
+							<a href="/" class="text-4xl font-bold">Verdit<span class="text-primary-600">Labs</span></a>
+							<span class="text-sm sm:text-base text-slate-600 font-bold">by Vitor Pepicon</span>
+						</div>
+						<nav class="items-center gap-3 hidden md:flex">
+							<a href="#services" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Services</a>
+							<a href="#testimonials" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Testimonials</a>
+							<a href="#pricing" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Pricing</a>
+							<a href="#faq" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">FAQ</a>
+							<a href="#contact" class="rounded-lg py-1.5 px-3 transition-colors duration-300 hover:bg-slate-100">Contact</a>
+						</nav>
+					</div>
+					<div class="flex items-center gap-4">
+						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="hidden md:inline-block font-bold text-xl py-4 px-8 shadow-lg rounded-full border bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 transition-colors duration-300">Get your free outreach audit</a>
+						<!-- Mobile menu button -->
+						<div class="md:hidden">
+							<button id="mobile-menu-toggle" class="p-2 relative z-10">
+								<svg id="icon-bars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5 fill-current">
+									<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+								</svg>
+								<svg id="icon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5 fill-current hidden">
+									<path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+								</svg>
+							</button>
+							<div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-200/50 backdrop-blur-sm hidden"></div>
+							<div id="mobile-menu" class="p-4 absolute inset-x-4 top-14 bg-white rounded-xl shadow-lg hidden">
+								<nav class="flex flex-col">
+									<a href="#services" class="p-4 hover:bg-slate-100 rounded-lg text-left">Services</a>
+									<a href="#testimonials" class="p-4 hover:bg-slate-100 rounded-lg text-left">Testimonials</a>
+									<a href="#pricing" class="p-4 hover:bg-slate-100 rounded-lg text-left">Pricing</a>
+									<a href="#faq" class="p-4 hover:bg-slate-100 rounded-lg text-left">FAQ</a>
+									<a href="#contact" class="p-4 hover:bg-slate-100 rounded-lg text-left">Contact</a>
+									<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="inline-block font-bold text-xl py-4 px-8 shadow-lg rounded-full border bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 transition-colors duration-300 text-center mt-2">Get your free outreach audit</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Hero Section -->
+			<section class="w-full bg-white !pt-20 !pb-8 sm:!pt-28 sm:!pb-12">
+				<div class="container xl:max-w-7xl mx-auto px-4 space-y-12 sm:space-y-16">
+					<div class="w-full text-center space-y-4 sm:space-y-6">
+						<div class="space-y-12 sm:space-y-16">
+							<h1 class="text-2xl lg:text-6xl font-medium font-display tracking-tight"><span style="color: #0f172a;">More clients.</span> <span style="color: #2563eb;">No new hires.</span></h1>
+							<p class="text-lg tracking-tight w-full max-w-2xl mx-auto text-slate-700">I run AI outbound systems that fill your staffing agency's client pipeline with hiring managers and HR leaders.<br>I'm Vitor Pepicon, <strong>Top 1% on Upwork, 100+ projects.</strong></p>
+						</div>
+					</div>
+
+					<div class="space-y-4 text-center">
+						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="inline-block font-bold text-xl py-4 px-8 shadow-lg rounded-full border bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 transition-colors duration-300">Get your free outreach audit</a>
+						<p class="text-slate-700 font-medium text-base italic -mt-3">No calls. I'll review your setup and reply within 48 hours.</p>
+
+						<div class="h-8"></div>
+						<p class="font-display">Trusted by:</p>
+						<div class="flex items-center justify-center gap-10 sm:gap-14 flex-wrap">
+							<a href="https://www.inwave.online/en" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="Inwave">
+								<img src="/imgs/partners/inwave.png" alt="Inwave" class="h-7 sm:h-8" />
+							</a>
+							<a href="https://www.mybi.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="MyBI">
+								<img src="/imgs/partners/mybi.png" alt="MyBI" class="h-10 sm:h-12" />
+							</a>
+							<a href="https://www.wgmilabs.com" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="WGMI Labs">
+								<img src="/imgs/partners/wgmi-labs.png" alt="WGMI Labs" class="h-12 sm:h-14" />
+							</a>
+							<a href="https://bluelakewebdesign.com" target="_blank" rel="noopener noreferrer" class="inline-flex h-14 sm:h-16 items-center justify-center transition-opacity duration-300 hover:opacity-80" aria-label="Blue Lake Web Design">
+								<span class="flex flex-col items-center justify-center gap-1">
+									<img src="/imgs/partners/blue-lake-web-design.png" alt="Blue Lake Web Design" class="h-10 sm:h-11" />
+									<span class="font-display text-[10px] sm:text-xs leading-none text-slate-700">Blue Lake Web Design</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Section -->
+			<section id="services" class="w-full bg-white overflow-hidden space-y-8 border-t border-slate-200 !py-8 sm:!py-12">
+				<div class="container xl:max-w-7xl mx-auto px-4">
+					<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
+						<h2 class="text-2xl lg:text-4xl font-display tracking-tight">What I run for you</h2>
+						<h2 class="text-base lg:text-xl font-display tracking-tight text-center">Every system is custom built around your client acquisition process.</h2>
+					</div>
+				</div>
+
+				<!-- Tasks - Mobile -->
+				<div class="lg:hidden flex flex-col gap-4">
+					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+						<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+							<svg aria-hidden="true" class="w-9 aspect-square fill-none">
+								<path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path>
+								<path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path>
+							</svg>
+						</div>
+						<h2 class="text-xl font-display">Verified Decision-Maker Data on Autopilot</h2>
+						<div class="space-y-3">
+							<p class="text-base lg:text-sm text-slate-600">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
+							<p class="text-base lg:text-sm text-slate-600">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+						<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+							<svg aria-hidden="true" class="w-9 aspect-square fill-none">
+								<path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+								<path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+								<path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+							</svg>
+						</div>
+						<h2 class="text-xl font-display">Personalized Client Outreach That Feels Relevant</h2>
+						<div class="space-y-3">
+							<p class="text-base lg:text-sm text-slate-600">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
+							<p class="text-base lg:text-sm text-slate-600">The result: more replies and better conversations with hiring managers and HR leaders.</p>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+						<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+							<svg aria-hidden="true" class="h-9 w-9" fill="none">
+								<path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<h2 class="text-xl font-display">AI Powered Prospect Scoring</h2>
+						<div class="space-y-3">
+							<p class="text-base lg:text-sm text-slate-600">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
+							<p class="text-base lg:text-sm text-slate-600">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
+						</div>
+					</div>
+					<div class="flex flex-col gap-4 w-full max-w-2xl mx-auto px-4">
+						<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+							<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="w-9 aspect-square" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<h2 class="text-xl font-display">Email Infrastructure and Inbox Placement</h2>
+						<div class="space-y-3">
+							<p class="text-base lg:text-sm text-slate-600">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
+							<p class="text-base lg:text-sm text-slate-600">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tasks - Desktop -->
+				<div class="container xl:max-w-7xl mx-auto px-4 space-y-4 hidden lg:block">
+					<div class="grid grid-cols-2 xl:grid-cols-4 gap-6">
+						<div class="flex flex-col gap-4">
+							<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+								<svg aria-hidden="true" class="w-9 aspect-square fill-none">
+									<path opacity=".5" d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z" fill="#fff"></path>
+									<path d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z" fill="#fff"></path>
+								</svg>
+							</div>
+							<h2 class="text-xl font-display">Verified Decision-Maker Data on Autopilot</h2>
+							<div class="space-y-3">
+								<p class="text-sm text-slate-600">As companies enter your pipeline, we pull verified contact data automatically: hiring managers and HR leaders, validated business emails, company size, industry, and seniority. Every prospect on your list is a real decision-maker at a real fit, not a guess.</p>
+								<p class="text-sm text-slate-600">The result: outreach that lands in inboxes instead of bouncing, and conversations with people who can actually sign, not gatekeepers.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4">
+							<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+								<svg aria-hidden="true" class="w-9 aspect-square fill-none">
+									<path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+									<path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+									<path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff"></path>
+								</svg>
+							</div>
+							<h2 class="text-xl font-display">Personalized Client Outreach That Feels Relevant</h2>
+							<div class="space-y-3">
+								<p class="text-sm text-slate-600">Role-specific sequences built around what hiring managers in your niche actually care about. We don't write a generic email and swap in a name. We build separate angles for healthcare staffing vs. light industrial vs. tech contract, because the pitch that works for one doesn't work for the others.</p>
+								<p class="text-sm text-slate-600">The result: more replies and better conversations with hiring managers and HR leaders.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4">
+							<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+								<svg aria-hidden="true" class="h-9 w-9" fill="none">
+									<path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+							<h2 class="text-xl font-display">AI Powered Prospect Scoring</h2>
+							<div class="space-y-3">
+								<p class="text-sm text-slate-600">AI scores every prospect using your CRM data, engagement signals, and company details. Your team stops guessing and calls the hiring managers most likely to convert.</p>
+								<p class="text-sm text-slate-600">Companies using AI scoring see up to 25% higher conversion rates and cut wasted calls on unqualified prospects by half.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4">
+							<div class="rounded-lg w-fit transition-colors duration-300 bg-primary-600">
+								<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="w-9 aspect-square" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 13.6493C3 16.6044 5.41766 19 8.4 19L16.5 19C18.9853 19 21 16.9839 21 14.4969C21 12.6503 19.8893 10.9449 18.3 10.25C18.1317 7.32251 15.684 5 12.6893 5C10.3514 5 8.34694 6.48637 7.5 8.5C4.8 8.9375 3 11.2001 3 13.6493Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<h2 class="text-xl font-display">Email Infrastructure and Inbox Placement</h2>
+							<div class="space-y-3">
+								<p class="text-sm text-slate-600">I set up dedicated sending domains, configure authentication, warm up mailboxes, and monitor sender reputation. Your main domain is never touched.</p>
+								<p class="text-sm text-slate-600">Proper infrastructure is the difference between 95%+ inbox placement and landing in spam. Without it, nothing else matters.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials Section -->
+			<section id="testimonials" class="w-full bg-slate-50 !py-8 sm:!py-12">
+				<div class="container xl:max-w-7xl mx-auto px-4 space-y-8">
+					<div class="w-full max-w-2xl space-y-4 mx-auto text-center">
+						<h2 class="text-xl lg:text-3xl font-display tracking-tight text-center">What clients say</h2>
+					</div>
+					<div class="sm:columns-2 lg:columns-3">
+						<div class="inline-block w-full pt-4">
+							<figure class="relative p-6 rounded-2xl bg-white shadow-xl flex flex-col gap-6">
+								<svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 text-slate-100 fill-current">
+									<path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+								</svg>
+								<blockquote class="relative text-lg tracking-tight leading-relaxed">Vitor is a beast. Honest, smart, hardworking. One of the best I've worked with.</blockquote>
+								<hr />
+								<figcaption class="flex items-center justify-between gap-4">
+									<div class="space-y-1">
+										<h3 class="font-display">Eric Plotts</h3>
+										<p class="text-base sm:text-sm text-slate-500">Blue Lake Web Design</p>
+									</div>
+									<img src="/imgs/testimonials/eric.jpeg" alt="Eric Plotts" class="w-14 aspect-square rounded-full" />
+								</figcaption>
+							</figure>
+						</div>
+						<div class="inline-block w-full pt-4">
+							<figure class="relative p-6 rounded-2xl bg-white shadow-xl flex flex-col gap-6">
+								<svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 text-slate-100 fill-current">
+									<path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+								</svg>
+								<blockquote class="relative text-lg tracking-tight leading-relaxed">Amazing experience with Vitor!! Will continue to work with him longterm.</blockquote>
+								<hr />
+								<figcaption class="flex items-center justify-between gap-4">
+									<div class="space-y-1">
+										<h3 class="font-display">Brandon Priest</h3>
+										<p class="text-base sm:text-sm text-slate-500">WgmiLabs.com</p>
+									</div>
+									<img src="/imgs/testimonials/brandon.jpeg" alt="Brandon Priest" class="w-14 aspect-square rounded-full" />
+								</figcaption>
+							</figure>
+						</div>
+						<div class="inline-block w-full pt-4">
+							<figure class="relative p-6 rounded-2xl bg-white shadow-xl flex flex-col gap-6">
+								<svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 text-slate-100 fill-current">
+									<path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+								</svg>
+								<blockquote class="relative text-lg tracking-tight leading-relaxed">Vitor is amazing! He did exactly what needed to be done and was fun to work with. He is very good at communication when we needed anything or had questions... The project was a huge success and we'll continue working together on this project for smaller portions of it.</blockquote>
+								<hr />
+								<figcaption class="flex items-center justify-between gap-4">
+									<div class="space-y-1">
+										<h3 class="font-display">Jacobo Escobar</h3>
+										<p class="text-base sm:text-sm text-slate-500">Founder, Web3 Gaming Platform</p>
+									</div>
+									<img src="/imgs/testimonials/jacobo.jpeg" alt="Jacobo Escobar" class="w-14 aspect-square rounded-full" />
+								</figcaption>
+							</figure>
+						</div>
+						<div class="inline-block w-full pt-4">
+							<figure class="relative p-6 rounded-2xl bg-white shadow-xl flex flex-col gap-6">
+								<svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 text-slate-100 fill-current">
+									<path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+								</svg>
+								<blockquote class="relative text-lg tracking-tight leading-relaxed">I have never known a better and more professional in my life. A person who has enthusiasm, drive, is trustworthy, has perfect English... If you're looking for someone you won't have to worry about and he will solve everything for you, you definitely won't find a better consultant.</blockquote>
+								<hr />
+								<figcaption class="flex items-center justify-between gap-4">
+									<div class="space-y-1">
+										<h3 class="font-display">Gary Nezri</h3>
+										<p class="text-base sm:text-sm text-slate-500">Gnla Transportation LLC</p>
+									</div>
+									<img src="/imgs/testimonials/peter-renolds.webp" alt="Gary Nezri" class="w-14 aspect-square rounded-full" />
+								</figcaption>
+							</figure>
+						</div>
+						<div class="inline-block w-full pt-4">
+							<figure class="relative p-6 rounded-2xl bg-white shadow-xl flex flex-col gap-6">
+								<svg aria-hidden="true" width="105" height="78" class="absolute left-6 top-6 text-slate-100 fill-current">
+									<path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+								</svg>
+								<blockquote class="relative text-lg tracking-tight leading-relaxed">Super responsive, highly professional. We're already planning the next project.</blockquote>
+								<hr />
+								<figcaption class="flex items-center justify-between gap-4">
+									<div class="space-y-1">
+										<h3 class="font-display">Mark Kempton</h3>
+										<p class="text-base sm:text-sm text-slate-500">SAS PointsPrizes</p>
+									</div>
+									<img src="/imgs/testimonials/mark.jpeg" alt="Mark Kempton" class="w-14 aspect-square rounded-full" />
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="inline-block font-bold text-xl py-4 px-8 shadow-lg rounded-full border bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 transition-colors duration-300">Get your free outreach audit</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pricing Section -->
+			<section id="pricing" class="w-full bg-slate-900 py-20 sm:py-32">
+				<div class="container xl:max-w-7xl mx-auto px-4 text-white space-y-16">
+					<h2 class="text-3xl sm:text-4xl font-display tracking-tight text-center text-white">Pricing</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<!-- Free plan -->
+						<div class="group w-full p-6 sm:p-8 rounded-3xl flex flex-col gap-6 sm:gap-10 transition-all duration-300 border-2 border-transparent hover:border-white hover:shadow-2xl hover:-translate-y-4">
+							<p class="text-base sm:text-lg uppercase tracking-[0.2em] text-center font-semibold text-slate-400"></p>
+							<h3 class="font-display text-5xl text-center">Free</h3>
+							<div class="space-y-2">
+								<p class="text-lg font-display text-center">Outreach Audit</p>
+								<p class="group-hover:text-white transition-colors duration-300 text-center text-slate-500">I review your outreach process, tools, and setup, and reply with 2-3 high impact automation ideas within 48 hours.</p>
+							</div>
+							<a href="#tally-open=nGYAdZ&whatButton=free_&emoji=👋&animation=wave" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-transparent text-white border-white hover:bg-white/10 font-medium transition-all duration-300 hover:scale-105">Get your free outreach audit</a>
+							<div class="flex flex-col gap-4 text-base sm:text-sm">
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Personalized review of your CRM and outreach process</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Highest leverage automation opportunities identified</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Actionable recommendations you can use immediately</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300 text-slate-400">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>No calls, no commitments</span>
+								</div>
+							</div>
+						</div>
+						<!-- Full Service plan -->
+						<div class="group w-full p-6 sm:p-8 rounded-3xl flex flex-col gap-6 sm:gap-10 transition-all duration-300 border-2 border-transparent hover:border-white hover:shadow-2xl hover:-translate-y-4 bg-primary-600">
+							<p class="text-base sm:text-lg uppercase tracking-[0.2em] text-center font-semibold text-white">3-month minimum</p>
+							<h3 class="font-display text-5xl text-center">$2,500/mo</h3>
+							<div class="space-y-2">
+								<p class="text-lg font-display text-center">Full Service</p>
+								<p class="group-hover:text-white transition-colors duration-300 text-center text-white">I build your AI outbound system, then run it for you. Every engagement is scoped to what you actually need. Not everything below will apply, and that's fine. You take the client meetings. I handle everything upstream.</p>
+							</div>
+							<a href="#tally-open=nGYAdZ&whatButton=%242_500_mo_&emoji=👋&animation=wave" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-white text-slate-900 hover:bg-slate-100 font-medium transition-all duration-300 hover:scale-105">Get started</a>
+							<div class="flex flex-col gap-4 text-base sm:text-sm">
+								<p class="font-display text-base text-white">Month 1: Setup</p>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Email infrastructure (dedicated sending domains, authentication, mailbox warmup)</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Verified decision-maker data pulled automatically into your pipeline</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Role-specific outreach sequences built for your niche (email + optional LinkedIn)</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>AI prospect scoring integrated with your CRM</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Prospecting system configured to your ideal client criteria</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>First campaign loaded and live</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>1:1 onboarding walkthrough</span>
+								</div>
+								<p class="font-display text-base text-white">Month 2+: Ongoing</p>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Monthly prospect list refreshes with new target companies</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Campaign monitoring: inbox placement, opens, and replies</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Testing and optimizing outreach copy</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Interested prospects forwarded to you</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Monthly performance report with video walkthrough</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Additional campaigns or verticals scoped as add-ons</span>
+								</div>
+								<div class="flex items-start gap-4 group-hover:text-white transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 mt-1 flex-shrink-0 aspect-square fill-current"><path d="M243.8 339.8C232.9 350.7 215.1 350.7 204.2 339.8L140.2 275.8C129.3 264.9 129.3 247.1 140.2 236.2C151.1 225.3 168.9 225.3 179.8 236.2L224 280.4L332.2 172.2C343.1 161.3 360.9 161.3 371.8 172.2C382.7 183.1 382.7 200.9 371.8 211.8L243.8 339.8zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+									<span>Continuous support</span>
+								</div>
+							</div>
+							<p class="text-base sm:text-sm leading-relaxed text-white">What you get: a done for you client acquisition engine that fills your pipeline month after month, without hiring a sales rep.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="w-full bg-primary-600 bg-[url('/imgs/featured-bg-1.jpg')] bg-cover bg-center bg-no-repeat bg-fixed py-20 sm:py-32">
+				<div class="container xl:max-w-7xl mx-auto px-4 text-center text-white">
+					<div class="w-full max-w-lg mx-auto space-y-6">
+						<h2 class="text-3xl sm:text-4xl font-display tracking-tight">Not sure where to start?</h2>
+						<p class="text-lg tracking-tight text-white">
+							I'll build your outbound system and run it month after month, but first, let's see where you stand. Send me your website, CRM setup, and a few words about your outreach process. I'll reply within 48 hours with a personalized audit and 2-3 automation ideas.
+						</p>
+						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="inline-block font-bold text-xl py-4 px-8 shadow-lg rounded-full border bg-white text-blue-700 hover:bg-blue-700 hover:text-white transition-colors duration-300">Get your free outreach audit</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ Section -->
+			<section id="faq" class="w-full bg-slate-50 bg-[url('/imgs/bg-faq.jpg')] bg-contain bg-right bg-no-repeat py-20 sm:py-32">
+				<div class="container xl:max-w-7xl mx-auto px-4 space-y-16">
+					<div class="w-full max-w-2xl mx-auto space-y-4 text-center">
+						<h2 class="text-3xl sm:text-4xl font-display tracking-tight text-center">FAQ</h2>
+					</div>
+					<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">Can you integrate with my current CRM and tools?</h3>
+							<p class="text-base sm:text-sm">Yes. HubSpot, Bullhorn, Pipedrive, Zoho, and anything with an API or Zapier/Make integration. I also set up email infrastructure from scratch if you need outbound built from zero.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">Do I need technical expertise to work with you?</h3>
+							<p class="text-base sm:text-sm">Zero. You focus on selling, I'll handle the nerdy stuff behind the curtain.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">How quickly can I expect results?</h3>
+							<p class="text-base sm:text-sm">Weeks 1 and 2: I build everything. Week 3: first outreach goes live. Week 4 onward: replies start coming in. Most clients see a steady flow of interested prospects by the end of month 2.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">What if I'm not even sure what I need?</h3>
+							<p class="text-base sm:text-sm">No problem: bring your chaos to the email exchange and I'll bring the clarity.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">Is this just another AI tool?</h3>
+							<p class="text-base sm:text-sm">No. I don't sell software. I run your entire client outreach for you on an ongoing basis, with custom automation built into your existing tools. Hands on consulting plus done for you execution.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">What's the minimum commitment?</h3>
+							<p class="text-base sm:text-sm">3 months. Month 1 is setup. Months 2-3 are when results start compounding. After that, continue month to month as long as it's working for you.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">What happens in month 1?</h3>
+							<p class="text-base sm:text-sm">I build everything: email infrastructure, prospect scoring, outreach sequences, and your first campaign goes live. By the end of month 1, hiring managers are already hitting your inbox.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">How many interested prospects should I expect?</h3>
+							<p class="text-base sm:text-sm">It depends on your market and offer, but most campaigns generate 5 to 15 interested replies per month once everything is running. Some clients see results as early as week 3.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">What metrics do I see?</h3>
+							<p class="text-base sm:text-sm">Every month you get a report showing prospects contacted, emails sent, open rate, reply rate, and interested prospects forwarded to you. Full transparency, no vanity metrics.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">Will this hurt my email domain or reputation?</h3>
+							<p class="text-base sm:text-sm">No. I set up separate sending domains that redirect to yours. Your main domain is never used for outbound. If anything goes wrong with a sending domain, your primary email and website are completely unaffected.</p>
+						</div>
+						<div class="space-y-1 sm:space-y-4 w-full">
+							<h3 class="font-display text-lg">Will my prospect lists be shared with other clients?</h3>
+							<p class="text-base sm:text-sm">No. Your data stays yours. I never share prospect lists, campaign copy, or outreach strategies between clients.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact / About Section -->
+			<section id="contact" class="w-full bg-gradient-to-br from-primary-600 to-primary-800 py-20 sm:py-32">
+				<div class="container xl:max-w-7xl mx-auto px-4 text-center text-white">
+					<div class="max-w-4xl mx-auto p-4">
+						<div class="flex flex-col lg:flex-row items-start lg:items-center lg:justify-start mb-6">
+							<div class="lg:w-3/5 w-full lg:pr-4 flex flex-col justify-start text-left">
+								<h2 class="text-3xl sm:text-4xl font-display tracking-tight mb-6 text-left"></h2>
+								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Hi! 👋</p>
+								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">I help staffing agencies get more clients without hiring more reps. I run AI powered outbound systems that put hiring managers on your calendar. Setup, sequences, infrastructure, all of it.</p>
+								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">No new platforms. No new hires. Just more clients.</p>
+								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Send me your setup and I'll reply with a free outreach audit within 48 hours.</p>
+								<p class="text-lg tracking-tight text-white mb-5 text-left text-lg lg:text-xl leading-relaxed">Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered.</p>
+							</div>
+							<div class="flex items-center justify-end lg:w-2/5 w-full mt-4 lg:mt-0">
+								<img src="/myphoto.jpg" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
+							</div>
+						</div>
+					</div>
+					<div class="w-full max-w-2xl space-y-4 mx-auto text-center text-base">
+						<p class="text-lg tracking-tight">Questions? I reply within 24 hours.</p>
+						<p class="text-lg tracking-tight text-white-700 underline">
+							<a href="mailto:vitor@verditlabs.com?Subject=Contact%20via%20VerditLabs&Body=I%20have%20a%20request.%20Looking%20forward%20to%20your%20response." class="text-white-700 hover:underline">vitor@verditlabs.com</a>
+						</p>
+						<div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+							<p class="text-lg tracking-tight text-white-700">
+								<a href="https://x.com/vitorpepz" target="_blank" rel="noopener noreferrer" class="text-white-700 underline hover:text-white">Twitter</a>
+							</p>
+							<span class="hidden sm:inline text-white/50">|</span>
+							<p class="text-lg tracking-tight text-white-700">
+								<a href="https://www.linkedin.com/in/vitorpepicon" target="_blank" rel="noopener noreferrer" class="text-white-700 underline hover:text-white">LinkedIn</a>
+							</p>
+						</div>
+						<p class="pt-8">
+							<a href="/privacy-policy" class="inline-flex rounded-lg border border-white/30 px-4 py-2 text-base font-medium text-white transition-colors hover:bg-white hover:text-primary-700">Privacy Policy</a>
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<script>
+			// Mobile menu toggle
+			const mobileToggle = document.getElementById('mobile-menu-toggle')
+			const mobileMenu = document.getElementById('mobile-menu')
+			const mobileOverlay = document.getElementById('mobile-menu-overlay')
+			const iconBars = document.getElementById('icon-bars')
+			const iconX = document.getElementById('icon-x')
+
+			if (mobileToggle) {
+				mobileToggle.addEventListener('click', () => {
+					mobileMenu.classList.toggle('hidden')
+					mobileOverlay.classList.toggle('hidden')
+					iconBars.classList.toggle('hidden')
+					iconX.classList.toggle('hidden')
+				})
+				mobileOverlay.addEventListener('click', () => {
+					mobileMenu.classList.add('hidden')
+					mobileOverlay.classList.add('hidden')
+					iconBars.classList.remove('hidden')
+					iconX.classList.add('hidden')
+				})
+			}
+
+			// Tally form submission tracking
+			const LANDING_PAGE_TALLY_FORM_ID = 'nGYAdZ'
+			const GOOGLE_ADS_SEND_TO = 'AW-18056474257/q1rqCL2VnpscEJHd_6FD'
+			const COOKIEBOT_EVENT_NAMES = ['CookiebotOnConsentReady', 'CookiebotOnAccept', 'CookiebotOnDecline']
+			const TRACKING_ENABLED = window.VERDIT_TRACKING_ENABLED === true
+
+			function hasCookiebotConsent(category) {
+				if (!TRACKING_ENABLED) return false
+				const consent = window.Cookiebot && window.Cookiebot.consent
+				return !!(consent && consent[category])
+			}
+
+			function hasAnalyticsConsent() { return hasCookiebotConsent('statistics') }
+			function hasMarketingConsent() { return hasCookiebotConsent('marketing') }
+
+			function gtagSendEvent(url, eventParameters = {}) {
+				if (!TRACKING_ENABLED || !window.gtag || !hasMarketingConsent()) return false
+				const callback = function () { if (typeof url === 'string') window.location = url }
+				window.gtag('event', 'conversion', { send_to: GOOGLE_ADS_SEND_TO, event_callback: callback, event_timeout: 2000, ...eventParameters })
+				return false
+			}
+
+			const hostname = window.location.hostname
+			const isPrivateNetworkHost = hostname === 'localhost' || hostname === '127.0.0.1' || hostname.startsWith('192.168.') || hostname.startsWith('10.') || /^172\.(1[6-9]|2\d|3[0-1])\./.test(hostname)
+
+			function trackPageView(path) {
+				if (!TRACKING_ENABLED || !window.gtag || !hasAnalyticsConsent()) return
+				window.gtag('event', 'page_view', { page_path: path, page_location: window.location.origin + path, page_title: document.title, debug_mode: isPrivateNetworkHost })
+			}
+
+			if (TRACKING_ENABLED) {
+				window.addEventListener('message', (event) => {
+					if (typeof event.data !== 'string' || !event.data.includes('Tally.FormSubmitted')) return
+					let payload
+					try { payload = JSON.parse(event.data).payload } catch (error) { console.error('Failed to parse Tally submission payload', error); return }
+					if (!payload || payload.formId !== LANDING_PAGE_TALLY_FORM_ID) return
+					gtagSendEvent(undefined, { value: 1.0, currency: 'BRL', form_id: payload.formId, form_name: payload.formName, submission_id: payload.id, debug_mode: isPrivateNetworkHost })
+				})
+
+				trackPageView(window.location.pathname + window.location.search + window.location.hash)
+				COOKIEBOT_EVENT_NAMES.forEach((eventName) => {
+					window.addEventListener(eventName, () => trackPageView(window.location.pathname + window.location.search + window.location.hash), { once: eventName === 'CookiebotOnConsentReady' })
+				})
+			}
+		</script>
 	</body>
 </html>

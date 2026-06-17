@@ -1,6 +1,5 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    // Tailwind is now static (public/tailwind.css), no PostCSS processing needed
   },
 }
