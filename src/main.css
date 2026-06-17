@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind is now imported as static CSS from public/tailwind.css */
 
 .responsive-video {
   width: 100%; /* Full width on smaller screens */
