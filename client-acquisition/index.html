@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script async src="https://tally.so/widgets/embed.js"></script>
 		<title>Verdit Labs | AI Powered Client Acquisition for Staffing Agencies</title>
 		<meta name="description" content="AI outbound automation for staffing agencies. Prospect scoring, AI powered outreach to hiring managers, and done for you pipeline management. By Vitor Pepicon, Top 1% Upwork.">
 		<meta property="og:title" content="Verdit Labs | AI Powered Client Acquisition for Staffing Agencies">
@@ -14,7 +13,7 @@
 
 		<!-- Generated Tailwind CSS (static, no build step needed) -->
 		<link rel="stylesheet" href="/tailwind.css">
-		<link rel="stylesheet" href="/site.css">
+		<link rel="stylesheet" href="/site.css?v=accessibility-2">
 
 		<!-- Custom Fonts - Self-hosted for better performance -->
 		<link rel="preload" href="/fonts/inter-local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -24,9 +23,9 @@
 			rel="stylesheet"
 		/>
 
-		<script src="/tracking.js"></script>
 	</head>
 	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
 		<main class="text-slate-900 bg-white min-h-screen">
 
 			<!-- Header -->
@@ -37,7 +36,7 @@
 							<a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
 							<span class="byline">by Vitor Pepicon</span>
 						</div>
-						<nav class="desktop-nav">
+						<nav class="desktop-nav" aria-label="Main navigation">
 							<a href="#services" class="nav-link">Services</a>
 							<a href="#testimonials" class="nav-link">Testimonials</a>
 							<a href="#pricing" class="nav-link">Pricing</a>
@@ -49,13 +48,13 @@
 					<div class="flex items-center gap-4">
 						<!-- Mobile menu button -->
 						<div class="md:hidden">
-							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-								<svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+							<button id="mobile-menu-toggle" class="p-2 relative z-10" type="button" aria-label="Open main navigation" aria-controls="mobile-menu" aria-expanded="false">
+								<svg id="icon-bars" class="icon-sm" aria-hidden="true"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="icon-sm hidden" aria-hidden="true"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
-							<div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
-							<div id="mobile-menu" class="mobile-menu-panel hidden">
-								<nav class="flex flex-col">
+							<div id="mobile-menu-overlay" class="menu-overlay hidden" aria-hidden="true"></div>
+							<div id="mobile-menu" class="mobile-menu-panel hidden" aria-hidden="true">
+								<nav class="flex flex-col" aria-label="Mobile navigation">
 									<a href="#services" class="nav-link-mobile">Services</a>
 									<a href="#testimonials" class="nav-link-mobile">Testimonials</a>
 									<a href="#pricing" class="nav-link-mobile">Pricing</a>
@@ -70,7 +69,7 @@
 			</header>
 
 			<!-- Hero Section -->
-			<section class="w-full bg-white !pt-20 !pb-8 sm:!pt-28 sm:!pb-12">
+			<section id="main-content" class="w-full bg-white !pt-20 !pb-8 sm:!pt-28 sm:!pb-12" tabindex="-1">
 				<div class="section-container space-y-12 sm:space-y-16">
 					<div class="w-full text-center space-y-4 sm:space-y-6">
 						<div class="space-y-12 sm:space-y-16">
@@ -80,7 +79,7 @@
 					</div>
 
 					<div class="space-y-4 text-center">
-						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="btn-primary">Get your free outreach audit</a>
+						<a href="mailto:vitor@verditlabs.com?subject=Client%20acquisition%20audit" aria-label="Email Vitor about a client acquisition audit" class="btn-primary">Get your free outreach audit</a>
 						<p class="text-slate-700 font-medium text-base italic -mt-3">No calls. I'll review your setup and reply within 48 hours.</p>
 
 						<div class="h-8"></div>
@@ -286,7 +285,7 @@
 					</div>
 
 					<div class="text-center">
-						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="btn-primary">Get your free outreach audit</a>
+						<a href="mailto:vitor@verditlabs.com?subject=Client%20acquisition%20audit" aria-label="Email Vitor about a client acquisition audit" class="btn-primary">Get your free outreach audit</a>
 					</div>
 				</div>
 			</section>
@@ -304,7 +303,7 @@
 								<p class="text-lg font-display text-center">Outreach Audit</p>
 								<p class="group-hover:text-white transition-colors duration-300 text-center text-slate-500">I review your outreach process, tools, and setup, and reply with 2-3 high impact automation ideas within 48 hours.</p>
 							</div>
-							<a href="#tally-open=nGYAdZ&whatButton=free_&emoji=👋&animation=wave" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-transparent text-white border-white hover:bg-white/10 font-medium transition-all duration-300 hover:scale-105">Get your free outreach audit</a>
+							<a href="mailto:vitor@verditlabs.com?subject=Client%20acquisition%20audit" aria-label="Email Vitor about a client acquisition audit" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-transparent text-white border-white hover:bg-white/10 font-medium transition-all duration-300 hover:scale-105">Get your free outreach audit</a>
 							<div class="flex flex-col gap-4 text-base sm:text-sm">
 								<div class="feature-item text-slate-400">
 									<svg class="icon-check"><use href="/imgs/icons.svg#icon-check"></use></svg>
@@ -332,7 +331,7 @@
 								<p class="text-lg font-display text-center">Full Service</p>
 								<p class="group-hover:text-white transition-colors duration-300 text-center text-white">I build your AI outbound system, then run it for you. Every engagement is scoped to what you actually need. Not everything below will apply, and that's fine. You take the client meetings. I handle everything upstream.</p>
 							</div>
-							<a href="#tally-open=nGYAdZ&whatButton=%242_500_mo_&emoji=👋&animation=wave" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-white text-slate-900 hover:bg-slate-100 font-medium transition-all duration-300 hover:scale-105">Get started</a>
+							<a href="mailto:vitor@verditlabs.com?subject=Client%20acquisition%20system" aria-label="Email Vitor about a client acquisition system" class="inline-block font-medium text-center text-base sm:text-sm py-3 px-6 shadow-md rounded-full border transition-colors duration-300 cursor-pointer w-full bg-white text-slate-900 hover:bg-slate-100 font-medium transition-all duration-300 hover:scale-105">Get started</a>
 							<div class="flex flex-col gap-4 text-base sm:text-sm">
 								<p class="font-display text-base text-white">Month 1: Setup</p>
 								<div class="feature-item">
@@ -407,7 +406,7 @@
 						<p class="text-lg tracking-tight text-white">
 							I'll build your outbound system and run it month after month, but first, let's see where you stand. Send me your website, CRM setup, and a few words about your outreach process. I'll reply within 48 hours with a personalized audit and 2-3 automation ideas.
 						</p>
-						<a href="#tally-open=nGYAdZ&whatButton=free_strategy&emoji=👋&animation=wave" class="btn-secondary">Get your free outreach audit</a>
+						<a href="mailto:vitor@verditlabs.com?subject=Client%20acquisition%20audit" aria-label="Email Vitor about a client acquisition audit" class="btn-secondary">Get your free outreach audit</a>
 					</div>
 				</div>
 			</section>
@@ -481,7 +480,7 @@
 								<p class="service-desc">Vitor Pepicon, Top 1% on Upwork, 100+ projects delivered.</p>
 							</div>
 							<div class="flex items-center justify-end lg:w-2/5 w-full mt-4 lg:mt-0">
-								<img src="/imgs/myphoto.webp" alt="User image" class="max-w-full h-auto" style="border-radius: 3.5rem;">
+								<img src="/imgs/myphoto.webp" alt="Vitor Pepicon, founder of Verdit Labs" class="max-w-full h-auto" style="border-radius: 3.5rem;">
 							</div>
 						</div>
 					</div>
@@ -500,7 +499,7 @@
 							</p>
 						</div>
 						<p class="pt-8">
-							<a href="/privacy-policy" class="inline-flex rounded-lg border border-white/30 px-4 py-2 text-base font-medium text-white transition-colors hover:bg-white hover:text-primary-700">Privacy Policy</a>
+							<a href="/privacy-policy.html" class="inline-flex rounded-lg border border-white/30 px-4 py-2 text-base font-medium text-white transition-colors hover:bg-white hover:text-primary-700">Privacy Policy</a>
 						</p>
 					</div>
 				</div>
@@ -509,6 +508,5 @@
 		</main>
 
 		<script src="/site.js" defer></script>
-		<script src="/index.js" defer></script>
 	</body>
 </html>

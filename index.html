@@ -12,7 +12,7 @@
 		<link rel="icon" href="/imgs/favicon.svg">
 
 		<link rel="stylesheet" href="/tailwind.css">
-		<link rel="stylesheet" href="/site.css?v=staffing-spacing-5">
+		<link rel="stylesheet" href="/site.css?v=accessibility-2">
 
 		<link rel="preload" href="/fonts/inter-local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		<noscript><link rel="stylesheet" href="/fonts/inter-local.css"></noscript>
@@ -21,9 +21,9 @@
 			rel="stylesheet"
 		/>
 
-		<script src="/tracking.js"></script>
 	</head>
 	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
 		<main class="staffing-page text-slate-900 min-h-screen">
 			<header class="site-header">
 				<div class="section-container relative flex items-center justify-between gap-4 text-slate-900 text-base">
@@ -32,7 +32,7 @@
 							<a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
 							<span class="byline">by Vitor Pepicon</span>
 						</div>
-						<nav class="desktop-nav">
+						<nav class="desktop-nav" aria-label="Main navigation">
 							<a href="#problem" class="nav-link">Problem</a>
 							<a href="#how-we-help" class="nav-link">How we help</a>
 							<a href="#testimonials" class="nav-link">Testimonials</a>
@@ -42,13 +42,13 @@
 					</div>
 					<div class="flex items-center gap-4">
 						<div class="md:hidden">
-							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-								<svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+							<button id="mobile-menu-toggle" class="p-2 relative z-10" type="button" aria-label="Open main navigation" aria-controls="mobile-menu" aria-expanded="false">
+								<svg id="icon-bars" class="icon-sm" aria-hidden="true"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="icon-sm hidden" aria-hidden="true"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
-							<div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
-							<div id="mobile-menu" class="mobile-menu-panel hidden">
-								<nav class="flex flex-col">
+							<div id="mobile-menu-overlay" class="menu-overlay hidden" aria-hidden="true"></div>
+							<div id="mobile-menu" class="mobile-menu-panel hidden" aria-hidden="true">
+								<nav class="flex flex-col" aria-label="Mobile navigation">
 									<a href="#problem" class="nav-link-mobile">Problem</a>
 									<a href="#how-we-help" class="nav-link-mobile">How we help</a>
 									<a href="#testimonials" class="nav-link-mobile">Testimonials</a>
@@ -61,14 +61,14 @@
 				</div>
 			</header>
 
-			<section class="staffing-hero">
+			<section id="main-content" class="staffing-hero" tabindex="-1">
 				<div class="section-container">
 					<div class="staffing-content">
 						<h1 class="staffing-title staffing-hero-title">Managed <span class="staffing-title-accent">automation</span> for staffing ops and BD workflows</h1>
 						<p class="staffing-copy">We help staffing agencies remove repetitive work around CRM updates, VMS portals, compliance, reporting, follow-up, timesheets, and billing.</p>
 					</div>
 					<div class="staffing-cta-row">
-						<a href="mailto:vitor@verditlabs.com?subject=Staffing%20ops%20workflow" class="btn-primary">Send us the workflow</a>
+						<a href="mailto:vitor@verditlabs.com?subject=Staffing%20ops%20workflow" class="btn-primary" aria-label="Email Vitor about a staffing ops workflow">Send us the workflow</a>
 					</div>
 				</div>
 			</section>
@@ -199,10 +199,10 @@
 							<p class="staffing-copy">Verdit Labs is led by Vitor Pepicon, a Top 1% Upwork developer with 15 years in software, Fortune 100 experience, and 100+ software and automation projects delivered.</p>
 							<p class="staffing-copy">Send the workflow that is wasting time. We will tell you how we would think about automating it and whether it is worth solving.</p>
 							<div class="staffing-cta-row">
-								<a href="mailto:vitor@verditlabs.com?subject=Staffing%20ops%20workflow" class="btn-primary">Email Vitor</a>
+								<a href="mailto:vitor@verditlabs.com?subject=Staffing%20ops%20workflow" class="btn-primary" aria-label="Email Vitor about a staffing ops workflow">Email Vitor</a>
 							</div>
 						</div>
-						<img src="/imgs/myphoto.webp" alt="Vitor Pepicon" class="staffing-contact-photo">
+						<img src="/imgs/myphoto.webp" alt="Vitor Pepicon, founder of Verdit Labs" class="staffing-contact-photo">
 					</div>
 
 					<div class="staffing-video">
@@ -213,6 +213,15 @@
 						<div class="staffing-video-frame">
 							<iframe src="https://www.youtube-nocookie.com/embed/tC4DFCqkUyg?rel=0" title="Vitor Pepicon software developer intro video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
+						<details class="staffing-transcript">
+							<summary>Video transcript</summary>
+							<div>
+								<p>Hi, my name is Vitor. I am a software developer with 15 years of software development experience. I spent the first six years at a Fortune 100 company, where I led a software development team and oversaw external software development contracts, from small projects to multi-million dollar projects.</p>
+								<p>After that, I moved into freelance software development and have worked remotely with companies around the world on more than 100 projects. When I start a new project, I look at the big picture first: how it will be maintained, how much effort it will take, and what the simplest useful path is.</p>
+								<p>Sometimes the right answer is custom code from scratch. Often, good open source software can move the work forward faster. I tend to choose JavaScript or Python where practical, but I use whatever is best for the objective and the client's team, including PHP, C++, Java, or .NET when that is the better fit.</p>
+								<p>I have worked across oil, banking, e-commerce, e-learning, and business intelligence. I also speak Portuguese and Spanish, I try to be very responsive with clients, and I work from the GMT-3 time zone.</p>
+							</div>
+						</details>
 					</div>
 
 					<div class="staffing-footer">
@@ -229,7 +238,7 @@
 							</p>
 						</div>
 						<p class="pt-4">
-							<a href="/privacy-policy" class="inline-flex rounded-lg border border-slate-300 px-4 py-2 text-base font-medium text-slate-700 transition-colors hover:bg-slate-100">Privacy Policy</a>
+							<a href="/privacy-policy.html" class="inline-flex rounded-lg border border-slate-300 px-4 py-2 text-base font-medium text-slate-700 transition-colors hover:bg-slate-100">Privacy Policy</a>
 						</p>
 					</div>
 				</div>

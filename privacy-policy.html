@@ -9,7 +9,7 @@
 
 		<!-- Generated Tailwind CSS (static, no build step needed) -->
 		<link rel="stylesheet" href="/tailwind.css">
-		<link rel="stylesheet" href="/site.css">
+		<link rel="stylesheet" href="/site.css?v=accessibility-2">
 
 		<!-- Custom Fonts - Self-hosted for better performance -->
 		<link rel="preload" href="/fonts/inter-local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -20,6 +20,7 @@
 		/>
 	</head>
 	<body>
+		<a href="#main-content" class="skip-link">Skip to main content</a>
 		<main class="text-slate-900 bg-white min-h-screen">
 
 			<!-- Header -->
@@ -30,28 +31,24 @@
 							<a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
 							<span class="byline">by Vitor Pepicon</span>
 						</div>
-						<nav class="desktop-nav">
-							<a href="/#services" class="nav-link">Services</a>
-							<a href="/#testimonials" class="nav-link">Testimonials</a>
-							<a href="/#pricing" class="nav-link">Pricing</a>
-							<a href="/#faq" class="nav-link">FAQ</a>
+						<nav class="desktop-nav" aria-label="Main navigation">
+							<a href="/" class="nav-link">Staffing Ops</a>
+							<a href="/client-acquisition/" class="nav-link">Client Acquisition</a>
 							<a href="/#contact" class="nav-link">Contact</a>
 						</nav>
 					</div>
 					<div class="flex items-center gap-4">
 						<!-- Mobile menu button -->
 						<div class="md:hidden">
-							<button id="mobile-menu-toggle" class="p-2 relative z-10">
-								<svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-								<svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+							<button id="mobile-menu-toggle" class="p-2 relative z-10" type="button" aria-label="Open main navigation" aria-controls="mobile-menu" aria-expanded="false">
+								<svg id="icon-bars" class="icon-sm" aria-hidden="true"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+								<svg id="icon-x" class="icon-sm hidden" aria-hidden="true"><use href="/imgs/icons.svg#icon-x"></use></svg>
 							</button>
-							<div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
-							<div id="mobile-menu" class="mobile-menu-panel hidden">
-								<nav class="flex flex-col">
-									<a href="/#services" class="nav-link-mobile">Services</a>
-									<a href="/#testimonials" class="nav-link-mobile">Testimonials</a>
-									<a href="/#pricing" class="nav-link-mobile">Pricing</a>
-									<a href="/#faq" class="nav-link-mobile">FAQ</a>
+							<div id="mobile-menu-overlay" class="menu-overlay hidden" aria-hidden="true"></div>
+							<div id="mobile-menu" class="mobile-menu-panel hidden" aria-hidden="true">
+								<nav class="flex flex-col" aria-label="Mobile navigation">
+									<a href="/" class="nav-link-mobile">Staffing Ops</a>
+									<a href="/client-acquisition/" class="nav-link-mobile">Client Acquisition</a>
 									<a href="/#contact" class="nav-link-mobile">Contact</a>
 								</nav>
 							</div>
@@ -61,12 +58,12 @@
 			</header>
 
 			<!-- Privacy Policy Content -->
-			<section class="w-full bg-white py-20 sm:py-32">
+			<section id="main-content" class="w-full bg-white py-20 sm:py-32" tabindex="-1">
 				<div class="container xl:max-w-7xl mx-auto px-4">
 					<article class="mx-auto max-w-3xl space-y-8 text-slate-700">
 						<header class="space-y-4">
 							<h1 class="text-3xl lg:text-5xl font-display tracking-tight">Privacy Policy</h1>
-							<p class="text-base"><strong>Last updated:</strong> May 10, 2026</p>
+							<p class="text-base"><strong>Last updated:</strong> June 30, 2026</p>
 							<p>
 								VerditLabs is operated by Vitor Pepicon. This policy explains what data we collect, how we use it, and the rights you have over it. If anything here is unclear, email <a href="mailto:vitor@verditlabs.com" class="prose-link">vitor@verditlabs.com</a> and I'll answer personally.
 							</p>
@@ -85,7 +82,7 @@
 						<section class="space-y-3">
 							<h2 class="policy-h2">What data we collect</h2>
 							<div class="space-y-3">
-								<p><strong>From website visitors:</strong> we do not currently run Google Analytics, Google Ads tags, or Cookiebot on this website. If we re-enable analytics or advertising tags, we'll update this policy and restore cookie controls before using them.</p>
+								<p><strong>From website visitors:</strong> we do not currently run Google Analytics, Google Ads tags, third-party form embeds, or Cookiebot on this website. Basic technical logs may be processed by our hosting and security providers. The homepage includes a privacy-enhanced YouTube embed; if you choose to load or play the video, YouTube/Google may process data under their own privacy terms.</p>
 							</div>
 							<p><strong>From prospects we contact on behalf of clients:</strong> business contact information sourced from public business directories, professional networking sites, and licensed B2B data providers. This typically includes name, job title, business email address, company name, company size, and publicly available information about the company's hiring activity.</p>
 							<p><strong>From clients:</strong> name, business email, company information, and any data you share with us during our engagement (CRM exports, outreach templates, ideal client criteria).</p>
@@ -118,6 +115,7 @@
 								<li><strong>Enrichment providers</strong> (such as Apollo, Clay, or similar) — prospect research and data verification</li>
 								<li><strong>CRM platforms</strong> (such as HubSpot, Bullhorn, or the CRM our client uses) — pipeline and contact management</li>
 								<li><strong>Website hosting and security providers</strong> — hosting the website, serving pages, maintaining uptime, and protecting against abuse</li>
+								<li><strong>YouTube/Google</strong> — privacy-enhanced embedded video playback when a visitor chooses to load or play the intro video</li>
 							</ul>
 							<p>If you're a client, we'll tell you specifically which tools are in use for your engagement.</p>
 						</section>

@@ -7,24 +7,49 @@ const iconBars = document.getElementById('icon-bars')
 const iconX = document.getElementById('icon-x')
 
 if (mobileToggle) {
-	mobileToggle.addEventListener('click', () => {
-		mobileMenu.classList.toggle('hidden')
-		mobileOverlay.classList.toggle('hidden')
-		iconBars.classList.toggle('hidden')
-		iconX.classList.toggle('hidden')
-	})
-	mobileOverlay.addEventListener('click', () => {
+	const openMenu = () => {
+		mobileMenu.classList.remove('hidden')
+		mobileOverlay.classList.remove('hidden')
+		iconBars.classList.add('hidden')
+		iconX.classList.remove('hidden')
+		mobileToggle.setAttribute('aria-expanded', 'true')
+		mobileToggle.setAttribute('aria-label', 'Close main navigation')
+		mobileMenu.setAttribute('aria-hidden', 'false')
+	}
+
+	const closeMenu = () => {
 		mobileMenu.classList.add('hidden')
 		mobileOverlay.classList.add('hidden')
 		iconBars.classList.remove('hidden')
 		iconX.classList.add('hidden')
+		mobileToggle.setAttribute('aria-expanded', 'false')
+		mobileToggle.setAttribute('aria-label', 'Open main navigation')
+		mobileMenu.setAttribute('aria-hidden', 'true')
+	}
+
+	mobileToggle.addEventListener('click', () => {
+		if (mobileMenu.classList.contains('hidden')) {
+			openMenu()
+		} else {
+			closeMenu()
+		}
 	})
+
+	mobileOverlay.addEventListener('click', () => {
+		closeMenu()
+		mobileToggle.focus()
+	})
+
 	mobileMenu.querySelectorAll('a').forEach(link => {
 		link.addEventListener('click', () => {
-			mobileMenu.classList.add('hidden')
-			mobileOverlay.classList.add('hidden')
-			iconBars.classList.remove('hidden')
-			iconX.classList.add('hidden')
+			closeMenu()
 		})
+	})
+
+	document.addEventListener('keydown', event => {
+		if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+			closeMenu()
+			mobileToggle.focus()
+		}
 	})
 }

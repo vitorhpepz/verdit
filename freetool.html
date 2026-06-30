@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async src="https://tally.so/widgets/embed.js"></script>
     <title>VerditLabs | Opensource Sales AI Tool</title>
     <link rel="icon" href="/imgs/favicon.svg">
 
@@ -12,9 +11,10 @@
     <noscript><link rel="stylesheet" href="/fonts/inter-local.css"></noscript>
 
     <link rel="stylesheet" href="/tailwind.css">
-		<link rel="stylesheet" href="/site.css">
+		<link rel="stylesheet" href="/site.css?v=accessibility-2">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <main>
       <header class="site-header">
         <div class="relative flex items-center justify-between gap-4 text-slate-900 text-base max-w-6xl mx-auto px-4">
@@ -23,7 +23,7 @@
               <a href="/" class="logo">Verdit<span class="text-primary-600">Labs</span></a>
               <span class="byline">by Vitor Pepicon</span>
             </div>
-            <nav class="desktop-nav">
+            <nav class="desktop-nav" aria-label="Main navigation">
               <a href="#about" class="nav-link">About</a>
               <a href="#features" class="nav-link">Features</a>
               <a href="/" class="nav-link">Our Consultancy Services</a>
@@ -32,21 +32,21 @@
           </div>
 
           <div class="flex items-center gap-4">
-            <a href="#tally-open=31BZpM&whatButton=free_strategy" class="hidden md:inline-block bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg rounded-full">Get tool from GitHub</a>
+            <a href="mailto:vitor@verditlabs.com?subject=Sales%20AI%20tool" class="hidden md:inline-block bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg rounded-full">Get tool from GitHub</a>
             <div class="md:hidden">
-              <button id="mobile-menu-toggle" class="p-2 md:hidden relative z-10">
-                <svg id="icon-bars" class="icon-sm"><use href="/imgs/icons.svg#icon-bars"></use></svg>
-                <svg id="icon-x" class="icon-sm hidden"><use href="/imgs/icons.svg#icon-x"></use></svg>
+              <button id="mobile-menu-toggle" class="p-2 md:hidden relative z-10" type="button" aria-label="Open main navigation" aria-controls="mobile-menu" aria-expanded="false">
+                <svg id="icon-bars" class="icon-sm" aria-hidden="true"><use href="/imgs/icons.svg#icon-bars"></use></svg>
+                <svg id="icon-x" class="icon-sm hidden" aria-hidden="true"><use href="/imgs/icons.svg#icon-x"></use></svg>
               </button>
-              <div id="mobile-menu-overlay" class="menu-overlay hidden"></div>
-              <div id="mobile-menu" class="mobile-menu-panel hidden">
-                <nav class="flex flex-col">
+              <div id="mobile-menu-overlay" class="menu-overlay hidden" aria-hidden="true"></div>
+              <div id="mobile-menu" class="mobile-menu-panel hidden" aria-hidden="true">
+                <nav class="flex flex-col" aria-label="Mobile navigation">
                   <a href="#about" class="nav-link-mobile">About</a>
                   <a href="#features" class="nav-link-mobile">Features</a>
                   <a href="/" class="nav-link-mobile">Our Consultancy Services</a>
                   <a href="https://x.com/vitorpepz" class="nav-link-mobile">Twitter</a>
                   <hr class="my-2" />
-                  <a href="#tally-open=31BZpM&whatButton=free_strategy" class="inline-block bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg rounded-full">Get tool from GitHub</a>
+                  <a href="mailto:vitor@verditlabs.com?subject=Sales%20AI%20tool" class="inline-block bg-blue-700 text-white hover:bg-slate-200 hover:text-blue-700 font-bold py-4 px-8 shadow-lg rounded-full">Get tool from GitHub</a>
                 </nav>
               </div>
             </div>
@@ -54,14 +54,14 @@
         </div>
       </header>
 
-      <section class="bg-white">
+      <section id="main-content" class="bg-white" tabindex="-1">
         <div class="space-y-12 sm:space-y-20 max-w-6xl mx-auto px-4 py-12">
           <div class="w-full max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
             <h1 class="lg:text-7xl font-medium"><span class="text-primary-600">Opensource</span> <span class="text-slate-900"> Sales AI Tool</span></h1>
             <p class="w-full max-w-2xl mx-auto text-slate-700">Save time answering clients on WhatsApp, email, Instagram, LinkedIn and more. Your AI-powered assistant for sales and business growth.</p>
 
             <div class="text-center mt-6">
-              <a href="#tally-open=31BZpM&whatButton=free_strategy" class="btn-primary">Get tool from GitHub</a>
+              <a href="mailto:vitor@verditlabs.com?subject=Sales%20AI%20tool" class="btn-primary">Get tool from GitHub</a>
             </div>
 
             <div style="margin-top: 40px; display: flex; justify-content: center; align-items: center;">
@@ -74,7 +74,7 @@
             <div class="text-sm text-slate-600 mt-4">Needs OpenAI API key. The interaction in the video costs $0.05 USD in API costs. For more details, visit the <a href="https://openai.com/api/pricing/" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700">OpenAI API Pricing page</a>.</div>
 
             <div class="text-center mt-6">
-              <a href="#tally-open=31BZpM&whatButton=free_strategy" class="btn-primary">Get tool from GitHub</a>
+              <a href="mailto:vitor@verditlabs.com?subject=Sales%20AI%20tool" class="btn-primary">Get tool from GitHub</a>
             </div>
 
           </div>
@@ -104,7 +104,7 @@
             </ul>
           </div>
           <div class="text-center mt-12">
-            <a href="#tally-open=31BZpM&whatButton=free_strategy" class="btn-primary">Get tool from GitHub</a>
+            <a href="mailto:vitor@verditlabs.com?subject=Sales%20AI%20tool" class="btn-primary">Get tool from GitHub</a>
           </div>
         </div>
       </section>
