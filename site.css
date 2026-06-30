@@ -328,6 +328,28 @@
   max-width: min(100%, 17rem);
 }
 
+.staffing-video {
+  margin: clamp(3rem, 7vw, 5rem) auto 0;
+  max-width: 52rem;
+}
+
+.staffing-video-frame {
+  aspect-ratio: 16 / 9;
+  background-color: #0f172a;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / .12), 0 8px 10px -6px rgb(0 0 0 / .12);
+  margin-top: 1.75rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.staffing-video-frame iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .staffing-footer {
   padding: 2.5rem 0 3rem;
   text-align: center;
@@ -374,6 +396,10 @@
   .staffing-contact-photo {
     border-radius: 2.5rem;
     max-width: min(72vw, 13.5rem);
+  }
+
+  .staffing-video {
+    margin-top: 3.25rem;
   }
 }
 
